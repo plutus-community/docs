@@ -707,7 +707,8 @@ The goal of homework part 2 is to mint an NFT for a given UTxO where the TokenNa
 
 First we need to write the mkPolicy in which checks if the UTxO is consumed, and also if the correct amount was minted.
 The "hasUTx0" function is a boolean that checks the TxOutRef to report true or false.
-The checkMintedAmount will check to make sure only 1 is actually minted. We also pass _ into the token argument since we are working with an empty argument.
+The checkMintedAmount will check to make sure only 1 is actually minted. We also set tn’ ==  “” since we are working with an empty Bytestring.
+
 
 ```haskell
 {-# INLINABLE mkPolicy #-}

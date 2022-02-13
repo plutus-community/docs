@@ -6,6 +6,8 @@ Joe Totes
 
 Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture5](https://youtu.be/mGPqi9m0EPw)
 
+Google Doc version can be found [HERE](https://docs.google.com/document/d/1o89UQlihqCQH-DvMcGJeoInqmZtm8AlCUbcemAerxmk/edit)
+
 # Lecture 5: Minting Tokens and NFTS 
 
 
@@ -724,7 +726,7 @@ mkPolicy oref () ctx =
 
    checkMintedAmount :: Bool
    checkMintedAmount = case flattenValue (txInfoMint info) of
-       [(_, _, amt)] -> amt == 1
+       [(_, tn', amt)] -> tn' == "" && amt == 1
        _               -> False
 ```
 
@@ -796,7 +798,7 @@ mkPolicy oref () ctx =
 
    checkMintedAmount :: Bool
    checkMintedAmount = case flattenValue (txInfoMint info) of
-       [(_, _, amt)] -> amt == 1
+       [(_, tn', amt)] -> tn' == "" && amt == 1
        _               -> False
 
 policy :: TxOutRef -> Scripts.MintingPolicy

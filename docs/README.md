@@ -6,11 +6,11 @@ This documentation site is built on community members contributions, usually Plu
 
 Please don't expect that everything works out of the box, all the content is completely based on some community members best efforts. Don't hesitate to join us if you have something to share with others. 
 
-Until now this website proved to be a very valuable source of information for past cohorts, mainly because:
-- the fact that Plutus is quickly evolving. 
-- the lack of extensive and updated official documentation.  
-- toolset is often unknown for users when joining a new cohort, leading to some frustration, just trying to setup the environment. 
-- the environment setup instructions may differ between platforms.
+Until now this website proved to be a very valuable source of information for past cohorts, mainly because:  
+- the fact that Plutus is quickly evolving.  
+- the lack of extensive and updated official documentation.   
+- toolset is often unknown for users when joining a new cohort, leading to some frustration, just trying to setup the environment.  
+- the environment setup instructions may differ between platforms.  
 
 ## How to collaborate
 
@@ -26,13 +26,13 @@ At the momment we are using Markdown language for the documentation for its simp
 
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-To help standarize the content, we recommend to write the articles following the schema below:
-- Title: using #, must be short and descriptive, including OS and technology when aplicable. Be aware that this string will be used by mkdocs to generate the navigation menu, so try to be as specific as possible.
-- Author, contact, date of creation, date of last revision.
-- Brief description.
-- Sections (##) Subsections (###) and content: as a general rule, avoid using pictures unless it is strictly necessary. If you do, upload it to the "img" directory, and name it using snake_case_format_XX.ext using the title of the article for easy identification. Use much plain text as possible, it is the preferred option as it can be copied, pasted, and searched internally and externally to the site. Make use of \``` \``` for marking code snippets. 
-- Changelog (optional): Brief summary of changes over time.
-- Link to a dedicated forum thread (optional) : Link to a new post on Cardano's forum announcing the new article, that can be used to interact with other users, overcoming this way the static nature of the documentation site.  
+To help standarize the content, we recommend to write the articles following the schema below:  
+- Title: using #, must be short and descriptive, including OS and technology when aplicable. Be aware that this string will be used by mkdocs to generate the navigation menu, so try to be as specific as possible.  
+- Author, contact, date of creation, date of last revision.  
+- Brief description.  
+- Sections (##) Subsections (###) and content: as a general rule, avoid using pictures unless it is strictly necessary. If you do, upload it to the "img" directory, and name it using snake_case_format_XX.ext using the title of the article for easy identification. Use much plain text as possible, it is the preferred option as it can be copied, pasted, and searched internally and externally to the site. Make use of \``` \``` for marking code snippets.  
+- Changelog (optional): Brief summary of changes over time.  
+- Link to a dedicated forum thread (optional) : Link to a new post on Cardano's forum announcing the new article, that can be used to interact with other users, overcoming this way the static nature of the documentation site.    
 
 
 ## Other resources

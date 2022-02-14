@@ -1,4 +1,4 @@
-# Week02
+# Lecture 02
 
 ### Credits
 

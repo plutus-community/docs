@@ -1,4 +1,4 @@
-# Lecture #1 - Week01 Plutus Pioneer Program
+# Lecture 01
 
 ## Credits
 Condensed version of Lecture #1 of the Plutus Pioneer Program by Lars Brünjes on [Youtube](https://youtu.be/IEn6jUo-0vU)

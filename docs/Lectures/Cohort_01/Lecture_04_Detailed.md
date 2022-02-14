@@ -1,3 +1,5 @@
+# Lecture 04 Detailed
+
 ## Credits
 
 Condensed version of Lecture #4 of the Plutus Pioneer Program by Lars Brünjes on [Youtube](https://www.youtube.com/watch?v=6Reuh0xZDjY)

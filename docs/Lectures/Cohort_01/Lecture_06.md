@@ -1,4 +1,4 @@
-# Lecture #6 - Week06 Plutus Pioneer Program
+# Lecture 06
 
 ## Credits
 

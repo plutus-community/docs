@@ -1,4 +1,4 @@
-# Lecture #3 - Week03 Plutus Pioneer Program
+# Lecture 03 
 
 ## Credits
 

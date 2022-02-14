@@ -1,7 +1,7 @@
 This repository:  
 
 - temporarily acts as a central hub for all the notes submitted by Plutus community collaborators, and make them
-available in HTML at:
+available via HTML at:
 
 <https://plutus-community.readthedocs.io/>
 

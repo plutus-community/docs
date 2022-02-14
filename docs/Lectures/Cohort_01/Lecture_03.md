@@ -314,7 +314,7 @@ Open the file
 Copy all its contents into the Plutus Playground
 
 Either use your own local running playground.
-Instructions located: [Community Docs](http://docs.plutus-community.com) or [my Reddit article for MacOS](https://www.reddit.com/r/cardano/comments/mmzut6/macos_plutus_playground_build_instructions/)
+Instructions located: [Community Docs](https://plutus-community.readthedocs.io/) or [my Reddit article for MacOS](https://www.reddit.com/r/cardano/comments/mmzut6/macos_plutus_playground_build_instructions/)
 
 You could use the Community Run Playground for week03.
 

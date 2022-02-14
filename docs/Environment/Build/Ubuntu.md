@@ -145,7 +145,7 @@ cd plutus-apps
 **Note** If you will be working on the Plutus Pioneer Project, it will be
 necessary at this point to `git checkout ...` a specific commit to match the
 class materials. That commit hash is listed in the exercises week## directory
-in the `cabal.project` file. For more info on this, see [Working on contracts with and without cabal build](https://docs.plutus-community.com/docs/setup/CabalBuild.html)
+in the `cabal.project` file. For more info on this, see [Working on contracts with and without cabal build](https://plutus-community.readthedocs.io/en/latest/Environment/Build/CabalBuild/)
 
 Now we will run the Plutus Playground servers. We start these in a `nix-shell`
 which sets up the environment and has working versions of tools.

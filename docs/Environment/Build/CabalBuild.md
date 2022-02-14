@@ -4,7 +4,7 @@
 
 _**Note:**_
 **The setup assumes that you are running this from an already configured
-Nix-Shell, look at the [other guides](http://docs.plutus-community.com/) to set
+Nix-Shell, look at the [other guides](https://plutus-community.readthedocs.io/) to set
 this up.**
 
 
@@ -45,7 +45,7 @@ git checkout 41149926c108c71831cfe8d244c83b0ee4bf5c8a
 
 And then start the server and client back up again. For more details and
 environments other than Linux, see the [other
-guides](http://docs.plutus-community.com/).
+guides](https://plutus-community.readthedocs.io/).
 
 Strictly speaking, it's not necessary to `cabal build` the
 plutus-pioneer-program sources at all. At this time they can't be run outside

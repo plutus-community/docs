@@ -1,4 +1,4 @@
-# Plutus VM (Ubuntu Based)
+# Vagrant with Ubuntu
 
 ## Credits
 Original from: [edwint88](https://github.com/edwint88/plutus-vm)

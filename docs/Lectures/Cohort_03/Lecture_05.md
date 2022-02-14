@@ -13,13 +13,15 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/1o89UQ
 
 ## Table of Contents
 
-1. [Preparation for Lecture 5](#Preparation-for-Lecture-5)
-2. [Values](#Values)
-3. [A Simple Minting Policy](#A-Simple-Minting-Policy)
-4. [A More Realistic Minting Policy](#A-More-Realistic-Minting-Policy)
-5. [NFT’s](#NFT's)
-6. [Homework Part 1](#Homework-Part-1)
-7. [Homework Part 2](#Homework-Part-2)
+- [Lecture 5: Minting Tokens and NFTS](#lecture-5-minting-tokens-and-nfts)
+  - [Table of Contents](#table-of-contents)
+  - [Preparation for Lecture 5](#preparation-for-lecture-5)
+  - [Values](#values)
+  - [A Simple Minting Policy](#a-simple-minting-policy)
+  - [A More Realistic Minting Policy](#a-more-realistic-minting-policy)
+  - [NFT’s](#nfts)
+  - [Homework Part 1](#homework-part-1)
+  - [Homework Part 2](#homework-part-2)
 
 ## Preparation for Lecture 5
 

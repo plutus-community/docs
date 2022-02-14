@@ -99,7 +99,14 @@ Value
 getValue :: Map CurrencySymbol (Map TokenName Integer)	 
 ```
 
-Each native token, including ADA, is represented by a currency symbol and token name. Where currency symbol is:
+Each native token, including ADA, is represented by a currency symbol and token name. 
+
+Where currency symbol is:
+
+```haskell
+CurrencySymbol	 
+unCurrencySymbol :: BuiltinByteString
+```
 
 Token name is:
 

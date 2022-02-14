@@ -177,7 +177,8 @@ Return:
 
 ```haskell
 return :: Monad m => a -> m a
- ```
+```
+
 ```
 *Main Data.Char> return "Haskell" :: IO String
 
@@ -234,7 +235,7 @@ Constructors
 Nothing
  
 Just a
- ```
+```
 
 
 Example, read. First import Text.Read (readMaybe):
@@ -577,13 +578,14 @@ Output:
 Writer 6 ["number: 1","number: 2","number: 3","sum: 6"]
 ```
 Lastly, we looked at the entire Monad Class:
+
 ```haskell
 Monad
 (>>=) :: Monad m => m a -> (a -> m b) -> m b
 (=<<) :: Monad m => (a -> m b) -> m a -> m b
 (>>) :: Monad m => m a -> m b -> m b
 return :: Monad m => a -> m a
- ```
+```
 
  ## The Emulator Trace Monad
 

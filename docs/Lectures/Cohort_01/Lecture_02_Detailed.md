@@ -1,4 +1,4 @@
-# Lecture #2 - Detailed Overview - Week02 Plutus Pioneer Program
+# Lecture 02 Detailed 
 
 ## Credits
 

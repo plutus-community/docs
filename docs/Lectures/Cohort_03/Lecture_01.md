@@ -17,8 +17,13 @@ Joe Totes
   - [Homework Part 2](#homework-part-2)
 ## Preparation for Lecture 1
 Before we can get started in lecture 1, we first must get our development environment setup. This guide will be using a fresh install of Ubuntu linux.
+
 If you want to use linux but only have a computer with windows, you can run a virtual environment inside of Windows. A great step by step guide for how to get started can be found here:
 [How to install an Ubuntu VM in Windows](https://www.google.com/url?q=https://youtu.be/x5MhydijWmc&sa=D&source=editors&ust=1644942252628903&usg=AOvVaw0y0kxJWz9VN7FAqqN8tkDT)
+
+You can copy and paste any of the code in this guide directly into your terminal or IDE. If you are new to linux and are unfamiliar with terminal shell commands, this cheat sheet gives a quick overview:
+[Linux Command Master List](https://www.google.com/url?q=https://drive.google.com/file/d/10xz7Dm3E_20doL08Wu_dfWJqiIfvTKlc/view?usp%3Dsharing&sa=D&source=editors&ust=1644942252629423&usg=AOvVaw0P47IWEpQgIFW1g2bxZeYQ)
+
 
 The haddock documentation is also a great source of information for all the public plutus libraries.  This can be found here:
 [Documentation for all public Plutus Libraries](https://www.google.com/url?q=https://playground.plutus.iohkdev.io/doc/haddock/&sa=D&source=editors&ust=1644942252629960&usg=AOvVaw2eoK-uGZuqWIqtuCZt0t_H)
@@ -103,7 +108,7 @@ You should now be up to date and can run nix-shell in this directory. Run nix-sh
 ```
 totinj@penguin:~/plutus-apps$ nix-shell
 ```
-Nix-shell will take a good amount of time to build the first time you are running it, so be patient. If you have setup your caches correctly, you will notice it building from https://hydra.iohk.io.
+Nix-shell will take a good amount of time to build the first time you are running it, so be patient. If you have setup your caches correctly, you will notice it building from [https://hydra.iohk.io](https://hydra.iohk.io).
 If successful, you should see the nix-shell:
 ```
 [nix-shell:~/plutus-apps]$ 
@@ -127,7 +132,8 @@ Prelude Week01.EnglishAuction> 
 ```
 
 ## The EUTxO Model
-This is the transcript for the lecture video on EUTxOs by Lars Brünjes. Further information about EUTxO models can be found here: Accounting Systems for Blockchains
+This is the transcript for the lecture video on EUTxOs by Lars Brünjes. Further information about EUTxO models can be found here: [Accounting Systems for Blockchains](https://www.google.com/url?q=https://iohk.io/en/blog/posts/2021/03/11/cardanos-extended-utxo-accounting-model/&sa=D&source=editors&ust=1644942252646800&usg=AOvVaw1u7nSai3vUbogywy7ttbnv)
+
 One of the most important things you need to understand in order to write Plutus smart contracts is the counting model that Cardano uses; and that is the so-called (E)UTxO model, which is an abbreviation for extended unspent transaction output model. The UTxO model without being extended is the one that has been introduced by Bitcoin.  But there are other models. Ethereum, for example, uses a so-called account-based model, which is what you're used to from a normal bank, where everybody has an account and each account has a balance. And if you transfer money from one account to another, then the balance gets updated accordingly, but that is not how the UTxO model works. Unspent transaction outputs are exactly what the name says. They are transaction outputs that are outputs from previous transactions that happened on the blockchain that have not yet been spent.
 So let's look at an example where we have two such UTxOs, one belonging to Alice, 100 ADA and another one belonging to Bob, 50 ADA. And as an example, let's assume that Alice wants to send 10 ADA to Bob. So she creates a transaction and the transaction is something that has inputs and outputs, can be an arbitrary number of inputs and an arbitrary number of outputs. And an important thing is that you can always only use complete UTxOs as input. So, if she wants to send 10 ADA to Bob, she can't simply split herexisting 100 ADA into a 90 to 10 piece. She has to use the full 100 ADA as input. So by using the UTxO 100 ADA as input to a transaction. Alice has not spent that UTxO, so it's no longer an UTxO. It's no longer unspent, it's been spent. And now she can create outputs for a transaction. So she wants to pay 10 ADA to Bob. So one output will be 10 ADA to Bob, and then she wants her change back. So she creates a second output of 90 ADA to herself.
 And so this is how, even though you always have to consume complete UTxOs, you can get your change back. So you consume the complete UTxO, but then you create an output for the change and note that in a transaction, the sum of the input values must equal the sum of the output values. So in this case, 100 ADA go in and 10 plus 90 ADA go out. This is strictly speaking, not true. There are two exceptions, the first exception is transaction fees. So in the real blockchain for each transaction, you have to pay fees. So that means that the sum of input values has to be slightly higher than the sum of output values to accommodate for the fees. And the second exception is the native tokens that we have on Cardano. So it's possible for transactions to create new tokens. In which case the outputs will be higher than the inputs or to burn tokens, in which case the inputs will be higher than the outputs. But that is a somewhat advanced topic, how to handle minting and burning of native tokens in Plutus. And we'll come back to that later in the course. So for now we only look at transactions where the sum of the input value equals the sum of the output values.

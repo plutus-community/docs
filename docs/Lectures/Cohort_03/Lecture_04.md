@@ -13,12 +13,14 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/1gRv1m
 
 ## Table of Contents
 
-1. [Preparation for Lecture 4](#Preparation-for-Lecture-4)
-2. [Monads](#Monads)
-3. [The Emulator Trace Monad](#The-Emulator-Trace-Monad)
-4. [The Contract Monad](#The-Contract-Monad)
-5. [Homework Part 1](#Homework-Part-1)
-6. [Homework Part 2](#Homework-Part-2)
+- [Lecture 4: Monads](#lecture-4-monads)
+  - [Table of Contents](#table-of-contents)
+  - [Preparation for Lecture 4](#preparation-for-lecture-4)
+  - [Monads](#monads)
+  - [The Emulator Trace Monad](#the-emulator-trace-monad)
+  - [The Contract Monad](#the-contract-monad)
+  - [Homework Part 1](#homework-part-1)
+  - [Homework Part 2](#homework-part-2)
 
 ## Preparation for Lecture 4
 
@@ -587,7 +589,7 @@ Monad
 return :: Monad m => a -> m a
 ```
 
- ## The Emulator Trace Monad
+## The Emulator Trace Monad
 
 
 Before we can get started with using the Emulator Trace Monad, start by loading the repl.

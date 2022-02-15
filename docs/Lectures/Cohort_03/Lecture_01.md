@@ -18,7 +18,7 @@ Joe Totes
 ## Preparation for Lecture 1
 Before we can get started in lecture 1, we first must get our development environment setup. This guide will be using a fresh install of Ubuntu linux.
 
-If you want to use linux but only have a computer with windows, you can run a virtual environment inside of Windows. A great step by step guide for how to get started can be found here:
+If you want to use linux but only have a computer with Windows, you can run a virtual environment inside of Windows. A great step by step guide for how to get started can be found here:
 [How to install an Ubuntu VM in Windows](https://www.google.com/url?q=https://youtu.be/x5MhydijWmc&sa=D&source=editors&ust=1644942252628903&usg=AOvVaw0y0kxJWz9VN7FAqqN8tkDT)
 
 You can copy and paste any of the code in this guide directly into your terminal or IDE. If you are new to linux and are unfamiliar with terminal shell commands, this cheat sheet gives a quick overview:

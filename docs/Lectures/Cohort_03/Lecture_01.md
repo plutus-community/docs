@@ -14,11 +14,13 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/1cd1wt
 
 ## Table of Contents
 
-  1. [Preparation for Lecture 1](#preparation-for-lecture-1)
-  2. [The EUTxO Model](#the-eutxo-model)
-  3. [The Auction Contract in the EUTxO Model](#the-auction-contract-in-the-eutxo-model)
-  4. [The Auction Contract in Plutus Playground](#the-auction-contract-in-plutus-playground)
-  5. [Homework](#homework)
+- [Lecture 1: Building Example Code and Learning Plutus Playground](#lecture-1-building-example-code-and-learning-plutus-playground)
+  - [Table of Contents](#table-of-contents)
+  - [Preparation for Lecture 1](#preparation-for-lecture-1)
+  - [The EUTxO Model](#the-eutxo-model)
+  - [The Auction Contract in the EUTxO Model](#the-auction-contract-in-the-eutxo-model)
+  - [The Auction Contract in Plutus Playground](#the-auction-contract-in-plutus-playground)
+  - [Homework](#homework)
   
 ## Preparation for Lecture 1
 Before we can get started in lecture 1, we first must get our development environment setup. 

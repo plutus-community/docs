@@ -20,6 +20,8 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/1cd1wt
   - [The EUTxO Model](#the-eutxo-model)
   - [The Auction Contract in the EUTxO Model](#the-auction-contract-in-the-eutxo-model)
   - [The Auction Contract in Plutus Playground](#the-auction-contract-in-plutus-playground)
+    - [Simulation](#simulation)
+    - [Evaluation](#evaluation)
   - [Homework](#homework)
   
 ## Preparation for Lecture 1
@@ -508,7 +510,7 @@ https://localhost:8009
 You will get a warning complaining about it being a risky website, ignore the message to click through anyway.
 
 You should now be able to successfully compile and run the auctions contract by using the two buttons in the top right corner: “Compile” and “Simulate”.<br/><br/><br/>
-### The next part is taken from reddit (u/RikAlexander) which walks through plutus playground. Credit to him for this submission: <br/>
+**The next part is taken from reddit (u/RikAlexander) which walks through plutus playground. Credit to him for this submission:** <br/>
 
 ### Simulation
 
@@ -687,7 +689,7 @@ As you can see, Wallet3 now has the 1T.
 [![r/cardano - Week 01 Contract - EnglishAuction - Plutus Pioneer Program](https://preview.redd.it/2yswtd1ir0t61.png?width=1188&format=png&auto=webp&s=25a895aa510ff3e7faa7f3fb25b8f91d4f7ffcf2)](https://preview.redd.it/2yswtd1ir0t61.png?width=1188&format=png&auto=webp&s=25a895aa510ff3e7faa7f3fb25b8f91d4f7ffcf2)
 
 
- ## Homework 
+## Homework 
 
 
 The objective of the homework this week is to get familiar with running the environment and playing around inside of Plutus Playground. If you have been following the guide up to this point, we should now have the essentials both knowledge and dev environment wise to be ready to move on to lecture 2.

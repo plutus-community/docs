@@ -1,13 +1,13 @@
 # MacOS Setup for Plutus Pioneer Program
 
+This is a step by step guide for getting the playground client and server running in the [plutus-apps](https://github.com/input-output-hk/plutus-apps.git) repository.
+It should work on Catalina and Big Sur. (Was tested on 2 Macs with Big Sur).
+However, if you run on an M1 Mac, you will need to add additional Nix configuration for your build to succeed. See [this guide](https://github.com/renzwo/cardano-plutus-apps-install-m1/blob/main/README.md).
+
 ## Credits
 Cloned from [Reddit](https://www.reddit.com/r/cardano/comments/mmzut6/macos_plutus_playground_build_instructions/)
 
 Go give u/RikAlexander karma!
-
-## Notes
-
-Should work on Catalina and Big Sur. (Was tested on 2 Macs with Big Sur)
 
 ## Setup
 

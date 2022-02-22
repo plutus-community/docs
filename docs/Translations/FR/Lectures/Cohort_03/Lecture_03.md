@@ -1,3 +1,5 @@
+# Lecture 03
+
 # 1.	Introduction
 
 Pour exécuter l'instance locale de `Plutus Playground`, pour basculer sur la version du dépôt `GIT` nécessaire du répertoire `plutus-apps` et pour initialiser l'environnement de travail de cette lecture, référez vous au document de la **semaine 1** qui contient toute les informations nécessaires.

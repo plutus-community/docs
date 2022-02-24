@@ -460,7 +460,7 @@ We see a data type *Auction* which represents the parameters for the
 contract that, in our example, Alice starts. The *aCurrency* and
 *aToken* parameters represent the NFT.
 
-``` {.haskell}
+```haskell
 data Auction = Auction
    { aSeller   :: !PubKeyHash
    , aDeadline :: !POSIXTime
@@ -475,7 +475,7 @@ You also see other data types, but the heart of the code is the
 whether a given transaction is allowed to spend a UTxO sitting at this
 script address.
 
-``` {.haskell}
+```haskell
 {-# INLINABLE mkAuctionValidator #-}
 mkAuctionValidator :: AuctionDatum -> AuctionAction -> ScriptContext -> Bool
 mkAuctionValidator ad redeemer ctx =
@@ -504,7 +504,7 @@ And then here is where the compilation to Plutus Core happens. It uses
 something called Template Haskell to take the Haskell function above and
 compile it to Plutus Core.
 
-``` {.haskell}
+```haskell
 auctionTypedValidator :: Scripts.TypedValidator Auctioning
 auctionTypedValidator = Scripts.mkTypedValidator @Auctioning
     $$(PlutusTx.compile [|| mkAuctionValidator ||])
@@ -519,7 +519,7 @@ invoked.
 We have three endpoints for this example, and each has a datatype
 defined to represent their parameters.
 
-``` {.haskell}
+```haskell
 data StartParams = StartParams
    { spDeadline :: !POSIXTime
    , spMinBid   :: !Integer
@@ -543,7 +543,7 @@ Then the off-chain operations are defined.
 
 First the *start* logic.
 
-``` {.haskell}
+```haskell
 start :: AsContractError e => StartParams -> Contract w s e ()
 start StartParams{..} = do
     pkh <- pubKeyHash <$> ownPubKey
@@ -567,7 +567,7 @@ start StartParams{..} = do
 
 Then the *bid* logic.
 
-``` {.haskell}
+```haskell
 bid :: forall w s. BidParams -> Contract w s Text ()
 bid BidParams{..} = do
     (oref, o, d@AuctionDatum{..}) <- findAuction bpCurrency bpToken
@@ -603,7 +603,7 @@ bid BidParams{..} = do
 
 And finally the *close* logic.
 
-``` {.haskell}
+```haskell
 close :: forall w s. CloseParams -> Contract w s Text ()
 close CloseParams{..} = do
     (oref, o, d@AuctionDatum{..}) <- findAuction cpCurrency cpToken
@@ -634,7 +634,7 @@ close CloseParams{..} = do
 
 There is some code to tie everything up.
 
-``` {.haskell}
+```haskell
 endpoints :: Contract () AuctionSchema Text ()
 endpoints = (start' `select` bid' `select` close') >> endpoints
   where
@@ -646,7 +646,7 @@ endpoints = (start' `select` bid' `select` close') >> endpoints
 And the last lines are just helpers to create a sample NFT to allow us
 to try the auctioning of this NFT in the playground.
 
-``` {.haskell}
+```haskell
 mkSchemaDefinitions ''AuctionSchema
 
 myToken :: KnownCurrency
@@ -657,7 +657,7 @@ mkKnownCurrencies ['myToken]
 
 An example of code reuse is the *minBid* function.
 
-``` {.haskell}
+```haskell
 minBid :: AuctionDatum -> Integer
 minBid AuctionDatum{..} = case adHighestBid of
     Nothing      -> aMinBid adAuction
@@ -735,7 +735,7 @@ button.
 The default wallets are setup with 10 Lovelace and 10 T, where T is a
 native token simulated by the script in the following lines:
 
-``` {.haskell}
+```haskell
 myToken :: KnownCurrency
 myToken = KnownCurrency (ValidatorHash "f") "Token" (TokenName "T" :| [])
 
@@ -777,7 +777,7 @@ starts at the beginning of the Shelley era, so this value - 1596059101 -
 reflects that and this will be on July 29th 2020 - the 10th slot of the
 Shelley era.
 
-``` {.haskell}
+```haskell
 Prelude Week01.EnglishAuction> import Ledger.TimeSlot
 Prelude Ledger.TimeSlot Week01.EnglishAuction> slotToPOSIXTime 10
 POSIXTime {getPOSIXTime = 1596059101}

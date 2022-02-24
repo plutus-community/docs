@@ -114,7 +114,7 @@ git rev 0000000000000000000000000000000000000000
 ```
 
 
-Head to week03 subfolder in the plutus pioneer directory, then inside that the testnet folder. We will be running the start-node-test.sh script which will initialize download the testnet blockchain based off of the config files in this folder:
+Head to week03 subfolder in the plutus pioneer directory, then inside that the testnet folder. We will be running the start-node-test.sh script which will initialize the download of the testnet blockchain based off of the config files in this folder:
 
 ```
 Terminal 2
@@ -734,8 +734,7 @@ https://localhost:8009
 ```
 You will get a warning complaining about it being a risky website, ignore the message to click through anyway.
 
-You should now be able to successfully compile and run the gift contract by copy/pasting it into Plutus Playground and using the two buttons in the top right corner: “Compile” and “Simulate”
-Our wallet setup should look like:
+You should now be able to successfully compile and run the gift contract by copy/pasting it into Plutus Playground and using the two buttons in the top right corner: “Compile” and “Simulate”.
 
 Before we do our simulation, we need to find out the paymentpubkeyhash for wallets 2 and 3. We can do this in the repl:
 
@@ -758,8 +757,6 @@ mockWalletPaymentPubKeyHash $ knownWallet 3
 Output:
 2e0ad60c3207248cecd47dbde3d752e0aad141d6b8f81ac2c6eca27c
 ```
-
-
 
 We can copy/paste those hashes into the sim for wallets 2 and 3.
 
@@ -989,104 +986,104 @@ The command line interface (CLI) provides a collection of tools for generating k
 
 This section provides a reference of the core `cardano-cli` commands and their associated subcommands:
 
-*cardano-cli*
-The set of `cardano-cli` commands include:
-- `address`: payment address commands
-- `stake-address`: stake address commands
-- `transaction`: transaction commands
-- `node`: node operation commands
-- `stake-pool`: stake pool commands
-- `query`: node query commands. Commands in this group query the local node whose Unix domain socket is obtained from the CARDANO_NODE_SOCKET_PATH environment variable.
-- `genesis`: genesis block commands
-- `text-view`: commands for dealing with text view files that are stored on disk, such as transactions or addresses
-- `governance`: governance commands
+*cardano-cli* <br/>
+The set of `cardano-cli` commands include: <br/>
+- `address`: payment address commands <br/>
+- `stake-address`: stake address commands <br/>
+- `transaction`: transaction commands <br/>
+- `node`: node operation commands <br/>
+- `stake-pool`: stake pool commands <br/>
+- `query`: node query commands. Commands in this group query the local node whose Unix domain socket is obtained from the CARDANO_NODE_SOCKET_PATH environment variable. <br/>
+- `genesis`: genesis block commands <br/>
+- `text-view`: commands for dealing with text view files that are stored on disk, such as transactions or addresses <br/>
+- `governance`: governance commands <br/>
 
-*cardano-cli address*
-The `address` command contains the following subcommands:
-- `key-gen`: creates a single address key pair
-- `key-hash`: prints the hash of an address to stdout
-- `build`: builds a payment address, with optional delegation to a stake address
-- `build-script`: builds a token locking script
-- `info`: prints details about the address
+*cardano-cli address* <br/>
+The `address` command contains the following subcommands: <br/>
+- `key-gen`: creates a single address key pair <br/>
+- `key-hash`: prints the hash of an address to stdout <br/>
+- `build`: builds a payment address, with optional delegation to a stake address <br/>
+- `build-script`: builds a token locking script <br/>
+- `info`: prints details about the address <br/>
 
-*cardano-cli stake-address*
-The `stake-address` command contains the following subcommands:
-- `key-gen`: creates a single address key pair
-- `build`: builds a stake address
-- `key-hash`: prints the hash of a stake verification key
-- `registration-certificate`: creates a registration certificate
-- `delegation-certificate`: creates a stake address delegation certificate
-- `deregistration-certificate`: creates a de-registration certificate
+*cardano-cli stake-address* <br/>
+The `stake-address` command contains the following subcommands: <br/>
+- `key-gen`: creates a single address key pair <br/>
+- `build`: builds a stake address <br/>
+- `key-hash`: prints the hash of a stake verification key <br/>
+- `registration-certificate`: creates a registration certificate <br/>
+- `delegation-certificate`: creates a stake address delegation certificate <br/>
+- `deregistration-certificate`: creates a de-registration certificate <br/>
 
-*cardano-cli transaction*
-The `transaction` command contains the following subcommands:
-- `build-raw`: builds a low-level transaction (uses the `--cardano-mode`, `--byron-mode`, `--shelley-mode` flags)
-- `build`: builds an automatically balanced transaction (automatically calculates fees)
-- `sign`: signs the transaction
-- `assemble`: combines and assembles the transaction witness(es) with a transaction body to create a transaction
-- `witness`: witnesses a transaction
-- `submit`: submits the transaction to the local node whose Unix domain socket is obtained from the CARANO_NODE_SOCKET_PATH environment variable (uses the `--cardano-mode`, `--byron-mode`, `--shelley-mode` flags)
-- `calculate-min-fee`: calculates the minimum fee for the transaction
-- `calculate-min-required-utxo`: calculates the minimum required ADA for a transaction output
-- `hash-script-data`: calculates the hash of script data (datums)
-- `txid`: retrieves the transaction ID
-- `policyid`: retrieves the policy ID
-- `view`: pretty prints a transaction
+*cardano-cli transaction* <br/>
+The `transaction` command contains the following subcommands: <br/>
+- `build-raw`: builds a low-level transaction (uses the `--cardano-mode`, `--byron-mode`, `--shelley-mode` flags) <br/>
+- `build`: builds an automatically balanced transaction (automatically calculates fees) <br/>
+- `sign`: signs the transaction <br/>
+- `assemble`: combines and assembles the transaction witness(es) with a transaction body to create a transaction <br/>
+- `witness`: witnesses a transaction <br/>
+- `submit`: submits the transaction to the local node whose Unix domain socket is obtained from the CARANO_NODE_SOCKET_PATH environment variable (uses the `--cardano-mode`, `--byron-mode`, `--shelley-mode` flags) <br/>
+- `calculate-min-fee`: calculates the minimum fee for the transaction <br/>
+- `calculate-min-required-utxo`: calculates the minimum required ADA for a transaction output <br/>
+- `hash-script-data`: calculates the hash of script data (datums) <br/>
+- `txid`: retrieves the transaction ID <br/>
+- `policyid`: retrieves the policy ID <br/>
+- `view`: pretty prints a transaction <br/>
 
-*cardano-cli node*
-The `node` command contains the following subcommands:
-- `key-gen`: creates a key pair for a node operator's offline key and a new certificate issue counter
-- `key-gen-KES`: creates a key pair for a node KES operational key
-- `key-gen-VRF`: creates a key pair for a node VRF operational key
-- `key-hash-VRF`: creates a key hash for a node VRF operational key
-- `new-counter`: keeps track of the number of KES evolutions for a given operational certificate hot key
-- `issue-op-cert`: issues a node operational certificate
+*cardano-cli node* <br/>
+The `node` command contains the following subcommands: <br/>
+- `key-gen`: creates a key pair for a node operator's offline key and a new certificate issue counter <br/>
+- `key-gen-KES`: creates a key pair for a node KES operational key <br/>
+- `key-gen-VRF`: creates a key pair for a node VRF operational key <br/>
+- `key-hash-VRF`: creates a key hash for a node VRF operational key <br/>
+- `new-counter`: keeps track of the number of KES evolutions for a given operational certificate hot key <br/>
+- `issue-op-cert`: issues a node operational certificate <br/>
 
-*cardano-cli stake-pool*
-The `stake-pool` command contains the following subcommands:
-- `registration-certificate`: creates a stake pool registration certificate
-- `de-registration-certificate`: creates a stake pool de-registration certificate
-- `id`: builds pool id from the offline key
-- `metadata-hash`:  retrieves the metadata hash
+*cardano-cli stake-pool* <br/>
+The `stake-pool` command contains the following subcommands: <br/>
+- `registration-certificate`: creates a stake pool registration certificate <br/>
+- `de-registration-certificate`: creates a stake pool de-registration certificate <br/>
+- `id`: builds pool id from the offline key <br/>
+- `metadata-hash`:  retrieves the metadata hash <br/>
 
-*cardano-cli query*
-The `query` command contains the following subcommands:
-- `protocol-parameters` (advanced): retrieves the node's current pool parameters (a raw dump of `Ledger.ChainDepState`).
-- `tip`: gets the node's current tip (slot number, hash, and block number)
-- `stake-pools`: gets the node's current set of stake pool ids
-- `utxo`: retrieves the node's current UTxO, filtered by address
-- `ledger-state` (advanced):  dumps the current state of the node (a raw dump of `Ledger.NewEpochState`)
-- `stake-distribution`: gets the node's current set of stake pool ids
-- `protocol-state` (advanced): dumps the node's current protocol state
-- `stake-address-info`: gets the current delegations and reward accounts filtered by stake address.
-- `stake-distribution`: gets the node's current aggregated stake distribution
-- `stake-snapshot` (advanced): gets the stake snapshot information for a stake pool
-- `pool-params` (advanced): gets the current and future parameters for a stake pool
-- `leadership-schedule`: gets the slots in which the node is slot leader for the current or following epoch
-- `kes-period-info` (advanced): returns diagnostic information about your operational certificate
+*cardano-cli query* <br/>
+The `query` command contains the following subcommands: <br/>
+- `protocol-parameters` (advanced): retrieves the node's current pool parameters (a raw dump of `Ledger.ChainDepState`). <br/>
+- `tip`: gets the node's current tip (slot number, hash, and block number) <br/>
+- `stake-pools`: gets the node's current set of stake pool ids <br/>
+- `utxo`: retrieves the node's current UTxO, filtered by address <br/>
+- `ledger-state` (advanced):  dumps the current state of the node (a raw dump of `Ledger.NewEpochState`) <br/>
+- `stake-distribution`: gets the node's current set of stake pool ids <br/>
+- `protocol-state` (advanced): dumps the node's current protocol state <br/>
+- `stake-address-info`: gets the current delegations and reward accounts filtered by stake address. <br/>
+- `stake-distribution`: gets the node's current aggregated stake distribution <br/>
+- `stake-snapshot` (advanced): gets the stake snapshot information for a stake pool <br/>
+- `pool-params` (advanced): gets the current and future parameters for a stake pool <br/>
+- `leadership-schedule`: gets the slots in which the node is slot leader for the current or following epoch <br/>
+- `kes-period-info` (advanced): returns diagnostic information about your operational certificate <br/>
 
-*cardano-cli governance*
-The `governance` command contains the following subcommands:
-- `create-mir-certificate`: creates an MIR (move instantaneous rewards) certificate
-- `create-update-proposal`: creates an update proposal
-- `create-genesis-key-certificate`: retrieves the genesis key certificate
+*cardano-cli governance* <br/>
+The `governance` command contains the following subcommands: <br/>
+- `create-mir-certificate`: creates an MIR (move instantaneous rewards) certificate <br/>
+- `create-update-proposal`: creates an update proposal <br/>
+- `create-genesis-key-certificate`: retrieves the genesis key certificate <br/>
 
-*cardano-cli genesis*
-The `genesis` command contains the following subcommands:
-- `key-gen-genesis`: creates a genesis key pair
-- `key-gen-delegate`: creates a genesis delegate key pair
-- `key-gen-utxo`: creates a genesis UTxO key pair
-- `key-hash`: prints the identifier, or hash, of a public key
-- `get-ver-key`: derives verification key from a signing key
-- `initial-addr`: gets the address for an initial UTxO based on the verification key
-- `initial-txin`: gets the transaction ID for an initial UTxO based on the verification key.
-- `create`: creates a genesis file from a genesis template, as well as genesis keys, delegation keys, and spending keys.
-- `create-staked`: creates a staked genesis file
-- `hash`: retrieves the hash value
+*cardano-cli genesis* <br/>
+The `genesis` command contains the following subcommands: <br/>
+- `key-gen-genesis`: creates a genesis key pair <br/>
+- `key-gen-delegate`: creates a genesis delegate key pair <br/>
+- `key-gen-utxo`: creates a genesis UTxO key pair <br/>
+- `key-hash`: prints the identifier, or hash, of a public key <br/>
+- `get-ver-key`: derives verification key from a signing key <br/>
+- `initial-addr`: gets the address for an initial UTxO based on the verification key <br/>
+- `initial-txin`: gets the transaction ID for an initial UTxO based on the verification key. <br/>
+- `create`: creates a genesis file from a genesis template, as well as genesis keys, delegation keys, and spending keys. <br/>
+- `create-staked`: creates a staked genesis file <br/>
+- `hash`: retrieves the hash value <br/>
 
-*cardano-cli text-view*
-The `text-view` command contains the following subcommand:
-- `decode-cbor`: prints a text view file as decoded CBOR.
+*cardano-cli text-view* <br/>
+The `text-view` command contains the following subcommand: <br/>
+- `decode-cbor`: prints a text view file as decoded CBOR. <br/>
 
  
 In order to test our contracts, we first need to generate key pairs on the testnet. We can start by opening a new terminal to run nix-shell, making sure not to close the node syncing in the other terminal:

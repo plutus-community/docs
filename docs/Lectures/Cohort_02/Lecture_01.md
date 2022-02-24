@@ -84,7 +84,7 @@ The important thing is that you can only ever use complete UTxOs as
 input. Alice cannot simply split her existing 100 ADA into a 90 and a
 10, she has to use the full 100 ADA as the input to a transaction.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/2.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/2.png)
 
 Once consumed by the transaction, Alice\'s input is no longer a UTxO (an
 unspent transaction). It will have been spent as an input to Tx 1. So,
@@ -96,7 +96,7 @@ She then wants her change back, so she creates a second output of 90 ADA
 receiving a new transaction of 10 ADA, and Alice receiving the change of
 90 ADA.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/3.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/3.png)
 
 In any transaction, the sum of the output values must match the sum of
 the input values. Although, strictly speaking, this is not true. There
@@ -115,7 +115,7 @@ choice, as she only has one UTxO. Bob also has no choice as neither of
 his two UTxOs is large enough to cover the 55 ADA he wishes to send to
 Charlie. Bob will have to use both his UTxOs as input.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/4.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/4.png)
 
 ### When Is Spending Allowed?
 
@@ -137,7 +137,7 @@ The extended part comes in when we talk about smart contracts, so in
 order to understand that, let\'s concentrate on the consumption of
 Alice\'s UTxO of 100 ADA.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/5.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/5.png)
 
 In the UTxO model, the validation that decides whether the transaction
 that this input belongs to is allowed to consume the UTxO, relies on
@@ -162,7 +162,7 @@ So, instead of an input being validated simply by its public key, the
 input will justify that it is allowed to consume this output with some
 arbitrary piece of data that we call the *Redeemer*.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/6.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/6.png)
 
 We replace the public key address (Alice\'s in our example), with a
 script, and we replace the digital signature with a *Redeemer*.
@@ -217,7 +217,7 @@ powerful and expressive as Ethereum scripts. That is the so-called
 Datum. That is a piece of data that can be associated with a UTxO along
 with the UTxO value.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/7.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/7.png)
 
 With this it is possible to prove mathematically that Plutus is at least
 as powerful as the Ethereum model - any logic you can express in
@@ -305,7 +305,7 @@ itself, a minimal bid and a deadline.
 
 So let\'s say that Alice has an NFT and wants to auction it.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00000.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00000.png)
 
 She creates a UTxO at the script output. We will look at the code later,
 but first we will just examine the ideas of the UTxO model.
@@ -320,7 +320,7 @@ simplicity we will ignore that here.
 
 Not let\'s say that Bob wants to bid 100 Ada.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00001.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00001.png)
 
 In order to do this, Bob creates a transaction with two inputs and one
 output. The first input is the auction UTxO and the second input is
@@ -344,7 +344,7 @@ the NFT and has the correct datum.
 
 Next, let\'s assume that Charlie wants to outbid Bob and bid 200 Ada.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00002.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00002.png)
 
 Charlie will create another transaction, this time one with two inputs
 and two outputs. As in the first case, the two inputs are the bid (this
@@ -389,7 +389,7 @@ highest bid.
 There is one more scenario for us to consider, namely that nobody makes
 any bid.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00002.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00002.png)
 
 Alice creates the auction, but receives no bids. In this case, there
 must be a mechanism for Alice to retrieve her NFT.
@@ -720,17 +720,17 @@ If all went well in the setup above, you should be able to open the
 playground at <https://localhost:8009>. You will likely receive a
 certificate error, which can be bypassed.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/plutus_playground.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/plutus_playground.png)
 
 Copy and paste the EnglishAuction.sh file contents into the playground,
 replacing the existing demo contract.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/playground_2.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/playground_2.png)
 
 Click the compile button. Once it has compiled, click the Simulate
 button.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/playground_3.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/playground_3.png)
 
 The default wallets are setup with 10 Lovelace and 10 T, where T is a
 native token simulated by the script in the following lines:
@@ -751,7 +751,7 @@ Ada, which is 1,000,000,000 lovelace.
 
 Click the \"Add Wallet\" option, then adjust the balances accordingly:
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00005.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00005.png)
 
 You can see in the playground that the contract has three endpoints:
 start, bid, and close.
@@ -799,13 +799,13 @@ In this case, the symbol is 66 and the token name, as we have seen is T.
 
 Enter these values into their respective fields.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00006.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00006.png)
 
 We can also insert \"wait\" actions, to wait for a certain number of
 slots. We will need to wait for at least one slot in order for the
 transaction to start the auction to complete.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00007.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00007.png)
 
 Now bidding can start.
 
@@ -814,19 +814,19 @@ Let\'s say that Wallets 2 and 3 want to bid for this token.
 Wallet 2 is faster, and bids 100 Ada by invoking the bid endpoint with
 the parameters as shown below.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00008.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00008.png)
 
 We now insert another wait action, and now we add a bid by Charlie
 (Wallet 3) for 200 Ada.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00009.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00009.png)
 
 Let\'s say that these two bids are the only bids.
 
 We now add a wait action that will wait until slot 11, which is the slot
 after the deadline of the auction.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00010.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00010.png)
 
 At this point, anybody can invoke the *close* endpoint. The auction will
 not settle on its own, it needs to be triggered by an endpoint.
@@ -844,7 +844,7 @@ Let\'s say that Alice (Wallet 1) invokes the *close* endpoint. We will
 add this and also add another wait action, which we need at the end in
 order to see the final transaction when we run the simulation.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00011.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00011.png)
 
 Now, click the \"Evaluate\" button - either the one at the bottom or the
 one at the top of the page.
@@ -859,7 +859,7 @@ Slot zero is not caused by our contract, it is the Genesis transaction
 that sets up the initial balances of the wallets. There are three
 outputs for this transaction.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00012.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00012.png)
 
 Now click on the Slot 1 transaction.
 
@@ -876,7 +876,7 @@ you also see the script address.
 As we know from the introduction to the UTxO model, there can also be a
 datum, and there is a datum, but this is not visible in this display.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00013.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00013.png)
 
 So now the auction is set up, let\'s look at the next transaction, where
 Bob (Wallet 2) makes a bid of 100 Ada.
@@ -892,7 +892,7 @@ the token, so it will only validate in a scenario where there is an
 output where the token ends up in the contract again. Remember that in
 the (E)UTxO model, all inputs and outputs are visible to the script.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00014.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00014.png)
 
 Now let\'s look at the next transaction. This is where Charlie bids 200
 Ada Lovelace (it is 5 Lovelace in Lars\' videos, but I entered it as 4
@@ -909,7 +909,7 @@ handled correctly, i.e. that the new bid is higher than the previous bid
 and that the token T continues to be locked in the contract along with
 the new bid.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00015.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00015.png)
 
 The last transaction is the *close* action. This two inputs - one from
 Alice in order to pay for the fees, and the second is the script UTxO as
@@ -917,11 +917,11 @@ input. There are four outputs - the fees from Alice and the change back
 to Alice, and then the successful bid of 200 Ada to Alice and the
 transfer of the NFT to Charlie.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00016.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00016.png)
 
 If we scroll down, we can now see the final balances.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00017.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00017.png)
 
 Let\'s check what happens when something goes wrong, for example, if
 Charlie makes a bid that is lower than Bob\'s bid. Let\'s say Charlie
@@ -930,11 +930,11 @@ makes a mistake and bids only 20 Ada.
 Now we see that we have only four transactions, and Bob wins the
 auction.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00018.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00018.png)
 
 Let\'s see what happens if there are no valid bids.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00019.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00019.png)
 
 Now there are only three transactions, the last of which is the close
 transaction. As this is a failed auction, where there was no successful

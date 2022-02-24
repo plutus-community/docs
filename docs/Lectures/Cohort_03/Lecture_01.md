@@ -28,7 +28,7 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/1cd1wt
 Before we can get started in lecture 1, we first must get our development environment setup. 
 
 This guide will be using a fresh install of Ubuntu Linux. If you want to use Linux but only have a computer with Windows installed, you can run a virtual environment inside of Windows. A great step by step guide for how to get started can be found here:<br/>
-[How to install an Ubuntu VM in Windows](https://www.google.com/url?q=https://youtu.be/x5MhydijWmc&sa=D&source=editors&ust=1644942252628903&usg=AOvVaw0y0kxJWz9VN7FAqqN8tkDT)
+[How to install an Ubuntu VM in Windows](https://youtu.be/x5MhydijWmc)
 
 You can copy and paste any of the code in this guide directly into your terminal or IDE. If you are new to Linux and are unfamiliar with terminal shell commands, this cheat sheet gives a quick overview:<br/>
 [Linux Command Master List](https://drive.google.com/file/d/10xz7Dm3E_20doL08Wu_dfWJqiIfvTKlc/view?usp=sharing)

@@ -1190,6 +1190,7 @@ We will now send some money to our second address using the premade script send.
 cat send.sh
 
 Output:
+cardano-cli transaction build \
     --alonzo-era \
     --testnet-magic 1097911063 \
     --change-address $(cat 01.addr) \

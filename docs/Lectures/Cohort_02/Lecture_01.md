@@ -67,7 +67,7 @@ blockchain that have not yet been spent.
 Let\'s look at an example where we have two such UTxOs. One belonging to
 Alice of 100 Ada, and another belonging to Bob of 50 Ada.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/pic__00000.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/pic__00000.png)
 
 Alice wants to send 10 ADA to Bob, so she needs to create a transaction.
 

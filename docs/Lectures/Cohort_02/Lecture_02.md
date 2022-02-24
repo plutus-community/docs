@@ -13,7 +13,6 @@ typed on-chain validation scripts.
 The code in this lecture uses the Plutus commit
 ```81ba78edb1d634a13371397d8c8b19829345ce0d```
 
-
 Before We Start
 ---------------
 
@@ -71,7 +70,7 @@ smart contracts, but for now we will concentrate on the on-chain part.
 Let\'s recall the Extended UTxO model where the idea is that we
 introduce a new type of address.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/1.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/1.png)
 
 In the simple UTxO model are so-called public key addresses, where the
 address is given by the hash of the public key. If a UTxO sits at such a
@@ -596,12 +595,12 @@ We will now test the `Gift` script in the playground.
 Copy the `Gift` script into the playground, then compile the script in
 the playground and press the `Simulate` button.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/playground_week2_1.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/playground_week2_1.png)
 
 And let\'s add a third wallet and give all the wallets 10 Ada (10
 million lovelace).
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00024.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00024.png)
 
 We will create a scenario where wallets 1 and 2 give lovelace, and
 wallet 3 grabs all of it.
@@ -612,14 +611,14 @@ endpoints `give` and `grab`. Use the `give` endpoint for to make wallet
 wait for 1 block, and then use to `grab` endpoint to make wallet 3 grab
 the funds. Then add another wait action to wait for 1 block.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00025.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00025.png)
 
 And now click `Evaluate`. We see that there have been four transactions.
 
 The first transaction is, as always, the genesis transaction that
 distributes the initial funds to the wallets.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00026.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00026.png)
 
 And there are two transactions which occur at slot 1. They are the two
 `give` transactions.
@@ -634,12 +633,12 @@ by wallet 2. The second output is the 6 Ada sent to the script address,
 and the third output is the returning of the change to wallet 2, which
 is 4 Ada minus the fees.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00027.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00027.png)
 
 And the second, Tx 1, is from wallet 1. Again, with similar output
 UTxOs.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00028.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00028.png)
 
 We now have two UTxOs sitting at the script address.
 
@@ -651,11 +650,11 @@ before, and this is because a script has now been executed, which makes
 it more expensive. However, the fees here are not yet entirely
 calibrated with those that would be charged on the real blockchain.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00029.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00029.png)
 
 And, by scrolling down, we see the final wallet balances.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00030.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00030.png)
 
 If you were to scroll down further you would see some traces and log
 outputs that would give more detail about the execution.
@@ -761,7 +760,7 @@ scenario should still be present in the simulator. And after clicking
 `Evaluate` and scrolling down a little, we can see that wallets 1 and 2
 have made their gifts but wallet 3 has been unable to grab.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00031.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00031.png)
 
 If we scroll down further, we will find a log message showing that
 validation failed.
@@ -808,7 +807,7 @@ will see the custom error message that we added.
       Contract instance stopped with error: "WalletError (ValidationError (ScriptFailure (EvaluationError [\"BURNT!\"])))" ]
 ```
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00032.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00032.png)
 
 ### Example 3 - Forty Two
 
@@ -886,17 +885,17 @@ used to construct the redeemer.
 For our first attempt, we will add the wrong redeemer value, in this
 case 100.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00033.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00033.png)
 
 If we click `Evaluate`, we see that we only have two transactions, and
 we see that the Ada remains in the script, which shows that wallet 2
 failed to grab it.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00034.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00034.png)
 
 The final balances also show this.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00035.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00035.png)
 
 And, if we look at the trace, we find the error.
 
@@ -908,12 +907,12 @@ And, if we look at the trace, we find the error.
 If we go back to scenario, change the value to `42` and click `Evaluate`
 again, we should see that validation succeeds.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00036.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00036.png)
 
 Now we see the third transaction where wallet 2 manages to collect the
 funds, minus fees.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00037.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00037.png)
 
 We see that the final balances are as we expect, and also the logs show
 that validation did not throw an error, which means that validation
@@ -1131,7 +1130,7 @@ We can look at the code in the `PlutusTx.IsData.Class` module.
 Here we see that there is a quite simple type class defined called
 `IsData`.
 
-![](https://github.com/chris-moreton/plutus-pioneer-program/blob/main/docs/pioneer/img/iteration2/pic__00037.png)
+![](https://raw.githubusercontent.com/chris-moreton/plutus-pioneer-program/main/docs/pioneer/img/iteration2/pic__00037.png)
 
 This class provides two functions
 
@@ -1238,10 +1237,9 @@ mkValidator :: () -> MySillyRedeemer -> ScriptContext -> Bool
 mkValidator () (MySillyRedeemer r) _ = traceIfFalse "wrong redeemer" $ r == 42
 ```
 
-::: {.note}
-::: {.title}
+```
 Note
-:::
+
 
 There is also a stable version of the `PlutusTx.unstableMakeIsData`
 function, and the stable version should always be used in production
@@ -1249,7 +1247,7 @@ code. The difference between the two is that, in the case where more
 than one `Data` constructor is required, the unstable version makes no
 guarantee, between Plutus versions, that the order of constructors will
 be preserved.
-:::
+```
 
 And we need to change some of the boilerplate.
 

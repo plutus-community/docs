@@ -27,27 +27,34 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/1cd1wt
 ## Preparation for Lecture 1
 Before we can get started in lecture 1, we first must get our development environment setup. 
 
-This guide will be using a fresh install of Ubuntu linux. If you want to use linux but only have a computer with windows, you can run a virtual environment inside of Windows. A great step by step guide for how to get started can be found here:<br/>
-[How to install an Ubuntu VM in Windows](https://www.google.com/url?q=https://youtu.be/x5MhydijWmc&sa=D&source=editors&ust=1644942252628903&usg=AOvVaw0y0kxJWz9VN7FAqqN8tkDT)
+This guide will be using a fresh install of Ubuntu Linux. If you want to use Linux but only have a computer with Windows installed, you can run a virtual environment inside of Windows. A great step by step guide for how to get started can be found here:<br/>
+[How to install an Ubuntu VM in Windows](https://youtu.be/x5MhydijWmc)
 
-You can copy and paste any of the code in this guide directly into your terminal or IDE. If you are new to linux and are unfamiliar with terminal shell commands, this cheat sheet gives a quick overview:<br/>
+You can copy and paste any of the code in this guide directly into your terminal or IDE. If you are new to Linux and are unfamiliar with terminal shell commands, this cheat sheet gives a quick overview:<br/>
 [Linux Command Master List](https://drive.google.com/file/d/10xz7Dm3E_20doL08Wu_dfWJqiIfvTKlc/view?usp=sharing)
 
 
 The haddock documentation is also a great source of information for all the public plutus libraries.  This can be found here:<br/>
 [Documentation for all public Plutus Libraries](https://www.google.com/url?q=https://playground.plutus.iohkdev.io/doc/haddock/&sa=D&source=editors&ust=1644942252629960&usg=AOvVaw2eoK-uGZuqWIqtuCZt0t_H)
 
-First, Open up the terminal to get started. We will first install the necessary dependencies first for a fresh copy of linux.
+First, Open up the terminal to get started. We will first install the necessary dependencies first for a fresh copy of Linux.
 
 We need to install Nix and get it configured properly to use IOG’s caches. In this guide we will be doing a single user install.
-Before we can install Nix, we need to make sure the version of linux you are using has curl installed. First run:
+Before we can install Nix, we need to make sure the version of Linux you are using has both curl and git installed. First run:
 
 ```
 totinj@penguin:~$ sudo sh -c 'apt update && apt install curl'
 ```
 
 
-Now that curl is installed, we can now install Nix. Run:
+Now that curl is installed, we can install git. Run:
+
+```
+totinj@penguin:~$ sudo apt-get install git
+```
+
+We can now install Nix single user install. Run:
+
 ```
 totinj@penguin:~$ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 ```
@@ -62,7 +69,7 @@ variables are set, either log in again, or type
 
 
 Now to finish, we need to set the environment with the following command notice from above.
-Very important here to replace “totinj” with your current linux user!!
+Very important here to replace ```totinj``` with your current Linux user!!
 ```
 totinj@penguin:~$ . /home/totinj/.nix-profile/etc/profile.d/nix.sh
 ```
@@ -136,7 +143,7 @@ Prelude Week01.EnglishAuction>
 
 ## The EUTxO Model
 This is the transcript for the lecture video on EUTxOs by Lars Brünjes. Further information about EUTxO models can be found here:<br/> [Accounting Systems for Blockchains]( https://iohk.io/en/blog/posts/2021/03/11/cardanos-extended-utxo-accounting-model/) <br/><br/>
-One of the most important things you need to understand in order to write Plutus smart contracts is the counting model that Cardano uses; and that is the so-called (E)UTxO model, which is an abbreviation for extended unspent transaction output model. The UTxO model without being extended is the one that has been introduced by Bitcoin.  But there are other models. Ethereum, for example, uses a so-called account-based model, which is what you're used to from a normal bank, where everybody has an account and each account has a balance. And if you transfer money from one account to another, then the balance gets updated accordingly, but that is not how the UTxO model works. Unspent transaction outputs are exactly what the name says. They are transaction outputs that are outputs from previous transactions that happened on the blockchain that have not yet been spent.<br/>
+One of the most important things you need to understand in order to write Plutus smart contracts is the accounting model that Cardano uses; and that is the so-called (E)UTxO model, which is an abbreviation for extended unspent transaction output model. The UTxO model without being extended is the one that has been introduced by Bitcoin. But there are other models. Ethereum, for example, uses a so-called account-based model, which is what you're used to from a normal bank, where everybody has an account and each account has a balance. And if you transfer money from one account to another, then the balance gets updated accordingly, but that is not how the UTxO model works. Unspent transaction outputs are exactly what the name says. They are transaction outputs that are outputs from previous transactions that happened on the blockchain that have not yet been spent.<br/>
 
 So let's look at an example where we have two such UTxOs, one belonging to Alice, 100 ADA and another one belonging to Bob, 50 ADA. And as an example, let's assume that Alice wants to send 10 ADA to Bob. So she creates a transaction and the transaction is something that has inputs and outputs, can be an arbitrary number of inputs and an arbitrary number of outputs. And an important thing is that you can always only use complete UTxOs as input. So, if she wants to send 10 ADA to Bob, she can't simply split herexisting 100 ADA into a 90 to 10 piece. She has to use the full 100 ADA as input. So by using the UTxO 100 ADA as input to a transaction. Alice has not spent that UTxO, so it's no longer an UTxO. It's no longer unspent, it's been spent. And now she can create outputs for a transaction. So she wants to pay 10 ADA to Bob. So one output will be 10 ADA to Bob, and then she wants her change back. So she creates a second output of 90 ADA to herself.<br/>
 

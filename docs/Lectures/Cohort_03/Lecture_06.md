@@ -246,8 +246,6 @@ Output:
 , "mnemonic_sentence": ["pudding", "observe", "army", "rigid", "wise", "toward", "smart", "waste", "bomb", "alpha", "source", "ugly", "blouse", "trial", "job", "scheme", "easily", "baby", "scheme", "whip", "bike", "rain", "enhance", "leaf"]
 , "passphrase": "mysecretpassphrase"
 }
-
-saved restoration file to testnet/restore-wallet.json
 ```
 Install Yoroi nightly to import the wallet seed phrase into:
 

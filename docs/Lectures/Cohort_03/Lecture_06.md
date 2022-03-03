@@ -1744,6 +1744,12 @@ Here, we must put the wallet id, the token name, the payment path, the staking p
 
 So if we execute this, then that should work and we should be able to mint tokens for our wallet. 
 
+First, set the environment variables:
+
+```
+Terminal 3
+[nix-shell:~/plutus-pioneer-program/code/week06]$ . env.sh
+```
 
 ```
 [nix-shell:~/plutus-pioneer-program/code/week06]$ 
@@ -1933,6 +1939,12 @@ It fills in the wallet id and the address from these environment variables.
 
 Looking in the terminal to run the script:
 
+First, set the environment variables:
+
+```
+Terminal 3
+[nix-shell:~/plutus-pioneer-program/code/week06]$ . env.sh
+```
 
 ```
 [nix-shell:~/plutus-pioneer-program/code/week06]$ 
@@ -2038,6 +2050,12 @@ cabal exec monitor -- $WALLETID $ADDRESS
 
 Looking in the terminal to run the script:
 
+First, set the environment variables:
+
+```
+Terminal 3
+[nix-shell:~/plutus-pioneer-program/code/week06]$ . env.sh
+```
 
 ```
 [nix-shell:~/plutus-pioneer-program/code/week06]$ 

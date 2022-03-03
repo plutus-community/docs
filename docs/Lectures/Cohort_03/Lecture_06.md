@@ -69,12 +69,6 @@ You should now be up to date and can run nix-shell in this directory. Run nix-sh
 totinj@penguin:~/plutus-apps$ nix-shell
 ```
 
-**To avoid future errors with the chain index, let’s install the dependencies:**
-
-```
-[nix-shell:~/plutus-apps]$ cabal install plutus-pab-examples plutus-chain-index
-```
-
 Head back to the week06 folder to start running the cabal commands:
 
 ```
@@ -320,6 +314,11 @@ Keep the wallet running on terminal 4, and open a new terminal 5. Head to the pl
 Terminal 5
 
 totinj@penguin:~/plutus-apps$ nix-shell
+```
+**To avoid future errors with the chain index, let’s install the dependencies:**
+
+```
+[nix-shell:~/plutus-apps]$ cabal install plutus-chain-index
 ```
 
 Head to week06 subfolder in the plutus pioneer directory. We will now sync the plutus-chain-index which will take a long time to sync:

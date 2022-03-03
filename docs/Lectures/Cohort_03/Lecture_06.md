@@ -251,7 +251,7 @@ saved restoration file to testnet/restore-wallet.json
 ```
 Install Yoroi nightly to import the wallet seed phrase into:
 
-https://chrome.google.com/webstore/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo?hl=en&authuser=0
+[Yoroi Nightly Download - Google Chrome](https://chrome.google.com/webstore/detail/yoroi-nightly/poonlenmfdfbjfeeballhiibknlknepo?hl=en&authuser=0)
 
 Restore Wallet:
 
@@ -371,7 +371,7 @@ By replacing the blockid and slot with your current nodes position, it will boot
 
 We can also view the swagger ui for the PAB at:
 
-http://localhost:9083/swagger/swagger-ui
+[Swagger UI - Browser Graphical Interface](http://localhost:9083/swagger/swagger-ui)
 
 
 ## Introduction

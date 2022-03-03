@@ -286,8 +286,10 @@ Use the receive address in the wallet to get funded from the Cardano Faucet:
 
 We now need to generate some ADA to send to our Yoroi address. This can be done from the following page using the Cardano faucet. 
 
-https://testnets.cardano.org/en/testnets/cardano/tools/faucet/
 
+```
+https://testnets.cardano.org/en/testnets/cardano/tools/faucet/
+```
 
 
 ![Screenshot 2022-03-02 1 53 12 PM](https://user-images.githubusercontent.com/59018247/156475990-0a2fd12a-bcab-47b2-a94b-fe78c4aaca8d.png)
@@ -633,8 +635,9 @@ addr_test1vpnfx9ge24t3fmncskfaseuxcuvxhh0gh9dp3enr0qgk8xshq22j0
 
 We now need to generate some ADA to send to our first address. This can be done from the following page using the Cardano faucet. 
 
+```
 https://testnets.cardano.org/en/testnets/cardano/tools/faucet/
-
+```
 
 Important to note here, that your address for 01.addr will be different then address generated in this tutorial! Make sure you send the testnet ADA to the address you generated in the CLI!
 

@@ -239,7 +239,7 @@ Looking at the wallet contents in the testnet folder:
 ```
 Terminal 4
 [nix-shell:~/plutus-pioneer-program/code/week06/testnet]$ 
-cat restore-wallet.son
+cat restore-wallet.json
 
 Output:
 { "name": "YoroiWallet"

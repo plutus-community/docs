@@ -295,7 +295,7 @@ data GameRedeemer = Play GameChoice | Reveal BuiltinByteString | ClaimFirst | Cl
 We implemented a custom type that we call ```GameRedeemer```, and that corresponds to the transitions we saw in the diagram
 
 - ```Play``` is when the second player moves and as an argument it has a ```GameChoice```. The second player can play zero or one, so that will be play zero or play one 
-- ```Reveal``` is for the case when the first player has one and must prove that by revealing its nonce so we us a byte string argument 
+- ```Reveal``` is for the case when the first player has one and must prove that by revealing its nonce so we use a byte string argument 
 - ```ClaimFirst``` is the case when the second player does not make a move; so the first player can claim back his stake 
 - ```ClaimSecond``` is for the case that the first player does not reveal his choice because he knows he has lost; so the second player can get his winnings 
 

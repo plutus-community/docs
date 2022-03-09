@@ -25,6 +25,9 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/15XIo3
   - [Deployment Scenarios](#deployment-scenarios)
   - [The Contracts](#the-contracts)
   - [Minting with the PAB](#minting-with-the-pab)
+     - [Minting Tokens with Curl](#minting-tokens-with-curl)
+     - [Minting Tokens with Haskell](#minting-tokens-with-haskell)
+     - [Wallet Monitoring](#wallet-monitoring)
   - [Homework](#homework)
 
 
@@ -1657,6 +1660,11 @@ We see that indeed, we do end up with one wallet that now has 100000 USDTs.
 
 If you followed the guide up till now, hopefully the node, wallet backend, chain index, and PAB are fully synced from the work done in “preparation for lecture 6”.
 
+
+
+
+### Minting Tokens with Curl
+
 We will first look at minting script using curl located at mint-token-curl.sh:
 
 ```
@@ -1777,6 +1785,10 @@ So now we have achieved with the PAB what we achieved earlier with the CLI, mint
 - What is nice about the CLI method is that you only need a node. You neither need the wallet backend,the chain index, nor the PAB. The cons of it being that everything is text-based and we have to work quite hard to convert all the data types and get the correct values to fill in. We also manually had to look up the UTxO that we can use as input, so that we can successfully mint. 
 
 - Using the contract monad and the PAB that was taken care of automatically, so we had to specify less. In the script here, all we had to do was give the amount and the token name. 
+
+
+### Minting Tokens with Haskell
+
 
 We will also look at a third way using haskell instead of curl to mint tokens utilizing the PAB. We will now look at mint-token.hs :
 
@@ -1970,6 +1982,9 @@ minted tokens, contract instance id: ContractInstanceId {unContractInstanceId = 
 ```
 
 ![Screenshot 2022-03-08 10 40 35 PM](https://user-images.githubusercontent.com/59018247/157368412-f2c12896-71fe-4d64-a1bb-1e436858bf8e.png)
+
+
+### Wallet Monitoring
 
 We will now look at one more contract, the monitor.hs contract:
 

@@ -16,7 +16,7 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/15XIo3
   - [Table of Contents](#table-of-contents)
   - [Preparation for Lecture 6](#preparation-for-lecture-6)
     - [Syncing the Node](#syncing-the-node)
-    - [Wallet Backend Preparation](#wallet-backend-preperation)
+    - [Wallet Backend Preparation](#wallet-backend-preparation)
     - [Syncing the Chain Index](#syncing-the-chain-index)
     - [Launching the PAB](#launching-the-pab)
   - [Introduction](#introduction)
@@ -337,6 +337,13 @@ Terminal 6
 
 totinj@penguin:~/plutus-apps$ nix-shell
 ```
+We first need to update the ./start-testnet-pab.sh script to handle the passphrase we picked for our wallet. 
+
+Open ./start-testnet-pab.sh to update and save the passphrase:
+
+
+![Screenshot 2022-03-08 10 13 57 PM](https://user-images.githubusercontent.com/59018247/157365851-5469402d-c7f0-4369-b85e-bd49e8c24712.png)
+
 
 Head to week06 subfolder in the plutus pioneer directory. We need to first create the initial config for the PAB:
 
@@ -1697,7 +1704,7 @@ curl -X 'POST' \
 
 Now we want to use this script to mint tokens by activating this contract. 
 
-So the idea is, I give both the:
+So the idea is, we give both the:
 
 - Amount  
 - Token Name
@@ -1756,7 +1763,13 @@ Terminal 3
 ./mint-token-curl.sh 123456 PPP
 
 Output:
+minting 123456 coins of token PPP
+payment key hash: d1c79f02df9e00e87f5480fb2ca0bff2f2e088dff291353c00f3d121
+stake key hash: f42afd0f3a849e19ffd104a9e8f25516be53afa40b0e51d276ae1521
+{"unContractInstanceId":"ca93e73e-8350-42ba-82ca-303dad779804"}
+
 ```
+![Screenshot 2022-03-08 10 38 53 PM](https://user-images.githubusercontent.com/59018247/157368174-d82e4af0-d525-4630-b32a-3ecfb8068709.png)
 
 
 So now we have achieved with the PAB what we achieved earlier with the CLI, minting tokens. There are pros and cons for both methods of course. 
@@ -1951,7 +1964,12 @@ Terminal 3
 ./mint-token-haskell.sh 1000000 Gold
 
 Output:
+Up to date
+minting token for wallet id d06f7ba2a8de05f20d628819782f85e4c880d537 with parameters TokenParams {tpToken = "Gold", tpAmount = 1000000, tpAddress = Address {addressCredential = PubKeyCredential d1c79f02df9e00e87f5480fb2ca0bff2f2e088dff291353c00f3d121, addressStakingCredential = Just (StakingHash (PubKeyCredential f42afd0f3a849e19ffd104a9e8f25516be53afa40b0e51d276ae1521))}}
+minted tokens, contract instance id: ContractInstanceId {unContractInstanceId = 6a9606ae-b696-4fb3-9c2b-6da0e8c856f1}
 ```
+
+![Screenshot 2022-03-08 10 40 35 PM](https://user-images.githubusercontent.com/59018247/157368412-f2c12896-71fe-4d64-a1bb-1e436858bf8e.png)
 
 We will now look at one more contract, the monitor.hs contract:
 
@@ -2062,6 +2080,10 @@ Terminal 3
 ./monitor.sh
 
 Output:
+monitoring address Address {addressCredential = PubKeyCredential d1c79f02df9e00e87f5480fb2ca0bff2f2e088dff291353c00f3d121, addressStakingCredential = Just (StakingHash (PubKeyCredential f42afd0f3a849e19ffd104a9e8f25516be53afa40b0e51d276ae1521))} on wallet d06f7ba2a8de05f20d628819782f85e4c880d537
+started monitor-process with contract id 157159ff-5a30-48d6-b420-ef3670d187bb
+
+[(ea4dbbf670b62ec4b430c97a8ec386eb712c3c57333daacccc534b28,"PPP",123456),(9a633180c8d3c3778d4af21d9e4b7936b7c08c8a1a73eb90177fb87d,"PPP",123456),(2b306c9b91e1fefd6ec74e02b3348981f26ebd9e908b74313b9ad3fe,"Gold",1000000),(,"",6000000)]
 ```
 
 

@@ -1766,6 +1766,8 @@ Terminal 3
 [nix-shell:~/plutus-pioneer-program/code/week06]$ . env.sh
 ```
 
+Mint the tokens using the ./mint-token-curl.sh script:
+
 ```
 [nix-shell:~/plutus-pioneer-program/code/week06]$ 
 ./mint-token-curl.sh 123456 PPP
@@ -1970,6 +1972,8 @@ First, set the environment variables:
 Terminal 3
 [nix-shell:~/plutus-pioneer-program/code/week06]$ . env.sh
 ```
+
+Mint the tokens using the ./mint-token-haskell.sh script:
 
 ```
 [nix-shell:~/plutus-pioneer-program/code/week06]$ 

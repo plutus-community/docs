@@ -445,12 +445,12 @@ So, looking at the three parameters for this minting policy:
 mkTokenPolicy :: TxOutRef -> TokenName -> Integer -> () -> ScriptContext -> Bool
 ```
 
-1) First, the TxOutRef, the reference to the UTxO that is to be consumed, spent by the minting transaction. 
-2) Second, the TokenName.
-3) Third, the integer which is the amount of coins you want to mint.
-4) Forth, we don't need a redeemer, so that is type unit 
-5) Fifth, the usual script context
-6) Last, the result is a bool
+- First, the TxOutRef, the reference to the UTxO that is to be consumed, spent by the minting transaction. 
+- Second, the TokenName.
+- Third, the integer which is the amount of coins you want to mint.
+- Forth, we don't need a redeemer, so that is type unit 
+- Fifth, the usual script context
+- Last, the result is a bool
 
 We then must check two conditions, namely that the specified UTxO has been spent and that the right amount has been minted.
 
@@ -544,9 +544,9 @@ In this composition pipeline of functions, the very first step is getMintingPoli
 
 So now recall we need three parameters. We need :
 
-1) A reference to that UTxO that we want to consume
-2) The token name 
-3) The amount
+- A reference to that UTxO that we want to consume
+- The token name 
+- The amount
 
 Using these three pieces of information we can use the function that we defined in the on-chain code ```TokenPolicy``` to calculate the policy, and then we can apply the function ```writeMintingPolicy``` to serialize and write it to our hard drive.
 
@@ -799,10 +799,10 @@ First, get the four command line arguments.
 
  It is  done by the standard Haskell function getArgs. 
 
-1) The first one is the file where I want to write the serialize minting policy too. 
-2) Second one is the UTxO reference that we have been talking about now.
-3) Third being the amount of tokens to mint
-4) Fourth being the token name.
+- The first one is the file where I want to write the serialize minting policy too. 
+- Second one is the UTxO reference that we have been talking about now.
+- Third being the amount of tokens to mint
+- Fourth being the token name.
 
 
 ```haskell
@@ -914,11 +914,11 @@ addrFile=$4
 skeyFile=$5
 ```
 
-1) The first is the UTxO reference that we also now just use to compute the minting policy.
-2) Second is the amount 
-3) Third is the token name.
-4) Fourth is the name of the file containing the address, our own address which is used as a change address. 
-5) Fifth is the name of the file containing the signing key, because we need to sign the transaction.
+- The first is the UTxO reference that we also now just use to compute the minting policy.
+- Second is the amount 
+- Third is the token name.
+- Fourth is the name of the file containing the address, our own address which is used as a change address. 
+- Fifth is the name of the file containing the signing key, because we need to sign the transaction.
 
 Then we log these parameters:
 
@@ -1194,13 +1194,13 @@ We see that there are various deployment scenarios for the PAB. The one we will 
 
 
 
-1) The way that works is that on the server, which in this case is our local machine, we run a node. 
+- The way it works is that on the server, which in this case is our local machine, we run a node. 
 
-2) Then in addition, we'll have to run a Cardano wallet backend. Which is the same backend that, for example, Daedalus wallet also uses.
+- Then in addition, we'll have to run a Cardano wallet backend. Which is the same backend that, for example, Daedalus wallet also uses.
 
-3) Third, we have to run a so-called chain index. 
+- Third, we have to run a so-called chain index. 
 
-4) Finally we have to run the PAB itself.
+- Finally we have to run the PAB itself.
 
 So the chain index is something like a lightweight version of db sync where db sync is a way to save the whole blockchain, all the information contained in the blockchain in an SQL database. The chain index is somewhat similar and it will allow us to do things like look up the datum belonging to a given datum hash.
 
@@ -1528,10 +1528,10 @@ let tn          = tpToken tp
                 val         = Value.singleton cs tn amt
 ```
 
-1) We first look up the token name from my parameters.
-2) Second, we look up the amount.
-3) Third, we compute the currency symbol. This comes from the on-chain part we looked at in the beginning. There we had a function ```tokenPolicy``` to get the policy and also a function ```tokenCurSymbol``` to get the currency symbol. Then we have this oref that we need as the first parameter and the token name and the amount. 
-4) So now we can finally compute the value that we want to mint. We can use the value singleton function; which takes the currency symbol that we now have, the token name, and the amount. Then it creates a value consisting of that. 
+- We first look up the token name from my parameters.
+- Second, we look up the amount.
+- Third, we compute the currency symbol. This comes from the on-chain part we looked at in the beginning. There we had a function ```tokenPolicy``` to get the policy and also a function ```tokenCurSymbol``` to get the currency symbol. Then we have this oref that we need as the first parameter and the token name and the amount. 
+- So now we can finally compute the value that we want to mint. We can use the value singleton function; which takes the currency symbol that we now have, the token name, and the amount. Then it creates a value consisting of that. 
 
 Now, I want to have a constraint that says we want to pay this value to the given address:
 
@@ -1619,9 +1619,9 @@ tokenTrace = do
         }
 ```
 
-1) For this wallet one, mintToken, we need to specify the w and the s parameters. In order to use it here in the emulator monad we must specify two specific types. So we choose type unit for the writer monad part, because we are not writing any information. We also use empty for the schema, so there are no endpoints.
-2) For the parameters, we just make up:
-3) A token name, so USDT in this case. 
+- For this wallet one, mintToken, we need to specify the w and the s parameters. In order to use it here in the emulator monad we must specify two specific types. So we choose type unit for the writer monad part, because we are not writing any information. We also use empty for the schema, so there are no endpoints.
+- For the parameters, we just make up:
+- A token name, so USDT in this case. 
 	- An amount of 100,000.
 	- An address where we use wallet one's address.
 
@@ -1851,10 +1851,10 @@ If we use Haskell, it is much easier to write the same function.
 
 The way this function works is it takes four parameters:
 
- 1) The amount 
- 2) The token name 
- 3) The wallet id  
- 4) The address.
+ - The amount 
+ - The token name 
+ - The wallet id  
+ - The address
 
 ```haskell
 let wid = unsafeReadWalletId wid'
@@ -1902,8 +1902,8 @@ So given a wallet id and something of type ```a```, we get a so-called ```Contra
 
 This is just a record type that has two fields.
 
-1) First is this ```caID``` field
-2) Second is the ```caWallet``` field
+- First is this ```caID``` field
+- Second is the ```caWallet``` field
 
 Given the wallet id, we can make a wallet out of that and specify that there as well. 
 

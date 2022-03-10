@@ -1331,7 +1331,7 @@ The third case was the case where the second player does not move in time before
 - Second, this condition specifies after the deadline has passed. 
 - Finally, we transition to this finished state.
 
-**The first situation is:**
+**The fourth situation is:**
 
 ```haskell
  (v, GameDatum _ (Just _), ClaimSecond)

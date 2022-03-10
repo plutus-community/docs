@@ -1286,6 +1286,8 @@ lovelaces v == gStake game
 
 - Then we checked that the value is actually the stake of the game.
 
+**The first situation is:**
+
 ```haskell
   (v, GameDatum bs Nothing, Play c)
         | lovelaces v == gStake game         -> Just ( Constraints.mustBeSignedBy (gSecond game)                    <>
@@ -1297,6 +1299,8 @@ lovelaces v == gStake game
 - First, this must be signed by the second player.
 - Second, was the validity interval. This needs to happen after the deadline.
 - The third component  is the new state of the resulting UTxO which again is given by datum and value. Here we are specifying with this transition that the second player makes a move. The new datum will be``` bs $ Just c```. The new value will be twice this stake of the game because it's now both the first player and the second player stake. We leave the NFT out of here, even though it should be present in the UTxO.And that is again, because
+
+**The second situation is:**
 
 ```haskell
  (v, GameDatum _ (Just _), Reveal _)
@@ -1312,6 +1316,7 @@ The second case was the case where the second player has moved, which is reflect
 - Second, was the validity interval. This needs to happen after the deadline.
 - Finally, we transition to this finished state.
 
+**The third situation is:**
 
 ```haskell
    (v, GameDatum _ Nothing, ClaimFirst)
@@ -1325,6 +1330,8 @@ The third case was the case where the second player does not move in time before
 - First, this must be signed by the first player.
 - Second, this condition specifies after the deadline has passed. 
 - Finally, we transition to this finished state.
+
+**The first situation is:**
 
 ```haskell
  (v, GameDatum _ (Just _), ClaimSecond)
@@ -1503,7 +1510,7 @@ tyTxOutTxOut :: TxOut
 tyTxOutData :: DatumType a 
 ```
 
-- So by using ```getOnchainState``` client, we have this m which could be nothing if no output is found as before. If it does, we throw an error and now we get this on-chain state.
+- So by using ```getOnchainState``` client, we have this ```m``` which could be nothing if no output is found as before. If it does, we throw an error and now we get this on-chain state.
 - We are not interested in the reference only in the ```o``` itself. Then we use this ```tyTxOutData``` to directly access the datum.
 
 ```haskell

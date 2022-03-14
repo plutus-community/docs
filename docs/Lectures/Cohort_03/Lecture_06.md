@@ -54,7 +54,7 @@ location: https://github.com/input-output-hk/plutus-apps.git
   tag:6e3f6a59d64f6d4cd9d38bf263972adaf4f7b244
 ```
 
-Head back to  to the plutus-apps directory and update it to the  current git tag:
+Head backto the plutus-apps directory and update it to the current git tag:
 
 ```
 totinj@penguin:~/plutus-apps$ git checkout main

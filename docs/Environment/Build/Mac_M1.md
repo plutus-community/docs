@@ -1,4 +1,4 @@
-# MAC M1 setup for Plutus Pioneer Program
+# Mac M1 setup for Plutus Pioneer Program
 
 some useful infos:
 https://cardano.stackexchange.com/questions/6287/lessons-learned-setting-up-plutus-playground-feedback-welcome

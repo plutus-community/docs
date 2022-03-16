@@ -113,7 +113,7 @@ main = do
         Right () -> return ()
 ```
 
-Where the ```nftPolicy`` is in Token.Onchain.hs: 
+Where the ```nftPolicy``` is in Token.Onchain.hs: 
 
 ```
 {-# INLINABLE mkNftPolicy #-}

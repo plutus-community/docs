@@ -11,15 +11,18 @@ The haddock documentation can be accessed from the plutus playground website wit
 
 Head to the plutus-apps directory and run ```nix-shell```:
 
+ - Directory ```totinj@penguin:~/plutus-apps$ ```
 ```
-totinj@penguin:~/plutus-apps$ nix-shell
+nix-shell
 ```
 
 Then while in nix-shell, run the  ```build-and-serve-docs``` command:
 
+ - Directory ```totinj@penguin:~/plutus-apps$```
 ```
-[nix-shell:~/plutus-apps]$ build-and-serve-docs
-
+build-and-serve-docs
+```
+```
 Output:
 Serving HTTP on 0.0.0.0 port 8002 (http://0.0.0.0:8002/) ...
 ```

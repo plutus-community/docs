@@ -51,9 +51,16 @@ cardano-cli address build \
             --out-file payment.addr $magic
 ```
 
-Grabs the utxo input from the user:
+Grab the utxo input from the user:
 
 ```
+cardano-cli query utxo \
+        --address $address \
+        $magic \
+        --out-file utxoquery.txt
+
+array_txid=($(awk -F'"' '/#/{print $2}' utxoquery.txt))
+    
 #Specify from the user which utxo to use for minting
 echo 'Which utxo would you like to use (enter number selection)?'
 select oref in "${array_txid[@]}"
@@ -64,6 +71,7 @@ select oref in "${array_txid[@]}"
 done
 echo;
 ```
+
 Optionally asks about sending the NFT to an alternate address:
 
 ```
@@ -76,7 +84,7 @@ do
     }
 done
 ```
-Generates the protcol parameters:
+Generate the protocol parameters:
 
 ```
 cardano-cli query protocol-parameters \
@@ -145,6 +153,13 @@ Converts the token name:
 #convert the token name into hexadecimal format using haskell, so the CLI can interpet it:
 tnHex=$(cabal exec token-name -- $tn)
 ```
+Define the minting value ```v```:
+
+```
+#compute the unique minted value based off the amount, policyid, and token name
+v="$amt $pid.$tnHex"
+```
+
 Inserts metadata for the NFT:
 
 ```

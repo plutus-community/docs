@@ -100,7 +100,7 @@ cabal exec token-policy $policyFile $oref $tn
 
 Where token-policy.hs is:
 
-```
+```haskell
 main :: IO ()
 main = do
     [file, oref', tn'] <- getArgs
@@ -115,7 +115,7 @@ main = do
 
 Where the ```nftPolicy``` is in Token.Onchain.hs: 
 
-```
+```haskell
 {-# INLINABLE mkNftPolicy #-}
 mkNftPolicy :: TxOutRef -> TokenName -> () -> ScriptContext -> Bool
 mkNftPolicy oref tn () ctx = traceIfFalse "UTxO not consumed"   hasUTxO           &&
@@ -160,7 +160,7 @@ tnHex=$(cabal exec token-name -- $tn)
 
 Where the token-name.hs is:
 
-```
+```haskell
 main :: IO ()
 main = do
     [tn'] <- getArgs
@@ -169,7 +169,7 @@ main = do
 ```
 Where the ```unsafeTokenNameToHex``` is in Utils.hs: 
 
-```
+```haskell
 unsafeTokenNameToHex :: TokenName -> String
 unsafeTokenNameToHex = BS8.unpack . serialiseToRawBytesHex . fromJust . deserialiseFromRawBytes AsAssetName . getByteString . unTokenName
   where

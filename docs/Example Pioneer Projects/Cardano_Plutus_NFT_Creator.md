@@ -98,6 +98,8 @@ Pass the token name, utxo, and a policy file through haskell/plutus validation t
 cabal exec token-policy $policyFile $oref $tn
 ```
 
+Where token-policy.hs is:
+
 ```
 main :: IO ()
 main = do
@@ -110,6 +112,8 @@ main = do
         Left err -> throwIO $ userError $ show err
         Right () -> return ()
 ```
+
+Where the ```nftPolicy`` is in Token.Onchain.hs: 
 
 ```
 {-# INLINABLE mkNftPolicy #-}

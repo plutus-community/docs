@@ -70,4 +70,4 @@ https://localhost:8009
 
 You will get a warning complaining about it being a risky website, ignore the message to click through anyway.
 
-You should now be able to successfully compile and run the auctions contract by using the two buttons in the top right corner: “Compile” and “Simulate”.<br/><br
+You should now be able to successfully compile and run the auctions contract by using the two buttons in the top right corner: “Compile” and “Simulate”.<br/><br>

@@ -1,3 +1,3 @@
 # Getting Started
 
-TODO: Brief explanation of setup options
+Choose your OS environment in the build section to get your enviroment ready for the Plutus Pioneer Program!

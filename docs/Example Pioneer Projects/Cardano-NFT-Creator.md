@@ -130,7 +130,7 @@ nftCurSymbol :: TxOutRef -> TokenName -> CurrencySymbol
 nftCurSymbol oref tn = scriptCurrencySymbol $ nftPolicy oref tn
 ```
 
-Then creates the policy ID file:
+Then creates the policy ID from the newly created plutus policy:
 
 ```
 #create a policyid using the CLI

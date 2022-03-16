@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create an NFT minting script that uses Plutus to validate the policy rather then time deadlines
+Create an NFT maker that uses Plutus to validate the policy rather then time deadlines.
 
 ### Overview
 

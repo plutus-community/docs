@@ -1,4 +1,4 @@
-# Cardano Plutus NFT Creator
+# Cardano Plutus NFT Maker
 
 [https://github.com/Totes5706/cardano-alonzo-nft-creator](https://github.com/Totes5706/cardano-alonzo-nft-creator)
 

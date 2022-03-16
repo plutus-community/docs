@@ -1,4 +1,4 @@
-# Docker Compose Plutus Playground Setup
+# Docker Compose Plutus Playground Setup (outdated)
 
 ## Credits
 

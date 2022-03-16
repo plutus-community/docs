@@ -1,4 +1,4 @@
-# Working on contracts with and without cabal build
+# Using nix-shell each week in the PPP
 
 ### Do NOT waste time building Cabal locally. It's provided in Nix.
 
@@ -27,10 +27,6 @@ block like this specifying the `plutus-apps` repo.
 source-repository-package
   type: git
   location: https://github.com/input-output-hk/plutus-apps.git
-  subdir:
-    freer-extras
-    ...
-    prettyprinter-configurable
   tag: 41149926c108c71831cfe8d244c83b0ee4bf5c8a
 
 ```
@@ -42,7 +38,9 @@ client and server and then
 ```bash
 git checkout 41149926c108c71831cfe8d244c83b0ee4bf5c8a
 ```
-
+```bash
+nix-shell
+```
 And then start the server and client back up again. For more details and
 environments other than Linux, see the [other
 guides](https://plutus-community.readthedocs.io/).

@@ -1,4 +1,4 @@
-# MacOS Setup for Plutus Pioneer Program
+# MacOS setup for Plutus Pioneer Program
 
 This is a step by step guide for getting the playground client and server running in the [plutus-apps](https://github.com/input-output-hk/plutus-apps.git) repository.
 It should work on Catalina and Big Sur. (Was tested on 2 Macs with Big Sur).

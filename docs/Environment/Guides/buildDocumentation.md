@@ -26,9 +26,9 @@ build-and-serve-docs
 Output:
 Serving HTTP on 0.0.0.0 port 8002 (http://0.0.0.0:8002/) ...
 ```
-Once you are hosting the server, general docs can now be accessed at:
+Once you are hosting the server, the general docs can now be accessed at:
 
-[0.0.0.0:8002/](0.0.0.0:8002/)
+[http://0.0.0.0:8002/](http://0.0.0.0:8002/)
 
 The haddock documentation can be accessed at:
 

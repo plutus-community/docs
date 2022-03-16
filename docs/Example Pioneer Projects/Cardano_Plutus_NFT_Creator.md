@@ -157,6 +157,18 @@ Convert the token name using a haskell function:
 #convert the token name into hexadecimal format using haskell, so the CLI can interpet it:
 tnHex=$(cabal exec token-name -- $tn)
 ```
+
+Where the token-name.hs is:
+
+```
+main :: IO ()
+main = do
+    [tn'] <- getArgs
+    let tn = fromString tn'
+    putStrLn $ unsafeTokenNameToHex tn
+```
+Where the ```unsafeTokenNameToHex``` is in Utils.hs: 
+
 ```
 unsafeTokenNameToHex :: TokenName -> String
 unsafeTokenNameToHex = BS8.unpack . serialiseToRawBytesHex . fromJust . deserialiseFromRawBytes AsAssetName . getByteString . unTokenName

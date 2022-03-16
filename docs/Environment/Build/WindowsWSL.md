@@ -1,4 +1,4 @@
-# Windows Plutus Setup with WSL2 and nix
+# Windows WSL2 setup for Plutus Pioneer Program
 
 ## Credits
 [Nick Ayotte](https://github.com/nicolasayotte)

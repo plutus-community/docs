@@ -1,6 +1,6 @@
 # Plutus Playground setup for Plutus Pioneer Program
 
-This guide assumes you setup your environment already and have nix installed.
+This guide assumes you set up your environment already and have nix installed.
 
 In order to get started with Plutus Playground, we need to have two terminals running, both of which are in the nix-shell.
 

@@ -1,6 +1,6 @@
 # Arch Linux setup for Plutus Pioneers Program 
 
-credit: https://github.com/andreiosg/ppp-archlinux
+credit: [https://github.com/andreiosg/ppp-archlinux](https://github.com/andreiosg/ppp-archlinux)
 
 A setup guide for the Nix package manager and Cardano Plutus apps on Arch Linux for the Plutus Pioneers Program
 

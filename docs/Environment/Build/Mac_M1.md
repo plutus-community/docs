@@ -1,11 +1,11 @@
 # Mac M1 setup for Plutus Pioneer Program
 
 some useful infos:
-https://cardano.stackexchange.com/questions/6287/lessons-learned-setting-up-plutus-playground-feedback-welcome
+[https://cardano.stackexchange.com/questions/6287/lessons-learned-setting-up-plutus-playground-feedback-welcome](https://cardano.stackexchange.com/questions/6287/lessons-learned-setting-up-plutus-playground-feedback-welcome)
 
-https://docs.plutus-community.com/docs/setup/MacOS.html (do not use the "plutus" repo! instead use "plutus-apps")
+[https://docs.plutus-community.com/docs/setup/MacOS.html](https://docs.plutus-community.com/docs/setup/MacOS.html) (do not use the "plutus" repo! instead use "plutus-apps")
 
-For Intel Macs: https://github.com/Til-D/cardano-plutus
+For Intel Macs: [https://github.com/Til-D/cardano-plutus](https://github.com/Til-D/cardano-plutus)
 
 And finalised thanks to @nrkramer Nolan Kramer!
 
@@ -124,13 +124,13 @@ thats it, but not needed. the url from now on would be http://localhost:8009
 
 to make some space on your harddrive without deleting nix - if you do not use nix for a while:
 
-https://www.reddit.com/r/NixOS/comments/mndp6a/garbage_collection/
+[https://www.reddit.com/r/NixOS/comments/mndp6a/garbage_collection/](https://www.reddit.com/r/NixOS/comments/mndp6a/garbage_collection/)
 
-https://nixos.org/guides/nix-pills/garbage-collector.html
+[https://nixos.org/guides/nix-pills/garbage-collector.html](https://nixos.org/guides/nix-pills/garbage-collector.html)
 
 
 or to uninstall nix, maybe you want to reinstall after macOS update?
 
-Use https://github.com/renzwo/cardano-plutus-apps-install-m1/blob/main/uninstall-nix-osx.sh 
+Use [https://github.com/renzwo/cardano-plutus-apps-install-m1/blob/main/uninstall-nix-osx.sh](https://github.com/renzwo/cardano-plutus-apps-install-m1/blob/main/uninstall-nix-osx.sh)
 
 Do a "chmod 777 uninstall-nix-osx.sh" before using it with "sudo".

@@ -1,4 +1,4 @@
-# Vagrant with Ubuntu
+# Vagrant with Ubuntu (outdated)
 
 ## Credits
 Original from: [edwint88](https://github.com/edwint88/plutus-vm)

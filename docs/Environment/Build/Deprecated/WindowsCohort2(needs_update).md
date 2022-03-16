@@ -1,4 +1,4 @@
-# Plutus Playground Setup on Windows
+# Plutus Playground Setup on Windows (outdated)
 
 ## Notes
 

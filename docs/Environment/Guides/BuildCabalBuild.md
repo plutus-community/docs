@@ -45,14 +45,6 @@ And then start the server and client back up again. For more details and
 environments other than Linux, see the [other
 guides](https://plutus-community.readthedocs.io/).
 
-Strictly speaking, it's not necessary to `cabal build` the
-plutus-pioneer-program sources at all. At this time they can't be run outside
-of the simulator web interface we got set up in a different step.
-
-When working on one, you need to copy the contents of the source file into the
-Simulator Editor page's big edit control. This is the only we can run them for
-now.
-
 
 ## Doing some of the work in a shell with cabal
 

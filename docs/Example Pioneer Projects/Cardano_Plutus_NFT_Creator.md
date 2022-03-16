@@ -72,7 +72,7 @@ done
 echo;
 ```
 
-Optionally asks about sending the NFT to an alternate address:
+Optionally ask user about sending the NFT to an alternate address:
 
 ```
 echo Do you want the NFT minted in this address, or have it transfered to another address?
@@ -92,7 +92,7 @@ cardano-cli query protocol-parameters \
     --out-file protocol.json
 ```
 
-Passes the token name, utxo, and a policy file through haskell/plutus validation to create a minting policy. 
+Pass the token name, utxo, and a policy file through haskell/plutus validation to create a minting policy. 
 
 ```
 cabal exec token-policy $policyFile $oref $tn
@@ -140,19 +140,26 @@ nftCurSymbol :: TxOutRef -> TokenName -> CurrencySymbol
 nftCurSymbol oref tn = scriptCurrencySymbol $ nftPolicy oref tn
 ```
 
-Then creates the policy ID from the newly created plutus policy:
+Then create the policy ID from the newly created plutus policy:
 
 ```
 #create a policyid using the CLI
 pid=$(cardano-cli transaction policyid --script-file $policyFile)
 ```
 
-Converts the token name:
+Convert the token name using a haskell function:
 
 ```
 #convert the token name into hexadecimal format using haskell, so the CLI can interpet it:
 tnHex=$(cabal exec token-name -- $tn)
 ```
+```
+unsafeTokenNameToHex :: TokenName -> String
+unsafeTokenNameToHex = BS8.unpack . serialiseToRawBytesHex . fromJust . deserialiseFromRawBytes AsAssetName . getByteString . unTokenName
+  where
+    getByteString (BuiltinByteString bs) = bs
+```
+
 Define the minting value ```v```:
 
 ```
@@ -160,7 +167,7 @@ Define the minting value ```v```:
 v="$amt $pid.$tnHex"
 ```
 
-Inserts metadata for the NFT:
+Insert the metadata for the NFT [CIP-25](https://cips.cardano.org/cips/cip25/) into proper json format:
 
 ```
 #generate metadata for NFT
@@ -182,7 +189,7 @@ cat > metadata.json << EOF
 EOF
 ```
 
-It then takes the plutus policy from the validation and submits the results to the cardano-cli. 
+Then take plutus policy from the validation and submit the results to the cardano-cli: 
 
 ```
 #build the transaction using the parameters from above

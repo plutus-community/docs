@@ -18,7 +18,7 @@ nix-shell
 
 Then while in nix-shell, run the  ```build-and-serve-docs``` command:
 
- - Directory ```totinj@penguin:~/plutus-apps$```
+ - Directory ```[nix-shell:~/plutus-apps]$```
 ```
 build-and-serve-docs
 ```

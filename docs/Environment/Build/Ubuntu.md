@@ -1,4 +1,4 @@
-# Ubuntu setup for Plutus Playround
+# Ubuntu setup for Plutus Pioneer Program
 
 ## Credits
 

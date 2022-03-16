@@ -1,4 +1,4 @@
-# Using nix-shell each week in the PPP
+# Nix-shell for Plutus Pioneer Program
 
 ### Do NOT waste time building Cabal locally. It's provided in Nix.
 

@@ -1,4 +1,4 @@
-# Plutus API documentation
+# How To: Use Plutus API Documentation
 
 ## Playground Server
 

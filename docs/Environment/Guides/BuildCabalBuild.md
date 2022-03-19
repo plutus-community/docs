@@ -1,4 +1,4 @@
-# Using nix-shell for Plutus Pioneer Program
+# How To: use nix-shell each week
 
 ### Do NOT waste time building Cabal locally. It's provided in Nix.
 

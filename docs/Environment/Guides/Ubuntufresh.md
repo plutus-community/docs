@@ -1,4 +1,4 @@
-# Lecture 1 Preperation - Ubuntu Fresh Install Walkthough
+# Ubuntu Fresh Install setup for Plutus Pioneer Program
 
 
 Before we can get started in lecture 1, we first must get our development environment setup. 

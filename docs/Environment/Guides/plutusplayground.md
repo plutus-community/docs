@@ -1,4 +1,4 @@
-# Plutus Playground setup for Plutus Pioneer Program
+# How To: use Plutus Playground for Plutus Pioneer Program
 
 This guide assumes you set up your environment with Linux already, and have nix installed.
 

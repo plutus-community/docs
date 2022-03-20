@@ -1,4 +1,4 @@
-# Prerequisites
+# Prerequisites for IDE Editors
 
 ### Credits
 - https://github.com/tmphey

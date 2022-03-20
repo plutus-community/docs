@@ -4,7 +4,7 @@
 
 ## Introduction
 
-![](.gitbook/assets/minswap\_promo\_twitter.jpg)
+![minswap_promo_twitter](https://user-images.githubusercontent.com/59018247/159178916-c2471c9a-1acc-4e3e-a7f6-c6ae4074e0ba.jpg)
 
 Minswap is a Decentralized Exchange (DEX). The purpose of a DEX is to enable permissionless trading of token pairs. For each swap, a fee is taken, which goes to the Liquidity Providers (LPs). Anyone can provide Liquidity as well, hence profits are decentralized. Minswap is a community-centric DEX, in that our tokens are fairly distributed, without any private or VC investment. Minswap has pioneered several ideas in the Cardano ecosystem such as the FISO model, touted as the fairest ISO model in the Cardano community, and we plan to continue developing several value adding features once we have launched the DEX. This will benefit both the Minswap community, and the Cardano community as a whole.&#x20;
 

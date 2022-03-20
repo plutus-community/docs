@@ -2,6 +2,7 @@
 
 [https://github.com/smart-chain-fr/tokenomia](https://github.com/smart-chain-fr/tokenomia)
 
+## Introduction
 
 ![tokenomia-logo](https://user-images.githubusercontent.com/59018247/159179212-b54ff916-5cfb-48ae-991f-d692fb58bc95.png)
 

@@ -5,7 +5,7 @@
 - @nymeron#8182
 - @getHashSet
 
-_This guide assumes that you've completed the steps described in [Prerequisites](./prerequisites.md)._
+_This guide assumes that you've completed the steps described in [Prerequisites](https://plutus-community.readthedocs.io/en/latest/Environment/Editors/Prerequisites/prerequisites/)._
 
 1. If you're using `nix-shell`, make sure you can launch the editor from the command line so it inherits your `$PATH`.
    On Linux, `code` command is automatically available after VSCode installation.

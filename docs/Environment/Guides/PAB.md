@@ -1,4 +1,4 @@
-# Mint with PAB Step-by-Step guide
+# How To: use the PAB for Plutus Pioneer Program
 
 Credit to : [https://github.com/SIDANWhatever](https://github.com/SIDANWhatever)
 

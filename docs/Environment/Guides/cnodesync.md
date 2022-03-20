@@ -1,4 +1,4 @@
-# How To: sync the Cardano Node
+# How To: sync the Cardano Node for Plutus Pioneer Program
 
 ## Introduction
 

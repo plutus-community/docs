@@ -9,7 +9,7 @@ Therefore, we only need the necessary config files to start syncing the cardano-
 
 ## Guide
 
-First, let’s clone plutus-apps repo from IOHK:
+First, let’s clone plutus-apps repo from IOHK if you do not already have it:
 
 - Directory: ```totinj@penguin:~$```
 ```

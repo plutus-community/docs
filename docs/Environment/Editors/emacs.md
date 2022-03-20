@@ -4,7 +4,7 @@
 - https://github.com/tmphey
 - @nymeron#8182
 
-_This guide assumes that you've completed the steps described in [Prerequisites](./prerequisites.md)._
+_This guide assumes that you've completed the steps described in [Prerequisites](https://plutus-community.readthedocs.io/en/latest/Environment/Editors/Prerequisites/prerequisites/)._
 
 1. If you're using `nix-shell`, make sure you launch your editor from the command line so it can inherit `$PATH`
 2. Install `haskell-mode` via `M-x RET package-install RET haskell-mode RET`

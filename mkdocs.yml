@@ -10,3 +10,106 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+# For using e.g. [](){:target="_blank"}:
+  - attr_list
+
+
+# readthedocs theme only supports 2 layer navigation depth!
+# If using more than 2 layers, navigation sidebar expands more than
+# the current chosen section/item.
+nav:
+  - README.md
+  - Lectures/index.md
+##  - Cohorts:
+  - 3rd Cohort:
+    - Lecture 8: Lectures/Cohort_03/Lecture_08.md
+    - Lecture 7: Lectures/Cohort_03/Lecture_07.md
+    - Lecture 6: Lectures/Cohort_03/Lecture_06.md
+    - Lecture 5: Lectures/Cohort_03/Lecture_05.md
+    - Lecture 4: Lectures/Cohort_03/Lecture_04.md
+    - Lecture 3: Lectures/Cohort_03/Lecture_03.md
+    - Lecture 2: Lectures/Cohort_03/Lecture_02.md
+    - Lecture 1: Lectures/Cohort_03/Lecture_01.md
+
+  - 2nd Cohort:
+    - Lectures: Lectures/Cohort_02/2nd_Cohort.md
+#      - Lecture 10: Lectures/Cohort_02/Lecture_10.md
+#      - Lecture 9: Lectures/Cohort_02/Lecture_09.md
+#      - Lecture 8: Lectures/Cohort_02/Lecture_08.md
+#      - Lecture 7: Lectures/Cohort_02/Lecture_07.md
+#      - Lecture 6: Lectures/Cohort_02/Lecture_06.md
+#      - Lecture 5: Lectures/Cohort_02/Lecture_05.md
+#      - Lecture 4: Lectures/Cohort_02/Lecture_04.md
+#      - Lecture 3: Lectures/Cohort_02/Lecture_03.md
+#      - Lecture 2: Lectures/Cohort_02/Lecture_02.md
+#      - Lecture 1: Lectures/Cohort_02/Lecture_01.md
+
+  - 1st Cohort:
+    - Lectures: Lectures/Cohort_01/1st_Cohort.md
+#      - Lecture 6: Lectures/Cohort_01/Lecture_06.md
+#      - Lecture 5: Lectures/Cohort_01/Lecture_05.md
+#      - Lecture 4 detailed: Lectures/Cohort_01/Lecture_04_Detailed.md
+#      - Lecture 4: Lectures/Cohort_01/Lecture_04.md
+#      - Lecture 3: Lectures/Cohort_01/Lecture_03.md
+#      - Lecture 2 detailed: Lectures/Cohort_01/Lecture_02_Detailed.md
+#      - Lecture 2: Lectures/Cohort_01/Lecture_02.md
+#      - Lecture 1: Lectures/Cohort_01/Lecture_01.md
+
+##  - Environment:
+#  - Building Plutus Playground:
+  - Setup for Plutus Pioneers Program:
+# "Getting Started"
+#    - Getting Started: Environment/index.md
+# "Ubuntu setup for Plutus Playround"
+    - Ubuntu: Environment/Build/Ubuntu.md
+# "Ubuntu (Fresh Install) setup for Plutus Playround"
+    - Ubuntu (Fresh Install): Environment/Build/Ubuntufresh.md
+# "Arch Linux setup for Plutus Playround"
+    - Arch Linux: Environment/Build/ArchLinux.md
+# "MacOS Setup for Plutus Pioneer Program"
+    - MacOS: Environment/Build/MacOS.md
+# "Mac M1 Setup for Plutus Pioneer Program"
+    - Mac M1: Environment/Build/Mac_M1.md
+# "Windows Plutus Setup with WSL2 and nix"
+    - Windows/WSL2 (2nd alternative): Environment/Build/WindowsWSL.md
+# "Vagrant with Nixos"
+    - Vagrant with Nixos: Environment/Build/Vagrant-Nixos.md
+# Deprecated:
+    - D_e_p_r_e_c_a_t_e_d: Environment/Build/Deprecated/Deprecated.md
+# "Docker Compose Plutus Playground Setup"
+#    - Docker: Environment/Build/DockerCompose.md
+# "Vagrant with Ubuntu"
+#    - Environment/Build/Vagrant-Ubuntu.md
+# "Plutus Playground Setup on Windows"
+#    - Windows/WSL2 (1st alternative): Environment/Build/WindowsCohort2.md
+
+  - How Tos:
+    - Use Plutus API Documentation: Environment/Guides/APIbuildDocumentation.md
+    - Use nix-shell for Plutus Pioneer Program: Environment/Guides/BuildCabalBuild.md
+    - Use PAB for Plutus Pioneer Program: Environment/Guides/PAB.md
+    - Sync Cardano node for Plutus Pioneer Program: Environment/Guides/cnodesync.md
+    - Use Plutus Playground for Plutus Pioneer Program: Environment/Guides/plutusplayground.md
+# "Working on contracts with and without cabal build"
+#    - For every new lecture: Environment/Build/CabalBuild.md
+# "Plutus API documentation"
+#    - Environment/Build/buildDocumentation.md
+
+  - Editors:
+    - Prerequisites: Environment/Editors/Prerequisites/prerequisites.md
+    - VS Code: Environment/Editors/vscode.md
+    - Emacs: Environment/Editors/emacs.md
+    - Vim: Environment/Editors/vim.md
+    - Sublime Text: Environment/Editors/sublime_text.md
+    - intelliJ IDEA Windows: Environment/Editors/intelliJ-Windows.md
+
+  - Open Source Plutus Examples:
+    - DEX: Open_Source_Plutus_Examples/DEX/Minswap.md
+    - NFTS: Open_Source_Plutus_Examples/NFTS/Cardano_Plutus_NFT_Creator.md
+    - Utility: Open_Source_Plutus_Examples/Utility/Tokenomia.md
+
+  - Translations:
+##    - FR:
+    - French Cohort 3: Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md
+#          - Translations/FR/Lectures/Cohort_03/Lecture_02.md
+#          - Translations/FR/Lectures/Cohort_03/Lecture_03.md
+#          - Translations/FR/Lectures/Cohort_03/Lecture_04.md

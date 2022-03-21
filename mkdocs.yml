@@ -20,7 +20,7 @@ markdown_extensions:
 nav:
   - README.md
   - Lectures/index.md
-##  - Cohorts:
+
   - 3rd Cohort:
     - Lecture 8: Lectures/Cohort_03/Lecture_08.md
     - Lecture 7: Lectures/Cohort_03/Lecture_07.md
@@ -33,30 +33,10 @@ nav:
 
   - 2nd Cohort:
     - Lectures: Lectures/Cohort_02/2nd_Cohort.md
-#      - Lecture 10: Lectures/Cohort_02/Lecture_10.md
-#      - Lecture 9: Lectures/Cohort_02/Lecture_09.md
-#      - Lecture 8: Lectures/Cohort_02/Lecture_08.md
-#      - Lecture 7: Lectures/Cohort_02/Lecture_07.md
-#      - Lecture 6: Lectures/Cohort_02/Lecture_06.md
-#      - Lecture 5: Lectures/Cohort_02/Lecture_05.md
-#      - Lecture 4: Lectures/Cohort_02/Lecture_04.md
-#      - Lecture 3: Lectures/Cohort_02/Lecture_03.md
-#      - Lecture 2: Lectures/Cohort_02/Lecture_02.md
-#      - Lecture 1: Lectures/Cohort_02/Lecture_01.md
 
   - 1st Cohort:
     - Lectures: Lectures/Cohort_01/1st_Cohort.md
-#      - Lecture 6: Lectures/Cohort_01/Lecture_06.md
-#      - Lecture 5: Lectures/Cohort_01/Lecture_05.md
-#      - Lecture 4 detailed: Lectures/Cohort_01/Lecture_04_Detailed.md
-#      - Lecture 4: Lectures/Cohort_01/Lecture_04.md
-#      - Lecture 3: Lectures/Cohort_01/Lecture_03.md
-#      - Lecture 2 detailed: Lectures/Cohort_01/Lecture_02_Detailed.md
-#      - Lecture 2: Lectures/Cohort_01/Lecture_02.md
-#      - Lecture 1: Lectures/Cohort_01/Lecture_01.md
 
-##  - Environment:
-#  - Building Plutus Playground:
   - Setup for Plutus Pioneers Program:
 # "Getting Started"
 #    - Getting Started: Environment/index.md
@@ -108,8 +88,4 @@ nav:
     - Utility: Open_Source_Plutus_Examples/Utility/Tokenomia.md
 
   - Translations:
-##    - FR:
     - French Cohort 3: Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md
-#          - Translations/FR/Lectures/Cohort_03/Lecture_02.md
-#          - Translations/FR/Lectures/Cohort_03/Lecture_03.md
-#          - Translations/FR/Lectures/Cohort_03/Lecture_04.md

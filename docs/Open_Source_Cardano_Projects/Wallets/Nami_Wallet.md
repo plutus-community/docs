@@ -1,6 +1,6 @@
 # Nami Wallet
 
-https://github.com/Berry-Pool/nami-wallet
+[https://github.com/Berry-Pool/nami-wallet](https://github.com/Berry-Pool/nami-wallet)
 
 
 ![bannerBlack](https://user-images.githubusercontent.com/59018247/159592653-aff0b8b0-955a-4f76-8538-1d9c9cd26d2f.svg)

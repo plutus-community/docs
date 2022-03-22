@@ -1,4 +1,4 @@
-# Tokenomia 
+# Tokenomia Wallet/Minting Utility Functions
 
 [https://github.com/smart-chain-fr/tokenomia](https://github.com/smart-chain-fr/tokenomia)
 

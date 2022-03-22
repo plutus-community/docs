@@ -1,4 +1,4 @@
-# Cardano JS NFT Maker (no SC)
+# Cardano NFT Maker using Javscript (no SC)
 
 [https://github.com/armada-alliance/cardano-minter](https://github.com/armada-alliance/cardano-minter)
 

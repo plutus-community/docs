@@ -15,7 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 
 ## What is this useful for:
-You can use this code as a starting point for the following:
 - you are building a DApp and want to connect to the user's wallet (Nami, CCVault, or Flint)
 - you want to read the balance, the UTXOs and the available tokens at the user's wallet
 - you want the user to interact with your DApp
@@ -53,23 +52,23 @@ This boilerplate code was written in javascript and React Js, so caters to the d
 ## Live Demo
 
 A demo of the DApp is running here:
-https://dynamicstrategies.io/wconnector
+[https://dynamicstrategies.io/wconnector](https://dynamicstrategies.io/wconnector)
 
 ## Useful Links
 
 These links serve as example of how to use the cardano-serialization-lib and where you can find code snippets
 
-Implements the CIP30: https://cips.cardano.org/cips/cip30/
+Implements the CIP30: [https://cips.cardano.org/cips/cip30/](https://cips.cardano.org/cips/cip30/)
 
 Uses the cardano-serialization-lib:
 
-Link1: https://docs.cardano.org/cardano-components/cardano-serialization-lib
+Link1: [https://docs.cardano.org/cardano-components/cardano-serialization-lib](https://docs.cardano.org/cardano-components/cardano-serialization-lib)
 
-Link2: https://github.com/Emurgo/cardano-serialization-lib
+Link2: [https://github.com/Emurgo/cardano-serialization-lib](https://github.com/Emurgo/cardano-serialization-lib)
 
-NFT implementation: https://github.com/MartifyLabs/martify.frontend
+NFT implementation: [https://github.com/MartifyLabs/martify.frontend](https://github.com/MartifyLabs/martify.frontend)
 
-Nami implementation: https://github.com/Berry-Pool/nami-wallet
+Nami implementation: [https://github.com/Berry-Pool/nami-wallet](https://github.com/Berry-Pool/nami-wallet)
 
-Wallet interface: https://github.com/HarmonicPool/cardano-wallet-interface
+Wallet interface: [https://github.com/HarmonicPool/cardano-wallet-interface](https://github.com/HarmonicPool/cardano-wallet-interface)
 

@@ -1,3 +1,5 @@
+# Lecture 5: Minting Policy
+
 Plutus Pioneer Program - Cohort 3 
 February 10, 2022
 

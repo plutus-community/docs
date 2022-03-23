@@ -1,3 +1,5 @@
+# Lecture 5: Minting Policy
+
 Contributed by: [Chis Moreton](https://github.com/chris-moreton) <br/>
 Ported over and converted into an .md file
 

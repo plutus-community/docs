@@ -1,3 +1,5 @@
+# Lecture 6: Minting with the CLI and PAB
+
 Plutus Pioneer Program - Cohort 3 
 February 26, 2022
 

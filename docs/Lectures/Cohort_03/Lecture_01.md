@@ -1,3 +1,5 @@
+# Lecture 1: EUTxO and English Auction
+
 Plutus Pioneer Program - Cohort 3
 January 12, 2022
 

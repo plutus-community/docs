@@ -1,3 +1,5 @@
+# Lecture 2: Validation scripts
+
 Plutus Pioneer Program - Cohort 3
 January 20, 2022
 

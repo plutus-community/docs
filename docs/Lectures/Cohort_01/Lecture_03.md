@@ -1,4 +1,4 @@
-# Lecture 03 
+# Lecture 3: Vesting example 
 
 ## Credits
 

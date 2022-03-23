@@ -1,4 +1,4 @@
-# Lecture 04
+# Lecture 4: Emulator Trace and Contract Monads
 
 ### Credits
 

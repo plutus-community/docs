@@ -204,6 +204,80 @@ One thing I haven't mentioned yet is who is responsible for providing datum, red
 So this is the UTxO model, the extended unspent transaction output model. And that is of course not tied to a specific programming language.I mean, what we have is Plutus, which is based on Haskell, but in principle, you could use the same concept, the same UTxO model with a completely different programming language. And we also plan to write compilers from other programming languages to Plutus script which issort of the assembly language and aligned Plutus.So there's an extended UTxO model is different from the specific programming language we use. In this course, we will use Plutus obviously, but the understanding the UTxO model is independently valid from understanding Plutus or learning Plutus syntax.
 
 ## The Auction Contract in the EUTxO Model
+
+
+![Screenshot 2022-03-22 at 20-13-48 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597264-b3900135-1d11-4796-ae1b-11c4965c48a7.png)
+
+As our introductory example we are going to look at an English Auction. Somebody wants to auction an NFT (Non-fungible token) - a native token on Cardano that exists only once. An NFT can represent some digital art or maybe some real-world asset.
+
+The auction is parameterised by the owner of the token, the token itself, a minimal bid and a deadline.
+
+So let's say that Alice has an NFT and wants to auction it.
+Alice Creates an English Auction
+
+She creates a UTxO at the script output. We will look at the code later, but first we will just examine the ideas of the UTxO model.
+
+The value of the UTxO is the NFT, and the datum is Nothing. Later on it will be the highest bidder and the highest bid. But right now, there hasn't yet been a bid.
+
+In the real blockchain you can't have a UTxO that just contains native tokens, they always have to be accompanied by some Ada, but for simplicity we will ignore that here.
+
+
+![Screenshot 2022-03-22 at 20-15-58 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597444-ab704788-ab82-42f0-b343-4e987a4a50e7.png)
+
+
+Not let's say that Bob wants to bid 100 Ada.
+Bob Makes a Bid
+
+In order to do this, Bob creates a transaction with two inputs and one output. The first input is the auction UTxO and the second input is Bob's bid of 100 Ada. The output is, again, at the output script, but now the value and the datum has changed. Previously the datum was Nothing but now it is (Bob, 100).
+
+The value has changed because now there is not only the NFT in the UTxO, but also the 100 Ada bid.
+
+As a redeemer, in order to unlock the original auction UTxO, we use something called Bid. This is just an algebraic data type. There will be other values as well but one of those is Bid. And the auction script will check that all the conditions are satisfied. So, in this case the script has to check that the bid happens before the deadline, that the bid is high enough.
+
+It also has to check that the correct inputs and outputs are present. In this case that means checking that the auction is an output containing the NFT and has the correct datum.
+
+
+![Screenshot 2022-03-22 at 20-17-06 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597527-ad86acf8-8fae-4718-9358-2cb383414b2a.png)
+
+
+
+Next, let's assume that Charlie wants to outbid Bob and bid 200 Ada.
+Charlie Makes a Bid
+
+Charlie will create another transaction, this time one with two inputs and two outputs. As in the first case, the two inputs are the bid (this time Charlie's bid of 200 Ada), and the auction UTxO. One of the outputs is the updated auction UTxO. There will also be a second output, which will be a UTxO which returns Bob's bid of 100 Ada.
+
+Note
+
+In reality the auction UTxO is not updated because nothing ever changes.
+
+What really happens is that the old auction UTxO is spent and a new one is created, but it has the feel of updating the state of the auction UTxO
+
+This time we again use the Bid redeemer. This time the script has to check that the deadline has been reached, that the bid is higher than the previous bid, it has to check that the auction UTxO is correctly created and it has to check that the previous highest bidder gets their bid back.
+
+
+![Screenshot 2022-03-22 at 20-18-31 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597670-239a57c9-1dbe-4d07-ae2d-4b30de61b474.png)
+
+Finally, let's assume that there won't be another bid, so once the deadline has been reached, the auction can be closed.
+
+In order to do that, somebody has to create yet another transaction. That could be Alice who wants to collect the bid or it could be Charlie who wants to collect the NFT. It can be anybody, but Alice and Charlie have an incentive to do so.
+
+This transaction will have one input - the auction UTxO, this time with the Close redeemer - and it will have two outputs. One of the outputs is for highest bidder, Charlie, and he gets the NFT and the second output goes to Alice who gets the highest bid.
+
+In the Close case, the script has to check that the deadline has been reached and that the winner gets the NFT and the auction owner gets the highest bid.
+
+
+![Screenshot 2022-03-22 at 20-19-24 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597728-da57dd37-5236-4665-b099-877b66620db3.png)
+
+
+There is one more scenario for us to consider, namely that nobody makes any bid.
+Nobody Makes a Bid
+
+Alice creates the auction, but receives no bids. In this case, there must be a mechanism for Alice to retrieve her NFT.
+
+For that she creates a transaction with the Close redeemer, but now because there is no bidder, the NFT doesn't go to the highest bidder but simply goes back to Alice.
+
+The logic in this case is slightly different. It will check that the NFT goes back to Alice, however, it doesn't really need to check the recipient because the transaction will be triggered by Alice and she can send the NFT wherever she wants.
+
 Plutus code is broken down into on-chain and off-chain code. On-chain code just checks and validates, as in it just says yes or no. The off-chain code actively creates that translation that will then pass validation. Both of the on-chain and off-chain parts are uniformly written in haskell. This is largely advantageous as code can be shared, and you only need to concern yourself with one programming language.
 
 Looking at the auction contract EnglishAuction.hs, we see the various data types are listed first in the contract:

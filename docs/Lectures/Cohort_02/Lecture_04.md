@@ -1,3 +1,5 @@
+# Lecture 4: Emulator Trace and Contract Monads
+
 Contributed by: [Chis Moreton](https://github.com/chris-moreton) <br/>
 Ported over and converted into an .md file
 

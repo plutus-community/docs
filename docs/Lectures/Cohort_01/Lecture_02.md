@@ -1,4 +1,4 @@
-# Lecture 02
+# Lecture 2: Validation scripts
 
 ### Credits
 

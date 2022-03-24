@@ -1,13 +1,13 @@
 # 1st Cohort:
  
-[Lecture 6](Lecture_06.md)
+[6. Oracles and Core, Swap, Funds and Test Modules](Lecture_06.md)
  
-[Lecture 5](Lecture_05.md)
+[5. Minting Policy](Lecture_05.md)
  
-[Lecture 4](Lecture_04.md)
+[4. Emulator Trace and Contract Monads](Lecture_04.md)
  
-[Lecture 3](Lecture_03.md)
+[3. Vesting Example](Lecture_03.md)
  
-[Lecture 2](Lecture_02.md)
+[2. Validation Scripts](Lecture_02.md)
  
-[Lecture 1](Lecture_01.md)
+[1. EUTxO and English Auction](Lecture_01.md)

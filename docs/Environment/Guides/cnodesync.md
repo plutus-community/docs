@@ -4,7 +4,7 @@
 
 This guide assumes that nix is installed. Check the environment/build section: [https://plutus-community.readthedocs.io/en/latest/Environment/](https://plutus-community.readthedocs.io/en/latest/Environment/) on how to install nix for your current OS if it is not already installed.
 
-By default, nix-shell includes the cardano-node and the cardano-cli when run the IOHK plutus-apps directory. 
+By default, nix-shell includes the cardano-node and the cardano-cli when run from the IOHK plutus-apps directory. 
 Therefore, we only need the necessary config files to start syncing the cardano-node without actually installing the cardano-node.
 
 ## Guide

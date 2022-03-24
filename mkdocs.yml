@@ -55,7 +55,7 @@ nav:
 # "Vagrant with Nixos"
     - Vagrant with Nixos: Environment/Build/Vagrant-Nixos.md
 # Deprecated:
-    - D_e_p_r_e_c_a_t_e_d: Environment/Build/Deprecated/Deprecated.md
+    - D_e_p_r_e_c_a_t_e_d: Outdated_Material/Deprecated.md
 # "Docker Compose Plutus Playground Setup"
 #    - Docker: Environment/Build/DockerCompose.md
 # "Vagrant with Ubuntu"
@@ -82,10 +82,11 @@ nav:
     - Sublime Text: Environment/Editors/sublime_text.md
     - intelliJ IDEA Windows: Environment/Editors/intelliJ-Windows.md
 
-  - Open Source Plutus Examples:
-    - DEX: Open_Source_Plutus_Examples/DEX/Minswap.md
-    - NFTS: Open_Source_Plutus_Examples/NFTS/Cardano_Plutus_NFT_Creator.md
-    - Utility: Open_Source_Plutus_Examples/Utility/Tokenomia.md
+  - Open Source Cardano Projects:
+    - DEX: Open_Source_Cardano_Projects/DEX/Minswap.md
+    - NFTs: Open_Source_Cardano_Projects/NFTS/index_nfts.md
+    - Utility: Open_Source_Cardano_Projects/Utility/index_utility.md
+    - Wallets: Open_Source_Cardano_Projects/Wallets/Nami_Wallet.md
 
   - Translations:
     - French Cohort 3: Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md

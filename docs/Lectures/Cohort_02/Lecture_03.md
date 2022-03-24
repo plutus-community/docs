@@ -1,3 +1,5 @@
+# Lecture 3: Vesting example
+
 Contributed by: [Chis Moreton](https://github.com/chris-moreton) <br/>
 Ported over and converted into an .md file
 

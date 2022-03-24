@@ -1,4 +1,4 @@
-# Arch Linux setup for Plutus Pioneers Program 
+# Arch Linux setup for Plutus Pioneer Program 
 
 Credit: [https://github.com/andreiosg/ppp-archlinux](https://github.com/andreiosg/ppp-archlinux)
 

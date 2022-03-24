@@ -4,13 +4,9 @@
  
 [Lecture 5](Lecture_05.md)
  
-[Lecture 4 detailed](Lecture_04_Detailed.md)
- 
 [Lecture 4](Lecture_04.md)
  
 [Lecture 3](Lecture_03.md)
- 
-[Lecture 2 detailed](Lecture_02_Detailed.md)
  
 [Lecture 2](Lecture_02.md)
  

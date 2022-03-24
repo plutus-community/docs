@@ -1,4 +1,4 @@
-# Lecture 06
+# Lecture 6: Oracles and Core, Swap, Funds and Test modules
 
 ## Credits
 

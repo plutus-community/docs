@@ -1,3 +1,5 @@
+# Lecture 4: Emulator Trace and Contract Monads
+
 Plutus Pioneer Program - Cohort 3 
 February 3, 2022
 

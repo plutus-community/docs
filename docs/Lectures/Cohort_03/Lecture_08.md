@@ -1,3 +1,5 @@
+# Lecture 8: QuickCheck
+
 Plutus Pioneer Program - Cohort 3 
 March 9th, 2022
 

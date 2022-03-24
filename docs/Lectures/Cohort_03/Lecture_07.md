@@ -1,3 +1,5 @@
+# Lecture 7: State Machines
+
 Plutus Pioneer Program - Cohort 3 
 March 2, 2022
 

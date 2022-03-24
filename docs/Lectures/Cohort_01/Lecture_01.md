@@ -1,4 +1,4 @@
-# Lecture 01
+# Lecture 1: EUTxO and English Auction 
 
 ## Credits
 Condensed version of Lecture #1 of the Plutus Pioneer Program by Lars Brünjes on [Youtube](https://youtu.be/IEn6jUo-0vU)

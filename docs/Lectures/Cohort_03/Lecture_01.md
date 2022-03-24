@@ -1,3 +1,5 @@
+# Lecture 1: EUTxO and English Auction
+
 Plutus Pioneer Program - Cohort 3
 January 12, 2022
 
@@ -142,22 +144,56 @@ Prelude Week01.EnglishAuction>
 ```
 
 ## The EUTxO Model
-This is the transcript for the lecture video on EUTxOs by Lars Brünjes. Further information about EUTxO models can be found here:<br/> [Accounting Systems for Blockchains]( https://iohk.io/en/blog/posts/2021/03/11/cardanos-extended-utxo-accounting-model/) <br/><br/>
+This is the transcript for the lecture video on EUTxOs by Lars Brünjes. Further information about EUTxO models can be found here:<br/> [Accounting Systems for Blockchains](https://iohk.io/en/blog/posts/2021/03/11/cardanos-extended-utxo-accounting-model/) <br/><br/>
 One of the most important things you need to understand in order to write Plutus smart contracts is the accounting model that Cardano uses; and that is the so-called (E)UTxO model, which is an abbreviation for extended unspent transaction output model. The UTxO model without being extended is the one that has been introduced by Bitcoin. But there are other models. Ethereum, for example, uses a so-called account-based model, which is what you're used to from a normal bank, where everybody has an account and each account has a balance. And if you transfer money from one account to another, then the balance gets updated accordingly, but that is not how the UTxO model works. Unspent transaction outputs are exactly what the name says. They are transaction outputs that are outputs from previous transactions that happened on the blockchain that have not yet been spent.<br/>
 
-So let's look at an example where we have two such UTxOs, one belonging to Alice, 100 ADA and another one belonging to Bob, 50 ADA. And as an example, let's assume that Alice wants to send 10 ADA to Bob. So she creates a transaction and the transaction is something that has inputs and outputs, can be an arbitrary number of inputs and an arbitrary number of outputs. And an important thing is that you can always only use complete UTxOs as input. So, if she wants to send 10 ADA to Bob, she can't simply split herexisting 100 ADA into a 90 to 10 piece. She has to use the full 100 ADA as input. So by using the UTxO 100 ADA as input to a transaction. Alice has not spent that UTxO, so it's no longer an UTxO. It's no longer unspent, it's been spent. And now she can create outputs for a transaction. So she wants to pay 10 ADA to Bob. So one output will be 10 ADA to Bob, and then she wants her change back. So she creates a second output of 90 ADA to herself.<br/>
+![Screenshot 2022-03-22 at 19-54-02 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159595570-f8a5f9e9-3cfe-4213-8ce0-bab6937de382.png)
+
+So let's look at an example where we have two such UTxOs, one belonging to Alice, 100 ADA and another one belonging to Bob, 50 ADA. And as an example, let's assume that Alice wants to send 10 ADA to Bob. So she creates a transaction and the transaction is something that has inputs and outputs, can be an arbitrary number of inputs and an arbitrary number of outputs. And an important thing is that you can always only use complete UTxOs as input. So, if she wants to send 10 ADA to Bob, she can't simply split herexisting 100 ADA into a 90 to 10 piece. She has to use the full 100 ADA as input. 
+
+![Screenshot 2022-03-22 at 19-55-18 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159595764-3208715a-08c2-4811-83b4-91939b4f7a48.png)
+
+So by using the UTxO 100 ADA as input to a transaction. Alice has not spent that UTxO, so it's no longer an UTxO. It's no longer unspent, it's been spent. And now she can create outputs for a transaction. So she wants to pay 10 ADA to Bob. So one output will be 10 ADA to Bob, and then she wants her change back. So she creates a second output of 90 ADA to herself.<br/>
+
+![Screenshot 2022-03-22 at 19-56-56 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159595910-34d76fae-61fc-4d57-9f55-602cd0f26461.png)
 
 And so this is how, even though you always have to consume complete UTxOs, you can get your change back. So you consume the complete UTxO, but then you create an output for the change and note that in a transaction, the sum of the input values must equal the sum of the output values. So in this case, 100 ADA go in and 10 plus 90 ADA go out. This is strictly speaking, not true. There are two exceptions, the first exception is transaction fees. So in the real blockchain for each transaction, you have to pay fees. So that means that the sum of input values has to be slightly higher than the sum of output values to accommodate for the fees. And the second exception is the native tokens that we have on Cardano. So it's possible for transactions to create new tokens. In which case the outputs will be higher than the inputs or to burn tokens, in which case the inputs will be higher than the outputs. But that is a somewhat advanced topic, how to handle minting and burning of native tokens in Plutus. And we'll come back to that later in the course. So for now we only look at transactions where the sum of the input value equals the sum of the output values.<br/>
 
 So this is a first example of a simple transaction, and we see that the effect of a transaction is to consume and spend transaction output and to produce new ones. So in this example, one UTxO has been consumed, Alice original 100 ADA UTxO, and two new ones have been created. One 90 ADA UTxO belongs to Alice and another 10 ADA UTxO belongs to Bob. It's important to note that this is the only thing that happens on an UTxO blockchain. The only thing that happens when a new transaction is added to the blockchain is that someform a UTxOs becomes spent and UTxOs appear. So in particular, nothing is ever changed, no value or any other data associated with the transaction output is ever changed. The only thing that changes by a new transaction is that some of the formerly unspent transaction outputs disappear and others are created, but the outputs themselves never change. The only thing that changes is whether they are unspent or not.<br/>
 
-Let's do one other example, a slightly more complicated one where Alice and Bob together want to pay 55 ADA each to Charlie. So they create a transaction together. And as inputs, Alice has no choice, she only has one UTxO, so she uses that one. And Bob also doesn't have a choice because neither of his two UTxOs is large enough to cover 55 ADA. So Bob has to use both his UTxOs as input. This time we need three outputs, one the 55 plus 55 equals 110 ADA for Charlie, and the two change outputs, one for Alice's change and one for Bob's change. So Alice paid 90, so she should get 35 change and Bob paid 60. So he should get five change. One thing I haven't yet explained is under which conditions a transaction can spend a given UTxO. Obviously it wouldn't be a good idea if any transaction could spend arbitrary UTxOs, if that was the case, then Bob could spend Alice's money without her consent. So the way it works is by adding signatures to transactions, so for our first example, our transaction one, because that consumes an UTxO belonging to Alice as input. Alice's signature has to be added to the transaction. And in the second example, because there are inputs belonging to both Alice and Bob, both Alice and Bob have to sign that transaction, which incidentally is something you can't do in Daedalus. So you would have to use the Cardano CLI for complex transactions like that.<br/>
+Let's do one other example, a slightly more complicated one where Alice and Bob together want to pay 55 ADA each to Charlie. So they create a transaction together. And as inputs, Alice has no choice, she only has one UTxO, so she uses that one. And Bob also doesn't have a choice because neither of his two UTxOs is large enough to cover 55 ADA. So Bob has to use both his UTxOs as input. 
 
-Everything I've explained so far is just about the UTxO model, not the extended UTxO model. So this is all just a simple UTxO model. And the extended part comes in when we talk about smart contracts. So in order to understand that, let's just concentrate on one consumption on a UTxO by an input. And as I just explained, the validation that decides whether the transaction this input belongs to is allowed to consume that you take so in the simple UTxO model relies on digital signatures. So in this case, Alice has to sign the transaction for this consumption of the UTxO to be valid. And now the idea of the extended UTxO model is to make this more general. So instead of just having one condition, namely that the appropriate signature is present in the transaction. We replace this by arbitrary logic, and this is where Plutus comes in. So instead of just having an address that corresponds to a public key, and that can be verified by a signature that is added to the transaction, instead we have more general addresses that are not based on public keys or the hashes of public keys, but instead contain arbitrary logic that can decide under which condition this specific UTxO can be spent by a transaction. So instead of an address going to a public key, like Alice's public key in this example, there will be an arbitrary script, a script containing arbitrary logic. And instead of the signature in the transaction, the input will justify that it is allowed to consume this output with some arbitrary piece of data that we call the redeemer. So we replace the public key address.<br/>
+![Screenshot 2022-03-22 at 19-58-43 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159596144-411b6d09-bbfa-4636-b6dd-a3df3b52776a.png)
 
-Alice in our example by a script, we place a digital signature by a redeemer which is an arbitrary piece of data. Now, the next question is, what exactly does that mean? What do we mean by arbitrary logic? And in particular it's important to consider what information? What context does this script have? So there are several options. And the one indicated in this diagram is that all the script sees is the redeemer. So all the information the script has in order to decide whether it's okay for the transaction to consume this UTxO or not is looking at the redeemer. And that is the thing that Bitcoin incidentally does.So, in Bitcoin, there are smart contracts, they are just not very smart.They are called Bitcoin script and Bitcoin script works exactly like this. So there's a script on the UTxO site and a redeemer on the input side and the script gets the redeemer and can use the redeemer to decide whether it's okay to consume the UTxO or not. But that's not the only option, we can decide to give more information to the script. So, Ethereum uses a different concept. In Ethereum the script basically can see everything, the whole blockchain,the whole state of the blockchain. So that's like the opposite extreme of Bitcoin. Bitcoin the script has very little context, all it can see is the redeemer. In Ethereum the solidity scripts in Ethereum can see the complete state of the blockchain. So that enables Ethereum's scripts to be much more powerful so they can do basically everything, but it also comes with problems because the scripts are so powerful, it's also very difficult to predict what a given script will do and that opens the door to all sorts of security issues and dangerous, because it's very hard to predict for the developers of an Ethereum smart contract what can possibly happen because there are so many possibilities.<br/>
+This time we need three outputs, one the 55 plus 55 equals 110 ADA for Charlie, and the two change outputs, one for Alice's change and one for Bob's change. So Alice paid 90, so she should get 35 change and Bob paid 60. So he should get five change. 
 
-So what Cardano does is something in the middle, so it doesn't offer such a restricted view as Bitcoin, but also does not have a global view as Ethereum, but instead chooses a middle ground. So the script can see the whole blockchain, can see the state of the word blockchain, but it can't see the whole transaction that is being validated. So, in contrast to Bitcoin it can just see this one input, the redeem of this one input, but it can see that and all the other inputs of the transaction and also all the outputs of the transaction and the transaction itself, and the Plutus script can use that information to decide whether it's okay to consume this output.<br/>
+![Screenshot 2022-03-22 at 20-01-15 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159596202-c5f5b1e7-dd5a-4764-861f-4ba4bea294c4.png)
+
+One thing I haven't yet explained is under which conditions a transaction can spend a given UTxO. Obviously it wouldn't be a good idea if any transaction could spend arbitrary UTxOs, if that was the case, then Bob could spend Alice's money without her consent. So the way it works is by adding signatures to transactions, so for our first example, our transaction one, because that consumes an UTxO belonging to Alice as input. Alice's signature has to be added to the transaction. And in the second example, because there are inputs belonging to both Alice and Bob, both Alice and Bob have to sign that transaction, which incidentally is something you can't do in Daedalus. So you would have to use the Cardano CLI for complex transactions like that.<br/>
+
+Everything I've explained so far is just about the UTxO model, not the extended UTxO model. So this is all just a simple UTxO model. And the extended part comes in when we talk about smart contracts. So in order to understand that, let's just concentrate on one consumption on a UTxO by an input. 
+
+![Screenshot 2022-03-22 at 20-02-40 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159596277-5db97b72-55fc-4edb-b273-1c9399c3cf7e.png)
+
+And as I just explained, the validation that decides whether the transaction this input belongs to is allowed to consume that you take so in the simple UTxO model relies on digital signatures. So in this case, Alice has to sign the transaction for this consumption of the UTxO to be valid. And now the idea of the extended UTxO model is to make this more general. So instead of just having one condition, namely that the appropriate signature is present in the transaction. We replace this by arbitrary logic, and this is where Plutus comes in. 
+
+So instead of just having an address that corresponds to a public key, and that can be verified by a signature that is added to the transaction, instead we have more general addresses that are not based on public keys or the hashes of public keys, but instead contain arbitrary logic that can decide under which condition this specific UTxO can be spent by a transaction. So instead of an address going to a public key, like Alice's public key in this example, there will be an arbitrary script, a script containing arbitrary logic. And instead of the signature in the transaction, the input will justify that it is allowed to consume this output with some arbitrary piece of data that we call the redeemer. So we replace the public key address.<br/>
+
+
+![Screenshot 2022-03-22 at 20-04-22 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159596485-9d39165d-167c-4624-84ff-15f68c52c3db.png)
+
+Alice in our example by a script, we place a digital signature by a redeemer which is an arbitrary piece of data. Now, the next question is, what exactly does that mean? What do we mean by arbitrary logic? And in particular it's important to consider what information? What context does this script have? So there are several options. And the one indicated in this diagram is that all the script sees is the redeemer. So all the information the script has in order to decide whether it's okay for the transaction to consume this UTxO or not is looking at the redeemer. And that is the thing that Bitcoin incidentally does.So, in Bitcoin, there are smart contracts, they are just not very smart.They are called Bitcoin script and Bitcoin script works exactly like this. So there's a script on the UTxO site and a redeemer on the input side and the script gets the redeemer and can use the redeemer to decide whether it's okay to consume the UTxO or not. But that's not the only option, we can decide to give more information to the script. 
+
+![Screenshot 2022-03-22 at 20-01-15 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159596728-7f3c241d-810c-4cfd-bcfb-42ec86b1f04a.png)
+
+So, Ethereum uses a different concept. In Ethereum the script basically can see everything, the whole blockchain,the whole state of the blockchain. So that's like the opposite extreme of Bitcoin. Bitcoin the script has very little context, all it can see is the redeemer. In Ethereum the solidity scripts in Ethereum can see the complete state of the blockchain. So that enables Ethereum's scripts to be much more powerful so they can do basically everything, but it also comes with problems because the scripts are so powerful, it's also very difficult to predict what a given script will do and that opens the door to all sorts of security issues and dangerous, because it's very hard to predict for the developers of an Ethereum smart contract what can possibly happen because there are so many possibilities.<br/>
+
+So what Cardano does is something in the middle, so it doesn't offer such a restricted view as Bitcoin, but also does not have a global view as Ethereum, but instead chooses a middle ground. So the script can see the whole blockchain, can see the state of the word blockchain, but it can't see the whole transaction that is being validated. 
+
+
+![Screenshot 2022-03-22 at 20-08-04 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159596869-3ebf8181-ae73-4539-bded-21b1eaf5d9fd.png)
+
+So, in contrast to Bitcoin it can just see this one input, the redeem of this one input, but it can see that and all the other inputs of the transaction and also all the outputs of the transaction and the transaction itself, and the Plutus script can use that information to decide whether it's okay to consume this output.<br/>
 
 Now, in this example, there's only one input, but if this transaction had more than one input, then the script would be able to see those as well. There's one last ingredient that Plutus scripts need in order to be as powerful and expressive as Ethereum scripts. And that is a so-called datum which is a piece of data that can be associated with a UTxO in addition to the value. So at a script address, like in this example, in addition to this 100 ADA value, that can be an arbitrary piece of data attached, which we call datum. And with this, we can actually mathematically prove that Plutus is at least as powerful as Ethereum, so everything, every logic you can express in Ethereum you can also express in this extended UTxO model that Cardano uses, but it has a lot of important advantages in comparison to the Ethereum model. So for example, in Plutus, it is possible to check whether a transaction will validate in your wallet before you ever sent it to the chain. So something can still go wrong, so for example, your transaction can consume an output and then when it gets to the chain, somebody else has already consumed that output.This output has already been consumed by another transaction.You can't prevent that, but in that case, your transaction will simply fail without you having to pay any fees. But if all the inputs are still there, that your transaction expects, then you can be sure that the transaction will validate and that it will have the effect that you predicted when you ran it in your wallet.<br/>
 
@@ -170,6 +206,80 @@ One thing I haven't mentioned yet is who is responsible for providing datum, red
 So this is the UTxO model, the extended unspent transaction output model. And that is of course not tied to a specific programming language.I mean, what we have is Plutus, which is based on Haskell, but in principle, you could use the same concept, the same UTxO model with a completely different programming language. And we also plan to write compilers from other programming languages to Plutus script which issort of the assembly language and aligned Plutus.So there's an extended UTxO model is different from the specific programming language we use. In this course, we will use Plutus obviously, but the understanding the UTxO model is independently valid from understanding Plutus or learning Plutus syntax.
 
 ## The Auction Contract in the EUTxO Model
+
+
+![Screenshot 2022-03-22 at 20-13-48 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597264-b3900135-1d11-4796-ae1b-11c4965c48a7.png)
+
+As our introductory example we are going to look at an English Auction. Somebody wants to auction an NFT (Non-fungible token) - a native token on Cardano that exists only once. An NFT can represent some digital art or maybe some real-world asset.
+
+The auction is parameterised by the owner of the token, the token itself, a minimal bid and a deadline.
+
+So let's say that Alice has an NFT and wants to auction it.
+Alice Creates an English Auction
+
+She creates a UTxO at the script output. We will look at the code later, but first we will just examine the ideas of the UTxO model.
+
+The value of the UTxO is the NFT, and the datum is Nothing. Later on it will be the highest bidder and the highest bid. But right now, there hasn't yet been a bid.
+
+In the real blockchain you can't have a UTxO that just contains native tokens, they always have to be accompanied by some Ada, but for simplicity we will ignore that here.
+
+
+![Screenshot 2022-03-22 at 20-15-58 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597444-ab704788-ab82-42f0-b343-4e987a4a50e7.png)
+
+
+Not let's say that Bob wants to bid 100 Ada.
+Bob Makes a Bid
+
+In order to do this, Bob creates a transaction with two inputs and one output. The first input is the auction UTxO and the second input is Bob's bid of 100 Ada. The output is, again, at the output script, but now the value and the datum has changed. Previously the datum was Nothing but now it is (Bob, 100).
+
+The value has changed because now there is not only the NFT in the UTxO, but also the 100 Ada bid.
+
+As a redeemer, in order to unlock the original auction UTxO, we use something called Bid. This is just an algebraic data type. There will be other values as well but one of those is Bid. And the auction script will check that all the conditions are satisfied. So, in this case the script has to check that the bid happens before the deadline, that the bid is high enough.
+
+It also has to check that the correct inputs and outputs are present. In this case that means checking that the auction is an output containing the NFT and has the correct datum.
+
+
+![Screenshot 2022-03-22 at 20-17-06 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597527-ad86acf8-8fae-4718-9358-2cb383414b2a.png)
+
+
+
+Next, let's assume that Charlie wants to outbid Bob and bid 200 Ada.
+Charlie Makes a Bid
+
+Charlie will create another transaction, this time one with two inputs and two outputs. As in the first case, the two inputs are the bid (this time Charlie's bid of 200 Ada), and the auction UTxO. One of the outputs is the updated auction UTxO. There will also be a second output, which will be a UTxO which returns Bob's bid of 100 Ada.
+
+Note
+
+In reality the auction UTxO is not updated because nothing ever changes.
+
+What really happens is that the old auction UTxO is spent and a new one is created, but it has the feel of updating the state of the auction UTxO
+
+This time we again use the Bid redeemer. This time the script has to check that the deadline has been reached, that the bid is higher than the previous bid, it has to check that the auction UTxO is correctly created and it has to check that the previous highest bidder gets their bid back.
+
+
+![Screenshot 2022-03-22 at 20-18-31 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597670-239a57c9-1dbe-4d07-ae2d-4b30de61b474.png)
+
+Finally, let's assume that there won't be another bid, so once the deadline has been reached, the auction can be closed.
+
+In order to do that, somebody has to create yet another transaction. That could be Alice who wants to collect the bid or it could be Charlie who wants to collect the NFT. It can be anybody, but Alice and Charlie have an incentive to do so.
+
+This transaction will have one input - the auction UTxO, this time with the Close redeemer - and it will have two outputs. One of the outputs is for highest bidder, Charlie, and he gets the NFT and the second output goes to Alice who gets the highest bid.
+
+In the Close case, the script has to check that the deadline has been reached and that the winner gets the NFT and the auction owner gets the highest bid.
+
+
+![Screenshot 2022-03-22 at 20-19-24 PPP 030101 - Welcome and Introduction](https://user-images.githubusercontent.com/59018247/159597728-da57dd37-5236-4665-b099-877b66620db3.png)
+
+
+There is one more scenario for us to consider, namely that nobody makes any bid.
+Nobody Makes a Bid
+
+Alice creates the auction, but receives no bids. In this case, there must be a mechanism for Alice to retrieve her NFT.
+
+For that she creates a transaction with the Close redeemer, but now because there is no bidder, the NFT doesn't go to the highest bidder but simply goes back to Alice.
+
+The logic in this case is slightly different. It will check that the NFT goes back to Alice, however, it doesn't really need to check the recipient because the transaction will be triggered by Alice and she can send the NFT wherever she wants.
+
 Plutus code is broken down into on-chain and off-chain code. On-chain code just checks and validates, as in it just says yes or no. The off-chain code actively creates that translation that will then pass validation. Both of the on-chain and off-chain parts are uniformly written in haskell. This is largely advantageous as code can be shared, and you only need to concern yourself with one programming language.
 
 Looking at the auction contract EnglishAuction.hs, we see the various data types are listed first in the contract:

@@ -1,0 +1,8 @@
+FROM python:3-alpine
+RUN apk add build-base
+WORKDIR /mkdocs
+RUN pip install mkdocs mkdocs-material
+# EXPOSE has only declaratory (and no configuratory!) effect:
+EXPOSE 8000
+# Serve mkdocs to all interfaces!:
+CMD ["mkdocs", "serve", "--dev-addr=0.0.0.0:8000"]

@@ -1,4 +1,4 @@
-# Lecture 1: Building Example Code and Learning Plutus Playground
+# Lecture 1: EUTxO and English Auction
 
 
 Plutus Pioneer Program - Cohort 3
@@ -14,7 +14,7 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/1cd1wt
 
 ## Table of Contents
 
-- [Lecture 1: Building Example Code and Learning Plutus Playground](#lecture-1-building-example-code-and-learning-plutus-playground)
+- [Lecture 1: EUTxO and English Auction](#lecture-1-eutxo-and-english-auction)
   - [Table of Contents](#table-of-contents)
   - [Preparation for Lecture 1](#preparation-for-lecture-1)
   - [The EUTxO Model](#the-eutxo-model)

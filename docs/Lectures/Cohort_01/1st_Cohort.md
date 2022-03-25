@@ -1,4 +1,6 @@
 # 1st Cohort:
+
+**Course: April - May 2021**
  
 [6. Oracles and Core, Swap, Funds and Test Modules](Lecture_06.md)
  

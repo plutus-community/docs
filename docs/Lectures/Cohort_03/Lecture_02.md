@@ -1,4 +1,4 @@
-# Lecture 2: Validation scripts
+# Lecture 2: Low and High Level Validation Scripts
 
 Plutus Pioneer Program - Cohort 3
 January 20, 2022
@@ -9,9 +9,6 @@ Contributed By:
 Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture2](https://youtu.be/BEr7lcCPjnA)
 
 Google Doc version can be found [HERE](https://docs.google.com/document/d/1wclIpwHW-Lo8R8IJHbjvEYjyzsm5qLUMcrN9bpCOL00/edit#)
-
-
-# Lecture 2: Low and High Level Validation Scripts
 
 
 ## Table of Contents

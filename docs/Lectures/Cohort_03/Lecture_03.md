@@ -12,7 +12,7 @@ Google Doc version can be found [HERE](https://docs.google.com/document/d/1MKEcg
 
 
 ## Table of Contents
-- [Lecture 3 : Vesting and the Cardano Testnet](#lecture-3-vesting-and-the-cardano-testnet)
+- [Lecture 3: Vesting and the Cardano Testnet](#lecture-3-vesting-and-the-cardano-testnet)
   - [Table of Contents](#table-of-contents)
   - [Preparation for Lecture 3](#preperation-for-lecture-3)
   - [Plutus Playground Timeout](#plutus-playground-timeout)

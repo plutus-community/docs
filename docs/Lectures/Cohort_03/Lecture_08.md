@@ -1,4 +1,4 @@
-# Lecture 8: QuickCheck
+# Lecture 8: Property Based Testing
 
 Plutus Pioneer Program - Cohort 3 
 March 9th, 2022
@@ -6,12 +6,9 @@ March 9th, 2022
 Contributed By:
 [Joe Totes](https://github.com/Totes5706)
 
-
 Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture8](https://youtu.be/mqHifIPefus)
 
 Google Doc version can be found [HERE](https://docs.google.com/document/d/1Z41CULV7lEXOZEOQDcjEN2ExWQ0fqsTydupI7jybC1U/edit?usp=sharing)
-
-# Lecture 8: Property Based Testing
 
 ## Table of Contents
 

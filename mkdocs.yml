@@ -3,6 +3,10 @@ repo_url: https://github.com/plutus-community/docs/
 theme: 
   name: readthedocs
   collapse_navigation: true
+  sticky_navigation: true
+  navigation_depth: 4
+  includehidden: true
+  titles_only: false
   features:
     - content.code.annotate
 #markdown_extensions:

@@ -11,8 +11,6 @@ Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture7](https://youtu.be/CLOHdIGg
 
 Google Doc version can be found [HERE](https://docs.google.com/document/d/1gqetrtmtsdAg0-kOYF94qlN10UG74syDLgSIzRBGg8Q/edit#)
 
-# Lecture 7: State Machines
-
 ## Table of Contents
 
 - [Lecture 7: State Machines](#lecture-7-state-machines)

@@ -41,11 +41,11 @@ nav:
       - Vim: Environment/Editors/vim.md
       - Sublime Text: Environment/Editors/sublime_text.md
       - intelliJ IDEA Windows: Environment/Editors/intelliJ-Windows.md
-    - D_e_p_r_e_c_a_t_e_d: 
-      - Outdated_Material/Deprecated.md
-      - Docker: Environment/Build/DockerCompose.md
-      - Environment/Build/Vagrant-Ubuntu.md
-      - Windows/WSL2 (1st alternative): Environment/Build/WindowsCohort2.md
+    #- D_e_p_r_e_c_a_t_e_d: 
+    - Outdated_Material/Deprecated.md
+      #- Docker: Environment/Build/DockerCompose.md
+      #- Environment/Build/Vagrant-Ubuntu.md
+      #- Windows/WSL2 (1st alternative): Environment/Build/WindowsCohort2.md
   - Lectures:
     - index.md
     - 3rd Cohort:

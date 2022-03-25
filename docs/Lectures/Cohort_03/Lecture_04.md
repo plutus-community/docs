@@ -10,12 +10,9 @@ Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture4](https://youtu.be/gxMW9uXT
 
 Google Doc version can be found [HERE](https://docs.google.com/document/d/1gRv1mZdzokLW_UHQzmCmSoW-ioDnj2gOkwxEbeMTjBs/edit#)
 
-# Lecture 4: Monads
-
-
 ## Table of Contents
 
-- [Lecture 4: Monads](#lecture-4-monads)
+- [Lecture 4: Emulator Trace and Contract Monads](#lecture-4-emulator-trace-and-contract-monads)
   - [Table of Contents](#table-of-contents)
   - [Preparation for Lecture 4](#preparation-for-lecture-4)
   - [Monads](#monads)

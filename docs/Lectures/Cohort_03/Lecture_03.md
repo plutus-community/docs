@@ -1,4 +1,4 @@
-# Lecture 3 : Vesting and the Cardano Testnet
+# Lecture 3: Vesting and the Cardano Testnet
 
 Plutus Pioneer Program - Cohort 3 
 January 26, 2022

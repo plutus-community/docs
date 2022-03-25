@@ -3,20 +3,19 @@ repo_url: https://github.com/plutus-community/docs/
 theme: 
   name: readthedocs
   collapse_navigation: true
-  sticky_navigation: true
-  navigation_depth: 4
+  sticky_navigation: false
+  navigation_depth: 2
   includehidden: true
   titles_only: false
   features:
     - content.code.annotate
-#markdown_extensions:
-#  - pymdownx.highlight:
-#      anchor_linenums: true
-#  - pymdownx.inlinehilite
-#  - pymdownx.snippets
-#  - pymdownx.superfences
-# For using e.g. [](){:target="_blank"}:
-#  - attr_list
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list # For using e.g. [](){:target="_blank"}:
 
 
 # readthedocs theme only supports 2 layer navigation depth!
@@ -26,22 +25,19 @@ nav:
   - README.md
   - Lectures/index.md
 
-  - Cohorts:
-    - 3rd Cohort:
-      - 8. Property Based Testing: Lectures/Cohort_03/Lecture_08.md
-      - 7. State Machines: Lectures/Cohort_03/Lecture_07.md
-      - 6. Minting with CLI and PAB: Lectures/Cohort_03/Lecture_06.md
-      - 5. Minting Policy: Lectures/Cohort_03/Lecture_05.md
-      - 4. Emulator Trace and Contract Monads: Lectures/Cohort_03/Lecture_04.md
-      - 3. Vesting and Cardano Testnet: Lectures/Cohort_03/Lecture_03.md
-      - 2. Validation Scripts: Lectures/Cohort_03/Lecture_02.md
-      - 1. EUTxO and English Auction: Lectures/Cohort_03/Lecture_01.md
-
-    - 2nd Cohort:
-      - Lectures: Lectures/Cohort_02/2nd_Cohort.md
-
-    - 1st Cohort:
-      - Lectures: Lectures/Cohort_01/1st_Cohort.md
+  - 3rd Cohort:
+    - 8. Property Based Testing: Lectures/Cohort_03/Lecture_08.md
+    - 7. State Machines: Lectures/Cohort_03/Lecture_07.md
+    - 6. Minting with CLI and PAB: Lectures/Cohort_03/Lecture_06.md
+    - 5. Minting Policy: Lectures/Cohort_03/Lecture_05.md
+    - 4. Emulator Trace and Contract Monads: Lectures/Cohort_03/Lecture_04.md
+    - 3. Vesting and Cardano Testnet: Lectures/Cohort_03/Lecture_03.md
+    - 2. Validation Scripts: Lectures/Cohort_03/Lecture_02.md
+    - 1. EUTxO and English Auction: Lectures/Cohort_03/Lecture_01.md
+  - 2nd Cohort:
+    - Lectures: Lectures/Cohort_02/2nd_Cohort.md
+  - 1st Cohort:
+    - Lectures: Lectures/Cohort_01/1st_Cohort.md
 
   - Setup for Plutus Pioneers Program:
 # "Getting Started"

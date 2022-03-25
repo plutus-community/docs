@@ -43,9 +43,24 @@ nav:
   - Lectures:
     - Cohort 01:
       - 'Lectures': 'Lectures/Cohort_01/1st_Cohort.md'
-      - 'Lecture 01': 'Lectures/Cohort_01/Lecture_01.md'
+      - '1. EUTxO and English Auction': 'Lectures/Cohort_01/Lecture_01.md'
+      - '2. Validation Scripts': 'Lectures/Cohort_01/Lecture_02.md'
+      - '3. Vesting': 'Lectures/Cohort_01/Lecture_03.md'
+      - '4. Emulator Trace and Contract Monads': 'Lectures/Cohort_01/Lecture_04.md'
+      - '5. Minting Policy': 'Lectures/Cohort_01/Lecture_05.md'
+      - '6. Oracles and Core, Swap, Funds and Test modules': 'Lectures/Cohort_01/Lecture_06.md'
     - Cohort 02:
       - 'Lectures': 'Lectures/Cohort_02/2nd_Cohort.md'
+      - '1. EUTxO and English Auction': 'Lectures/Cohort_02/Lecture_01.md'
+      - '2. Validation Scripts': 'Lectures/Cohort_02/Lecture_02.md'
+      - '3. Vesting': 'Lectures/Cohort_02/Lecture_03.md'
+      - '4. Emulator Trace and Contract Monads': 'Lectures/Cohort_02/Lecture_04.md'
+      - '5. Minting Policy': 'Lectures/Cohort_02/Lecture_05.md'
+      - '6. Oracles and Core, Swap, Funds and Test modules': 'Lectures/Cohort_02/Lecture_06.md'
+      - '7. State Machines': 'Lectures/Cohort_02/Lecture_07.md'
+      - '8. Property Based Testing': 'Lectures/Cohort_02/Lecture_08.md'
+      - '9. Marlowe': 'Lectures/Cohort_02/Lecture_07.md'
+      - '10. Uniswap': 'Lectures/Cohort_02/Lecture_08.md'
     - Cohort 03:
       - '1. EUTxO and English Auction': 'Lectures/Cohort_03/Lecture_01.md'
       - '2. Validation Scripts': 'Lectures/Cohort_03/Lecture_02.md'

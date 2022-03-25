@@ -2,6 +2,7 @@ site_name: Plutus Community Docs
 repo_url: https://github.com/plutus-community/docs/
 theme: 
   name: readthedocs
+  collapse_navigation: true
   features:
     - content.code.annotate
 markdown_extensions:

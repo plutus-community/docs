@@ -1,4 +1,4 @@
-# Lecture 3: Vesting and Cardano Testnet
+# Lecture 3 : Vesting, Script Context, and the Cardano Testnet
 
 Plutus Pioneer Program - Cohort 3 
 January 26, 2022
@@ -10,10 +10,9 @@ Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture3](https://youtu.be/sLMhsqiW
 
 Google Doc version can be found [HERE](https://docs.google.com/document/d/1MKEcgNl5QUugBhan39eOKM6zkBJ9_kLkQ6abjWp9pUY/edit#)
 
-# Lecture 3 : Script Context and the Cardano Testnet
 
 ## Table of Contents
-- [Lecture 3 : Script Context and the Cardano Testnet](#lecture-3-script-context-and-the-cardano-testnet)
+- [Lecture 3 : Vesting, Script Context, and the Cardano Testnet](#lecture-3-vesting-script-context-and-the-cardano-testnet)
   - [Table of Contents](#table-of-contents)
   - [Preparation for Lecture 3](#preperation-for-lecture-3)
   - [Plutus Playground Timeout](#plutus-playground-timeout)

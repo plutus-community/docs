@@ -1,6 +1,16 @@
 # About this project
 
-## Welcome to Plutus Community Documentation site
+## Welcome to documentation for Plutus Community 
+
+### Disclaimer
+
+
+---
+**>**
+This site is for the benefit of the Cardano community and is owned and maintained by the community under an open source philosophy. IOG Singapore Pte. Ltd (IOG) is not responsible for, and makes no representations or warranties regarding, the accuracy, reliability and completeness of the aggregated content found in this repo. Any use of the open source Apache 2.0 licensed software is done at your own risk and on a “AS IS” basis, without warranties or conditions of any kind. 
+---
+
+### About this site
 
 This documentation site is built from the contributions of current Plutus Pioneer students and alumni. Our goal is to help future Plutus developers to stand on the shoulder of giants by provding a resource which combines the lessons and experiences from previous cohorts.
 

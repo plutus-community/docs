@@ -1,9 +1,7 @@
-# About this project
 
 ## Welcome to documentation for Plutus Community 
 
 ### Disclaimer
-
 
 ---
 **.-**
@@ -24,7 +22,7 @@ This website has been a valuable source of information for past cohorts, mainly 
 -   the environment setup instructions may vastly differ between platforms
 -   setting up an environment for Plutus development can be challenging
 
-## How to collaborate
+### How to collaborate
 
 Any collaboration is welcome, it doesn't need to be a new document, corrections to the old ones are much needed. To do so, just modify or create a document in the corresponding directory inside "docs", and make a pull request using the community repository:
 
@@ -32,7 +30,7 @@ Any collaboration is welcome, it doesn't need to be a new document, corrections 
 
 In the case of contributing a fix, please make sure to include a description of the issue fixed to facilitate the task of the moderator. Once it is approved, it'll be automatically published and linked into the ToC of the site (for now, using readthedocs.io service thru mkdocs).
 
-## Style Guide
+### Style Guide
 
 At the momment we are using Markdown language for the documentation for its simplicity, broad adoption and syntax support within the Github web-based editor. Additionally, we're using Github for version and access control so the combination works seamlessly well together. More information on Markdown can be found here:
 
@@ -47,7 +45,7 @@ To help standarize the content, we recommend to write the articles following the
 -   Changelog (optional): Brief summary of changes over time.
 -   Link to a dedicated forum thread (optional) : Link to a new post on Cardano's forum announcing the new article, that can be used to interact with other users, overcoming this way the static nature of the documentation site.
 
-## Other resources
+### Other resources
 
 Plutus Pioneers Course Materials:  
 <https://github.com/input-output-hk/plutus-pioneer-program>

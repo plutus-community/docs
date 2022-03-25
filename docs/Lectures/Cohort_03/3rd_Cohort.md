@@ -1,4 +1,6 @@
 # 3rd Cohort
+
+**Course: January - Februrary 2022**
  
 [8. Quick Check](Lecture_08.md)
  

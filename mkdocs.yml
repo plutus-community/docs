@@ -18,6 +18,8 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list # For using e.g. [](){:target="_blank"}:
 
+nav:
+  - Environment Setup: Environment/index.md
 
 # readthedocs theme only supports 2 layer navigation depth!
 # If using more than 2 layers, navigation sidebar expands more than

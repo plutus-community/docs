@@ -22,62 +22,62 @@ markdown_extensions:
 # readthedocs theme only supports 2 layer navigation depth!
 # If using more than 2 layers, navigation sidebar expands more than
 # the current chosen section/item.
-nav:
-  - README.md
-  - Setup for Plutus Pioneers Program:
-    - Getting Started: Environment/index.md
-    - Build:
-      - Ubuntu: Environment/Build/Ubuntu.md
-      - Ubuntu (Fresh Install): Environment/Build/Ubuntufresh.md
-      - Arch Linux: Environment/Build/ArchLinux.md
-      - MacOS: Environment/Build/MacOS.md
-      - Mac M1: Environment/Build/Mac_M1.md
-      - Windows/WSL2 (2nd alternative): Environment/Build/WindowsWSL.md
-      - Vagrant with Nixos: Environment/Build/Vagrant-Nixos.md
-    - Editors:
-      - Prerequisites: Environment/Editors/Prerequisites/prerequisites.md
-      - VS Code: Environment/Editors/vscode.md
-      - Emacs: Environment/Editors/emacs.md
-      - Vim: Environment/Editors/vim.md
-      - Sublime Text: Environment/Editors/sublime_text.md
-      - intelliJ IDEA Windows: Environment/Editors/intelliJ-Windows.md
-    #- D_e_p_r_e_c_a_t_e_d: 
-    - Outdated_Material/Deprecated.md
-      #- Docker: Environment/Build/DockerCompose.md
-      #- Environment/Build/Vagrant-Ubuntu.md
-      #- Windows/WSL2 (1st alternative): Environment/Build/WindowsCohort2.md
-  - Lectures:
-    - index.md
-    - 3rd Cohort:
-      - 8. Property Based Testing: Lectures/Cohort_03/Lecture_08.md
-      - 7. State Machines: Lectures/Cohort_03/Lecture_07.md
-      - 6. Minting with CLI and PAB: Lectures/Cohort_03/Lecture_06.md
-      - 5. Minting Policy: Lectures/Cohort_03/Lecture_05.md
-      - 4. Emulator Trace and Contract Monads: Lectures/Cohort_03/Lecture_04.md
-      - 3. Vesting and Cardano Testnet: Lectures/Cohort_03/Lecture_03.md
-      - 2. Validation Scripts: Lectures/Cohort_03/Lecture_02.md
-      - 1. EUTxO and English Auction: Lectures/Cohort_03/Lecture_01.md
-    - 2nd Cohort:
-      - Lectures: Lectures/Cohort_02/2nd_Cohort.md
-    - 1st Cohort:
-      - Lectures: Lectures/Cohort_01/1st_Cohort.md
-  - How Tos:
-    - Use Plutus API Documentation: Environment/Guides/APIbuildDocumentation.md
-    - Use nix-shell for Plutus Pioneer Program: Environment/Guides/BuildCabalBuild.md
-    - Use PAB for Plutus Pioneer Program: Environment/Guides/PAB.md
-    - Sync Cardano node for Plutus Pioneer Program: Environment/Guides/cnodesync.md
-    - Use Plutus Playground for Plutus Pioneer Program: Environment/Guides/plutusplayground.md
+#nav:
+#  - README.md
+#  - Setup for Plutus Pioneers Program:
+#    - Getting Started: Environment/index.md
+#    - Build:
+#      - Ubuntu: Environment/Build/Ubuntu.md
+#      - Ubuntu (Fresh Install): Environment/Build/Ubuntufresh.md
+#      - Arch Linux: Environment/Build/ArchLinux.md
+#      - MacOS: Environment/Build/MacOS.md
+#      - Mac M1: Environment/Build/Mac_M1.md
+#      - Windows/WSL2 (2nd alternative): Environment/Build/WindowsWSL.md
+#      - Vagrant with Nixos: Environment/Build/Vagrant-Nixos.md
+#    - Editors:
+#      - Prerequisites: Environment/Editors/Prerequisites/prerequisites.md
+#      - VS Code: Environment/Editors/vscode.md
+#      - Emacs: Environment/Editors/emacs.md
+#      - Vim: Environment/Editors/vim.md
+#      - Sublime Text: Environment/Editors/sublime_text.md
+#      - intelliJ IDEA Windows: Environment/Editors/intelliJ-Windows.md
+#    #- D_e_p_r_e_c_a_t_e_d: 
+#    - Outdated_Material/Deprecated.md
+#      #- Docker: Environment/Build/DockerCompose.md
+#      #- Environment/Build/Vagrant-Ubuntu.md
+#      #- Windows/WSL2 (1st alternative): Environment/Build/WindowsCohort2.md
+#  - Lectures:
+#    - index.md
+#    - 3rd Cohort:
+#      - 8. Property Based Testing: Lectures/Cohort_03/Lecture_08.md
+#      - 7. State Machines: Lectures/Cohort_03/Lecture_07.md
+#      - 6. Minting with CLI and PAB: Lectures/Cohort_03/Lecture_06.md
+#      - 5. Minting Policy: Lectures/Cohort_03/Lecture_05.md
+#      - 4. Emulator Trace and Contract Monads: Lectures/Cohort_03/Lecture_04.md
+#      - 3. Vesting and Cardano Testnet: Lectures/Cohort_03/Lecture_03.md
+#      - 2. Validation Scripts: Lectures/Cohort_03/Lecture_02.md
+#      - 1. EUTxO and English Auction: Lectures/Cohort_03/Lecture_01.md
+#    - 2nd Cohort:
+#      - Lectures: Lectures/Cohort_02/2nd_Cohort.md
+#    - 1st Cohort:
+#      - Lectures: Lectures/Cohort_01/1st_Cohort.md
+#  - How Tos:
+#    - Use Plutus API Documentation: Environment/Guides/APIbuildDocumentation.md
+#    - Use nix-shell for Plutus Pioneer Program: Environment/Guides/BuildCabalBuild.md
+#    - Use PAB for Plutus Pioneer Program: Environment/Guides/PAB.md
+#    - Sync Cardano node for Plutus Pioneer Program: Environment/Guides/cnodesync.md
+#    - Use Plutus Playground for Plutus Pioneer Program: Environment/Guides/plutusplayground.md
 # "Working on contracts with and without cabal build"
 #    - For every new lecture: Environment/Build/CabalBuild.md
 # "Plutus API documentation"
 #    - Environment/Build/buildDocumentation.md
 
 
-  - Open Source Cardano Projects:
-    - DEX: Open_Source_Cardano_Projects/DEX/Minswap.md
-    - NFTs: Open_Source_Cardano_Projects/NFTS/index_nfts.md
-    - Utility: Open_Source_Cardano_Projects/Utility/index_utility.md
-    - Wallets: Open_Source_Cardano_Projects/Wallets/Nami_Wallet.md
+#  - Open Source Cardano Projects:
+#    - DEX: Open_Source_Cardano_Projects/DEX/Minswap.md
+#    - NFTs: Open_Source_Cardano_Projects/NFTS/index_nfts.md
+#    - Utility: Open_Source_Cardano_Projects/Utility/index_utility.md
+#    - Wallets: Open_Source_Cardano_Projects/Wallets/Nami_Wallet.md
 
-  - Translations:
-    - French Cohort 3: Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md
+#  - Translations:
+#    - French Cohort 3: Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md

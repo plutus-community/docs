@@ -17,10 +17,21 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - attr_list # For using e.g. [](){:target="_blank"}:
-
-nav:
-  - Plutus Pioneer Program: index.md
-
+pages:
+  - Environment Setup:
+    - Build:
+      - 'ArchLinux':'Environment/Build/ArchLinux.md'  
+      - 'MacOS':'Environment/Build/MacOS.md'  
+      - 'Mac_M1':'Environment/Build/Mac_M1.md'  
+    - Editors:
+      - 'Emacs':'emacs.md'
+      - 'Vim':'vim.md'
+  - Lectures:
+    - Cohort 01
+      - 'Lecture 01':'Lectures/Cohort_01/Lecture_01.md'
+    - Cohort 02
+    - Cohort 03
+    
 # readthedocs theme only supports 2 layer navigation depth!
 # If using more than 2 layers, navigation sidebar expands more than
 # the current chosen section/item.

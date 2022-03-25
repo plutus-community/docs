@@ -10,8 +10,6 @@ Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture6](https://youtu.be/TfWKxdli
 
 Google Doc version can be found [HERE](https://docs.google.com/document/d/15XIo3ebvs3ovbKdGURsXbmdXu3YiNmH-iTBQaE07OyU/edit#)
 
-# Lecture 6: Minting with the CLI and PAB
-
 ## Table of Contents
 
 - [Lecture 6: Minting with the CLI and PAB](#lecture-6-minting-with-the-cli-and-pab)

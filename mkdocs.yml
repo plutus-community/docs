@@ -21,7 +21,7 @@ markdown_extensions:
 nav:
   - Environment Setup:
     - Build instructions:
-      - 'Getting Started': 'Environment/index.md'
+      #- 'Getting Started': 'Environment/index.md'
       - 'Ubuntu': 'Environment/Build/Ubuntu.md'
       - 'Ubuntu (Fresh Install)': 'Environment/Build/Ubuntufresh.md'
       - 'Arch Linux': 'Environment/Build/ArchLinux.md'  
@@ -29,8 +29,6 @@ nav:
       - 'MacOS M1': 'Environment/Build/Mac_M1.md'
       - 'Windows/WSL2 (2nd alternative)': 'Environment/Build/WindowsWSL.md'
       - 'NixOS (using Vagrant)': 'Environment/Build/Vagrant-Nixos.md'
-      - 'Cabal Build': 'Environment/Build/CabalBuild.md'
-      - 'Build Documentation': 'Environment/Build/buildDocumentation.md'
     - Editors:
       - 'Prerequisites': 'Environment/Editors/Prerequisites/prerequisites.md'
       - 'Emacs': 'Environment/Editors/emacs.md'
@@ -39,9 +37,9 @@ nav:
       - 'Sublime Text': 'Environment/Editors/sublime_text.md'
       - 'intelliJ IDEA Windows': 'Environment/Editors/intelliJ-Windows.md'
     - Deprecated:
-      - 'Docker': 'Environment/Build/DockerCompose.md'
-      - 'Ubuntu (using Vagrant)': 'Environment/Build/Vagrant-Ubuntu.md'
-      - 'Windows/WSL2 (1st alternative)': 'Environment/Build/WindowsCohort2.md'
+      - 'Docker': 'Outdated_Material/DockerCompose(needs_update).md'
+      - 'Ubuntu (using Vagrant)': 'Outdated_Material/Vagrant-Ubuntu(needs_update).md'
+      - 'Windows/WSL2 (1st alternative)': 'Outdated_Material/WindowsCohort2(needs_update).md'
   - Lectures:
     - Cohort 01:
       - 'Lectures': 'Lectures/Cohort_01/1st_Cohort.md'

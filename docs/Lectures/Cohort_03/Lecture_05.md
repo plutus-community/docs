@@ -10,12 +10,10 @@ Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture5](https://youtu.be/mGPqi9m0
 
 Google Doc version can be found [HERE](https://docs.google.com/document/d/1o89UQlihqCQH-DvMcGJeoInqmZtm8AlCUbcemAerxmk/edit)
 
-# Lecture 5: Minting Tokens and NFTS 
-
 
 ## Table of Contents
 
-- [Lecture 5: Minting Tokens and NFTS](#lecture-5-minting-tokens-and-nfts)
+- [Lecture 5: Minting Policy](#lecture-5-minting-policy)
   - [Table of Contents](#table-of-contents)
   - [Preparation for Lecture 5](#preparation-for-lecture-5)
   - [Values](#values)

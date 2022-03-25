@@ -3,12 +3,16 @@
 # Not there to strictly require the approval, but to be tagged as a reviewer
 # on the PRs to push them into a high priority inbox.
 
-./docs/Environment/ @Igodlab
+# global
+* @jmhoms
 
-./docs/Lectures/ @
-./docs/Lectures/Translations/FR/ @
+./docs/Environment/ @Igodlab @jmhoms
+
+# user missing
+#./docs/Lectures/ @
+#./docs/Lectures/Translations/FR/ @
 
 # Github Actions
 # This list is for people wanting to be notified every time there's a change
 # related to Github Actions
-/.github/ @Igodlab
+/.github/ @Igodlab @jmhoms

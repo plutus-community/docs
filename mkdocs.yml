@@ -20,7 +20,7 @@ markdown_extensions:
   - attr_list # For using e.g. [](){:target="_blank"}:
 nav:
   - Environment Setup:
-    - Build:
+    - Build instructions:
       - 'Getting Started': 'Environment/index.md'
       - 'Ubuntu': 'Environment/Build/Ubuntu.md'
       - 'Ubuntu (Fresh Install)': 'Environment/Build/Ubuntufresh.md'
@@ -29,6 +29,8 @@ nav:
       - 'MacOS M1': 'Environment/Build/Mac_M1.md'
       - 'Windows/WSL2 (2nd alternative)': 'Environment/Build/WindowsWSL.md'
       - 'NixOS (using Vagrant)': 'Environment/Build/Vagrant-Nixos.md'
+      - 'Cabal Build': 'Environment/Build/CabalBuild.md'
+      - 'Build Documentation': 'Environment/Build/buildDocumentation.md'
     - Editors:
       - 'Prerequisites': 'Environment/Editors/Prerequisites/prerequisites.md'
       - 'Emacs': 'Environment/Editors/emacs.md'
@@ -55,26 +57,18 @@ nav:
       - '6. Minting with CLI and PAB': 'Lectures/Cohort_03/Lecture_06.md'
       - '7. State Machines': 'Lectures/Cohort_03/Lecture_07.md'
       - '8. Property Based Testing': 'Lectures/Cohort_03/Lecture_08.md'
+    - Translations:
+      - 'French Cohort 3': 'Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md'  
+  - Guides:
+    - 'Use Plutus API Documentation': 'Environment/Guides/APIbuildDocumentation.md'
+    - 'Use nix-shell for Plutus Pioneer Program': 'Environment/Guides/BuildCabalBuild.md'
+    - 'Use PAB for Plutus Pioneer Program': 'Environment/Guides/PAB.md'
+    - 'Sync Cardano node for Plutus Pioneer Program': 'Environment/Guides/cnodesync.md'
+    - 'Use Plutus Playground for Plutus Pioneer Program': 'Environment/Guides/plutusplayground.md'
+  - Related Projects:
+    - 'DEX': 'Open_Source_Cardano_Projects/DEX/Minswap.md'
+    - 'NFTs': 'Open_Source_Cardano_Projects/NFTS/index_nfts.md'
+    - 'Utility': 'Open_Source_Cardano_Projects/Utility/index_utility.md'
+    - 'Wallets': 'Open_Source_Cardano_Projects/Wallets/Nami_Wallet.md'
   - 'About': 'README.md'
     
- 
-#  - How Tos:
-#    - Use Plutus API Documentation: Environment/Guides/APIbuildDocumentation.md
-#    - Use nix-shell for Plutus Pioneer Program: Environment/Guides/BuildCabalBuild.md
-#    - Use PAB for Plutus Pioneer Program: Environment/Guides/PAB.md
-#    - Sync Cardano node for Plutus Pioneer Program: Environment/Guides/cnodesync.md
-#    - Use Plutus Playground for Plutus Pioneer Program: Environment/Guides/plutusplayground.md
-# "Working on contracts with and without cabal build"
-#    - For every new lecture: Environment/Build/CabalBuild.md
-# "Plutus API documentation"
-#    - Environment/Build/buildDocumentation.md
-
-
-#  - Open Source Cardano Projects:
-#    - DEX: Open_Source_Cardano_Projects/DEX/Minswap.md
-#    - NFTs: Open_Source_Cardano_Projects/NFTS/index_nfts.md
-#    - Utility: Open_Source_Cardano_Projects/Utility/index_utility.md
-#    - Wallets: Open_Source_Cardano_Projects/Wallets/Nami_Wallet.md
-
-#  - Translations:
-#    - French Cohort 3: Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md

@@ -27,10 +27,10 @@ pages:
       - 'Emacs': 'emacs.md'
       - 'Vim': 'vim.md'
   - Lectures:
-    - Cohort 01
+    - Cohort 01:
       - 'Lecture 01': 'Lectures/Cohort_01/Lecture_01.md'
-    - Cohort 02
-    - Cohort 03
+    - Cohort 02:
+    - Cohort 03:
     
 # readthedocs theme only supports 2 layer navigation depth!
 # If using more than 2 layers, navigation sidebar expands more than

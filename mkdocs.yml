@@ -11,7 +11,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 # For using e.g. [](){:target="_blank"}:
-  - attr_list
+#  - attr_list
 
 
 # readthedocs theme only supports 2 layer navigation depth!

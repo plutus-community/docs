@@ -1,7 +1,8 @@
 site_name: Plutus Community Docs
 repo_url: https://github.com/plutus-community/docs/
 theme: 
-  name: rtd-dropdown
+  #name: rtd-dropdown
+  name: readthedocs
   collapse_navigation: true
   sticky_navigation: false
   navigation_depth: 4

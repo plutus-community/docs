@@ -1,7 +1,7 @@
 site_name: Plutus Community Docs
 repo_url: https://github.com/plutus-community/docs/
 theme: 
-  name: windmill
+  name: windmill # cleaner for nested content and supporting more than 2 levels of depth
   #name: rtd-dropdown
   #name: readthedocs
   collapse_navigation: true
@@ -21,61 +21,43 @@ markdown_extensions:
 nav:
   - Environment Setup:
     - Build:
-      - 'ArchLinux': 'Environment/Build/ArchLinux.md'  
+      - 'Getting Started': 'Environment/index.md'
+      - 'Ubuntu': 'Environment/Build/Ubuntu.md'
+      - 'Ubuntu (Fresh Install)': 'Environment/Build/Ubuntufresh.md'
+      - 'Arch Linux': 'Environment/Build/ArchLinux.md'  
       - 'MacOS': 'Environment/Build/MacOS.md'  
-      - 'Mac_M1': 'Environment/Build/Mac_M1.md'  
+      - 'MacOS M1': 'Environment/Build/Mac_M1.md'
+      - 'Windows/WSL2 (2nd alternative)': 'Environment/Build/WindowsWSL.md'
+      - 'NixOS (using Vagrant)': 'Environment/Build/Vagrant-Nixos.md'
     - Editors:
-      - 'Emacs': 'emacs.md'
-      - 'Vim': 'vim.md'
+      - 'Prerequisites': 'Environment/Editors/Prerequisites/prerequisites.md'
+      - 'Emacs': 'Environment/Editors/emacs.md'
+      - 'Vim': 'Environment/Editors/vim.md'
+      - 'VS Code': 'Environment/Editors/vscode.md'
+      - 'Sublime Text': 'Environment/Editors/sublime_text.md'
+      - 'intelliJ IDEA Windows': 'Environment/Editors/intelliJ-Windows.md'
+    - Deprecated:
+      - 'Docker': 'Environment/Build/DockerCompose.md'
+      - 'Ubuntu (using Vagrant)': 'Environment/Build/Vagrant-Ubuntu.md'
+      - 'Windows/WSL2 (1st alternative)': 'Environment/Build/WindowsCohort2.md'
   - Lectures:
     - Cohort 01:
+      - 'Lectures': 'Lectures/Cohort_01/1st_Cohort.md'
       - 'Lecture 01': 'Lectures/Cohort_01/Lecture_01.md'
-    #- Cohort 02:
-    #- Cohort 03:
+    - Cohort 02:
+      - 'Lectures': 'Lectures/Cohort_02/2nd_Cohort.md'
+    - Cohort 03:
+      - '1. EUTxO and English Auction': 'Lectures/Cohort_03/Lecture_01.md'
+      - '2. Validation Scripts': 'Lectures/Cohort_03/Lecture_02.md'
+      - '3. Vesting and Cardano Testnet': 'Lectures/Cohort_03/Lecture_03.md'
+      - '4. Emulator Trace and Contract Monads': 'Lectures/Cohort_03/Lecture_04.md'
+      - '5. Minting Policy': 'Lectures/Cohort_03/Lecture_05.md'
+      - '6. Minting with CLI and PAB': 'Lectures/Cohort_03/Lecture_06.md'
+      - '7. State Machines': 'Lectures/Cohort_03/Lecture_07.md'
+      - '8. Property Based Testing': 'Lectures/Cohort_03/Lecture_08.md'
   - 'About': 'README.md'
     
-# readthedocs theme only supports 2 layer navigation depth!
-# If using more than 2 layers, navigation sidebar expands more than
-# the current chosen section/item.
-#nav:
-#  - README.md
-#  - Setup for Plutus Pioneers Program:
-#    - Getting Started: Environment/index.md
-#    - Build:
-#      - Ubuntu: Environment/Build/Ubuntu.md
-#      - Ubuntu (Fresh Install): Environment/Build/Ubuntufresh.md
-#      - Arch Linux: Environment/Build/ArchLinux.md
-#      - MacOS: Environment/Build/MacOS.md
-#      - Mac M1: Environment/Build/Mac_M1.md
-#      - Windows/WSL2 (2nd alternative): Environment/Build/WindowsWSL.md
-#      - Vagrant with Nixos: Environment/Build/Vagrant-Nixos.md
-#    - Editors:
-#      - Prerequisites: Environment/Editors/Prerequisites/prerequisites.md
-#      - VS Code: Environment/Editors/vscode.md
-#      - Emacs: Environment/Editors/emacs.md
-#      - Vim: Environment/Editors/vim.md
-#      - Sublime Text: Environment/Editors/sublime_text.md
-#      - intelliJ IDEA Windows: Environment/Editors/intelliJ-Windows.md
-#    #- D_e_p_r_e_c_a_t_e_d: 
-#    - Outdated_Material/Deprecated.md
-#      #- Docker: Environment/Build/DockerCompose.md
-#      #- Environment/Build/Vagrant-Ubuntu.md
-#      #- Windows/WSL2 (1st alternative): Environment/Build/WindowsCohort2.md
-#  - Lectures:
-#    - index.md
-#    - 3rd Cohort:
-#      - 8. Property Based Testing: Lectures/Cohort_03/Lecture_08.md
-#      - 7. State Machines: Lectures/Cohort_03/Lecture_07.md
-#      - 6. Minting with CLI and PAB: Lectures/Cohort_03/Lecture_06.md
-#      - 5. Minting Policy: Lectures/Cohort_03/Lecture_05.md
-#      - 4. Emulator Trace and Contract Monads: Lectures/Cohort_03/Lecture_04.md
-#      - 3. Vesting and Cardano Testnet: Lectures/Cohort_03/Lecture_03.md
-#      - 2. Validation Scripts: Lectures/Cohort_03/Lecture_02.md
-#      - 1. EUTxO and English Auction: Lectures/Cohort_03/Lecture_01.md
-#    - 2nd Cohort:
-#      - Lectures: Lectures/Cohort_02/2nd_Cohort.md
-#    - 1st Cohort:
-#      - Lectures: Lectures/Cohort_01/1st_Cohort.md
+ 
 #  - How Tos:
 #    - Use Plutus API Documentation: Environment/Guides/APIbuildDocumentation.md
 #    - Use nix-shell for Plutus Pioneer Program: Environment/Guides/BuildCabalBuild.md

@@ -74,11 +74,11 @@ nav:
     - Translations:
       - 'French Cohort 3': 'Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md'  
   - Guides:
-    - 'Use Plutus API Documentation': 'Environment/Guides/APIbuildDocumentation.md'
-    - 'Use nix-shell for Plutus Pioneer Program': 'Environment/Guides/BuildCabalBuild.md'
-    - 'Use PAB for Plutus Pioneer Program': 'Environment/Guides/PAB.md'
-    - 'Sync Cardano node for Plutus Pioneer Program': 'Environment/Guides/cnodesync.md'
-    - 'Use Plutus Playground for Plutus Pioneer Program': 'Environment/Guides/plutusplayground.md'
+    - 'Using Plutus API Documentation': 'Environment/Guides/APIbuildDocumentation.md'
+    - 'Using Plutus Playground for Plutus Pioneer Program': 'Environment/Guides/plutusplayground.md'
+    - 'Using nix-shell for Plutus Pioneer Program': 'Environment/Guides/BuildCabalBuild.md'
+    - 'Using PAB for Plutus Pioneer Program': 'Environment/Guides/PAB.md'
+    - 'Syncing cardano-node for Plutus Pioneer Program': 'Environment/Guides/cnodesync.md'
   - Related Projects:
     - 'DEX': 'Open_Source_Cardano_Projects/DEX/Minswap.md'
     - 'NFTs': 'Open_Source_Cardano_Projects/NFTS/index_nfts.md'

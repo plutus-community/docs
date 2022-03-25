@@ -17,7 +17,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - attr_list # For using e.g. [](){:target="_blank"}:
-pages:
+nav:
   - Environment Setup:
     - Build:
       - 'ArchLinux': 'Environment/Build/ArchLinux.md'  

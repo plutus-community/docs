@@ -1,2 +1,7 @@
 pymdown-extensions
 Pygments
+Jinja2<3.0.0
+markupsafe<2
+mkdocs>=1.1
+#mkdocs-rtd-dropdown
+mkdocs-windmill

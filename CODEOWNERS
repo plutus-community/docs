@@ -1,0 +1,14 @@
+# lets see the power of open source
+
+# Not there to strictly require the approval, but to be tagged as a reviewer
+# on the PRs to push them into a high priority inbox.
+
+./docs/Environment/ @Igodlab
+
+./docs/Lectures/ @
+./docs/Lectures/Translations/FR/ @
+
+# Github Actions
+# This list is for people wanting to be notified every time there's a change
+# related to Github Actions
+/.github/ @Igodlab

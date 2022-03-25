@@ -1,4 +1,5 @@
-# Lecture 1: EUTxO and English Auction
+# Lecture 1: Building Example Code and Learning Plutus Playground
+
 
 Plutus Pioneer Program - Cohort 3
 January 12, 2022
@@ -9,9 +10,6 @@ Contributed By:
 Offical Video by Lars Brünjes: [PPP-Cohort3-Lecture1](https://youtu.be/X80uNXenWF4)
 
 Google Doc version can be found [HERE](https://docs.google.com/document/d/1cd1wtXYH3ej8udF02cV9cyJYziPqln-uPyCPlFMANKM/edit?usp=sharing)
-
-
-# Lecture 1: Building Example Code and Learning Plutus Playground
 
 
 ## Table of Contents

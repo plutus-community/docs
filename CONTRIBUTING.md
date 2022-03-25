@@ -2,6 +2,7 @@
 
 <!-- toc -->
 
+- [Disclaimer](#disclaimer)
 - [Contributing to Plutus Community](#contributing-to-plutus)
 - [Developing Plutus Community](#developing-plutus)
 - [Writing documentation](#writing-documentation)
@@ -12,11 +13,15 @@
 
 <!-- tocstop -->
 
-## Contributing to Plutus Community
+## Disclaimer
 
 ---
 This site is for the benefit of the Cardano community and is owned and maintained by the community under an open source philosophy. IOG Singapore Pte. Ltd (IOG) is not responsible for, and makes no representations or warranties regarding, the accuracy, reliability and completeness of the aggregated content found in this repo. Any use of the open source Apache 2.0 licensed software is done at your own risk and on a “AS IS” basis, without warranties or conditions of any kind. 
 ---
+
+
+## Contributing to Plutus Community
+
 
 Thank you for your interest in contributing to Plutus Community! Before you begin writing code, it is important
 that you share your intention to contribute with the team, based on the type of contribution:

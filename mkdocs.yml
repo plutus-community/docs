@@ -5,14 +5,14 @@ theme:
   collapse_navigation: true
   features:
     - content.code.annotate
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+#markdown_extensions:
+#  - pymdownx.highlight:
+#      anchor_linenums: true
+#  - pymdownx.inlinehilite
+#  - pymdownx.snippets
+#  - pymdownx.superfences
 # For using e.g. [](){:target="_blank"}:
-  - attr_list
+#  - attr_list
 
 
 # readthedocs theme only supports 2 layer navigation depth!

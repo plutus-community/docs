@@ -1,4 +1,6 @@
 # 2nd Cohort
+
+**Course: July - August 2021**
  
 [10. Uniswap in the EUTxO-Model](Lecture_10.md)
  

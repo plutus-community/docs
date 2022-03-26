@@ -59,8 +59,8 @@ nav:
       - '6. Oracles': 'Lectures/Cohort_02/Lecture_06.md'
       - '7. State Machines': 'Lectures/Cohort_02/Lecture_07.md'
       - '8. Property Based Testing': 'Lectures/Cohort_02/Lecture_08.md'
-      - '9. Marlowe': 'Lectures/Cohort_02/Lecture_07.md'
-      - '10. Uniswap': 'Lectures/Cohort_02/Lecture_08.md'
+      - '9. Marlowe': 'Lectures/Cohort_02/Lecture_09.md'
+      - '10. Uniswap': 'Lectures/Cohort_02/Lecture_10.md'
     - Cohort 03:
       - 'Lectures': 'Lectures/Cohort_03/3rd_Cohort.md'
       - '1. EUTxO and English Auction': 'Lectures/Cohort_03/Lecture_01.md'

@@ -1,6 +1,8 @@
 # 3rd Cohort
 
-**Course: January - Februrary 2022**
+**Course: January - March 2022**
+
+[9. Marlowe](Lecture_09.md)
  
 [8. Quick Check](Lecture_08.md)
  

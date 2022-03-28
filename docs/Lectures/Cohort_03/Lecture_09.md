@@ -44,7 +44,7 @@ about Plutus, but about Marlowe; which is a domain specific language for financi
 Marlowe has also changed a little bit since the recording of this lecture for the first iteration.
 It was decided to not edit this lecture as much, because it is still mostly accurate and in particular the demo at the end still works.
 
-In the previous lectures we have learnt about all the important ingredients for writing a Plutus application.
+In the previous lectures we have learned about all the important ingredients for writing a Plutus application.
 
 We have first looked at the extended UTxO model - the accounting model that Cardano uses - and the additions that Plutus brings to it.
 
@@ -57,8 +57,9 @@ One such language is Marlowe. Marlowe is a Domain Specific Language (DSL) for sm
 For this lecture, Professor Simon Thompson, a very prominent figure in the Haskell community who leads the Marlowe team, and his colleague Alex Nemish will give guest lectures to tell us a bit about Marlowe.
 
 In contrast  to previous iterations of this course it is now  actually possible to deploy Marlowe contracts on  the blockchain, on the Mainnet or on the Testnet.  
-There is a very nice tool to do this, it is called the Marlowe-CLI, which is similar to  the Cardano-CLI. 
-So in this lecture we will also  include a presentation by our colleague Brian bush, who will talk about Marlowe -CLI and explain how it works. 
+
+There is a very nice tool to do this, it is called the Marlowe-CLI. This is similar to the Cardano-CLI. 
+So in this lecture we will also include a presentation by our colleague Brian Bush, who will talk about Marlowe-CLI and explain how it works. 
 
 Afterwards we will look at the Marlowe playground and play with a simple smart contract.
 

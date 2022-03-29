@@ -24,7 +24,7 @@ git clone https://github.com/Totes5706/cnode.git
 ```
 Head to the cnode directory to update the configuration files from IOHK:
 
-- Directory: ```~/cnode$```
+- Directory: ```totinj@penguin:~/cnode$```
 ```
 chmod u+r+x update-config.sh
 ./update-config.sh
@@ -44,12 +44,6 @@ While in nix-shell, head to the node directory inside this repo that we just clo
 
 - Directory: ```[nix-shell:~/cnode]$```
 
-### Update the Configuration files:
-
-- Directory: ```[nix-shell:~/cnode]$```
-```
-./update-config.sh
-```
 
 These next two scripts are used to download either the testnet or the mainnet for the Cardano Blockchain. 
 You must either be in nix-shell, or have the necessary dependencies to run cardano-node. 

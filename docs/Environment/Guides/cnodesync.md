@@ -37,6 +37,16 @@ While in nix-shell, head to the node directory inside this repo that we just clo
 
 - Directory: ```[nix-shell:~/cnode]$```
 
+### Update the Configuration files:
+
+- Directory: ```[nix-shell:~/cnode]$```
+```
+./update-config.sh
+```
+
+These next two scripts are used to download either the testnet or the mainnet for the Cardano Blockchain. 
+You must either be in nix-shell, or have the necessary dependencies to run cardano-node. 
+
 Here, you can now sync either the mainnet or testnet using the scripts:
 
 ### Cardano Testnet Sync

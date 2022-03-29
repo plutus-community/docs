@@ -26,8 +26,8 @@ Head to the cnode directory to update the configuration files from IOHK:
 
 - Directory: ```totinj@penguin:~/cnode$```
 ```
-chmod 755 start-mainnet-node.sh start-testnet-node.sh update-config.sh
-./update-config.sh
+chmod +x start-mainnet-node.sh start-testnet-node.sh update-config.sh
+sudo ./update-config.sh
 ```
 
 Head to the plutus-apps directory, and you can now run nix-shell. Run nix-shell:

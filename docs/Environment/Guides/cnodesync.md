@@ -22,6 +22,13 @@ Next, let’s clone this cnode repo that already contains the sync scripts and c
 ```
 git clone https://github.com/Totes5706/cnode.git
 ```
+Head to the cnode directory to update the configuration files from IOHK:
+
+- Directory: ```~/cnode$```
+```
+chmod u+r+x update-config.sh
+./update-config.sh
+```
 
 Head to the plutus-apps directory, and you can now run nix-shell. Run nix-shell:
 

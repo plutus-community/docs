@@ -26,7 +26,7 @@ Head to the cnode directory to update the configuration files from IOHK:
 
 - Directory: ```totinj@penguin:~/cnode$```
 ```
-chmod u+r+x update-config.sh
+chmod 755 start-mainnet-node.sh start-testnet-node.sh update-config.sh
 ./update-config.sh
 ```
 
@@ -54,14 +54,14 @@ Here, you can now sync either the mainnet or testnet using the scripts:
 
 - Directory: ```[nix-shell:~/cnode]$```
 ```
-./start-testnet-node
+./start-testnet-node.sh
 ```
 
 ### Cardano Mainnet Sync
 
 - Directory: ```[nix-shell:~/cnode]$```
 ```
-./start-mainet-node
+./start-mainnet-node.sh
 ```
 
 

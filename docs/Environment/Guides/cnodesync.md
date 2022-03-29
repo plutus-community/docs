@@ -16,7 +16,7 @@ First, let’s clone plutus-apps repo from IOHK if you do not already have it:
 git clone https://github.com/input-output-hk/plutus-apps.git
 ```
 
-Next, let’s clone this cnode repo that already contains the sync scripts and config files:
+Next, let’s clone this [cnode repo](https://github.com/Totes5706/cnode) that already contains the sync scripts and config files:
 
 - Directory: ```totinj@penguin:~$```
 ```

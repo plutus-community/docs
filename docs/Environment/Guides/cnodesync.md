@@ -26,7 +26,7 @@ Head to the cnode directory to update the configuration files from IOHK:
 
 - Directory: ```totinj@penguin:~/cnode$```
 ```
-chmod +x start-mainnet-node.sh start-testnet-node.sh update-config.sh
+chmod +x start-mainnet-node.sh start-testnet-node.sh
 sudo ./update-config.sh
 ```
 

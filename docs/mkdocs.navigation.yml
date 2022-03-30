@@ -63,6 +63,7 @@ nav:
     - 'Using Plutus Playground for Plutus Pioneer Program': 'Environment/Guides/plutusplayground.md'
     - 'Using nix-shell for Plutus Pioneer Program': 'Environment/Guides/BuildCabalBuild.md'
     - 'Using PAB for Plutus Pioneer Program': 'Environment/Guides/PAB.md'
+    - 'Using Plutus-Starter to build your own project': 'Environment/Guides/plutus-starter.md'
     - 'Syncing cardano-node for Plutus Pioneer Program': 'Environment/Guides/cnodesync.md'
   - Related Projects:
     - 'DEX': 'Open_Source_Cardano_Projects/DEX/Minswap.md'

@@ -15,8 +15,8 @@ I used a fake example name "NFT-Maker" just to make this tutorial, however my re
   - [1: Create the Template](#1-create-the-template)
   - [2: Import Haskell Files into the Project](#2-import-haskell-files-into-the-project)
   - [3: Modify the Cabal Files](#3-modify-the-cabal-files)
-  - [4: Optional Add Cardano Node and CLI into Nix Shell](4-optional-add-cardano-node-and-cli-into-nix-shell)
-  - [5: Build and Run Project](5-build-and-run-project)
+  - [4: Optional Add Cardano Node and CLI into Nix Shell](#4-optional-add-cardano-node-and-cli-into-nix-shell)
+  - [5: Build and Run Project](#5-build-and-run-project)
 
 ## 1: Create the Template
 

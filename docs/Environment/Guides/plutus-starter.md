@@ -46,7 +46,7 @@ Head to the plutus-start github to get started:
 
 ## 2: Import Haskell Files into the Project
 
-**Now it is time to import my files into the project. It is good practice to have at least two main folders; an app directory for executable files and an src directory for the onchain and utility files.**
+**Now it is time to import our files into the project. It is good practice to have at least two main folders; an app directory for executable files and an src directory for the onchain and utility files.**
 
 **My project has two executable files, a utilty file, and an onchain haskell file. First we will add the executable (main :: io()) files and create a directory called app:**
 

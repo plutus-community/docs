@@ -66,8 +66,8 @@ nav:
     - 'Using Plutus-Starter to build your own project': 'Environment/Guides/plutus-starter.md'
     - 'Syncing cardano-node for Plutus Pioneer Program': 'Environment/Guides/cnodesync.md'
   - Related Projects:
-    - 'DEX': 'Open_Source_Cardano_Projects/DEX/Minswap.md'
-    - 'NFTs': 'Open_Source_Cardano_Projects/NFTS/index_nfts.md'
-    - 'Utility': 'Open_Source_Cardano_Projects/Utility/index_utility.md'
-    - 'Wallets': 'Open_Source_Cardano_Projects/Wallets/Nami_Wallet.md'
+    - 'DEX': 'Related_Projects/DEX/Minswap.md'
+    - 'NFTs': 'Related_Projects/NFTS/index_nfts.md'
+    - 'Utility': 'Related_Projects/Utility/index_utility.md'
+    - 'Wallets': 'Related_Projects/Wallets/Nami_Wallet.md'
   - 'About': 'README.md'

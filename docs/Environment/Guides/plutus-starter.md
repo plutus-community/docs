@@ -74,7 +74,7 @@ Head to the plutus-start github to get started:
 
 ### Token.Onchain.hs
 
-![Screenshot 2022-03-29 at 22-46-28 Totes5706_NFT-Maker](https://user-images.githubusercontent.com/59018247/160740860-441276dd-e817-415b-8ce4-4fa5acd768d9.png)
+![Screenshot 2022-03-30 at 19-37-51 Totes5706_cardano-alonzo-nft-creator A bash script that will make real NFTs using a Haskell_Plutus on-chain validator on the Cardano Blockchain](https://user-images.githubusercontent.com/59018247/160948095-67a9a44d-2419-4db7-836a-af724708db33.png)
 
 ![Screenshot 2022-03-29 at 22-47-45 Totes5706_NFT-Maker](https://user-images.githubusercontent.com/59018247/160740989-0f24e9ab-4917-4e19-88fb-e56bfe3f5744.png)
 
@@ -251,7 +251,7 @@ executable token-name
                      , NFT-Maker
 ```
 
-**Once that is saved, open up cabal.project and edit the packages field to now include the cabal file named we just saved:**
+**Once that is saved, open up cabal.project and edit the packages field to now include the cabal file name we just saved:**
 
 ![Screenshot 2022-03-29 at 22-35-32 input-output-hk_plutus-starter A starter project for Plutus apps](https://user-images.githubusercontent.com/59018247/160739594-027e9325-87aa-46ac-a6ce-38cf9ff49d5f.png)
 

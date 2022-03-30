@@ -36,7 +36,7 @@ Head to the plutus-start github to get started:
 
 ![Screenshot 2022-03-29 at 16-13-25 Build software better together](https://user-images.githubusercontent.com/59018247/160698849-2758b939-63df-40e5-ba17-af1b392789ea.png)
 
-**Remove the examples, scripts, and pab directories; they will be replaced with out project files**
+**Remove the examples, scripts, and pab directories; they will be replaced with our project files**
 
 ![Screenshot 2022-03-29 at 21-57-02 input-output-hk_plutus-starter A starter project for Plutus apps](https://user-images.githubusercontent.com/59018247/160735287-c8d71878-b634-4e4e-bbfd-72f0fbbe0453.png)
 

@@ -84,7 +84,7 @@ Head to the plutus-start github to get started:
 
 ![Screenshot 2022-03-29 at 22-53-43 Totes5706_NFT-Maker](https://user-images.githubusercontent.com/59018247/160741654-afd32749-7b27-4a77-8407-901f2aefd1df.png)
 
-**Important to note here, my project uses a bash script to call the cabal exectuable files in this project. If you are creating a pure haskell/plutus project, you will not need a script to start your project. You would instead called cabal exec or cabal run depending on the project structure.**
+**Important to note here, my project uses a bash script to call the cabal exectuable files in this project. If you are creating a pure haskell/plutus project, you will not need a script to start your project. You would instead call cabal exec or cabal run depending on the project structure.**
 
 **Example inside my bash script:**
 ```

@@ -127,7 +127,7 @@ version:            0.1.0.0
 license: Apache-2.0
 license-files: LICENSE
 author:             Joe Totes
-maintainer:         totinj@gmail.com
+maintainer:         email@gmail.com
 ...
 ```
 **Scroll to the bottom, we will be editing the Haskell files being linked here with our own:** 

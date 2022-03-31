@@ -278,11 +278,11 @@ benchmarks: true
 
 ![Screenshot 2022-03-30 at 14-28-56 Totes5706_cardano-alonzo-nft-creator A bash script that will make real NFTs using a Haskell_Plutus on-chain validator on the Cardano Blockchain](https://user-images.githubusercontent.com/59018247/160905874-c43debbb-6ee1-49f6-bcec-97d86853c473.png)
 
-The original shell.nix looks like this:
+**The original shell.nix looks like this:**
 
 ![Screenshot 2022-03-30 at 14-30-34 input-output-hk_plutus-starter A starter project for Plutus apps](https://user-images.githubusercontent.com/59018247/160906147-3f1bf743-1651-4ea3-a14e-aecbc18f6325.png)
 
-We will modify it to now include the Cardano-Node and CLI by changing to this:
+**We will modify it to now include the Cardano-Node and CLI by changing to this:**
 
 ```haskell
 { pure ? false

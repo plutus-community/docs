@@ -139,17 +139,17 @@ maintainer:         totinj@gmail.com
 ```haskell
 
 library
-  {- Include this to import the ghc-options and language above -}
+  -- Include this to import the ghc-options and language above 
   import: lang
   
-  {- This is the directory location where our onchain code files will go, and also a utility function for my project -}
+  -- This is the directory location where our onchain code files will go, and also a utility function for my project 
   hs-source-dirs:      src     
 
-  {- These are the file names that will get called by our executable files listed below -}
+  -- These are the file names that will get called by our executable files listed below 
   exposed-modules:     Token.OnChain
                        Utils     
                        
-  {- These are the imports needed for the files Token.Onchain and Utils. Always include  base >= 4.9 && < 5 for Haskell. -}                     
+  -- These are the imports needed for the files Token.Onchain and Utils. Always include  base >= 4.9 && < 5 for Haskell.                      
   build-depends:       base >= 4.9 && < 5
                      , aeson
                      , bytestring
@@ -168,42 +168,42 @@ library
                      , serialise
                      , text
 
-{- This is the first executable file that will get called from the cabal exec command, and will be the main :: IO () files for our project -} 
+-- This is the first executable file that will get called from the cabal exec command, and will be the main :: IO () files for our project 
 executable token-policy
 
-{- Include this to import the ghc-options and language above -}
+-- Include this to import the ghc-options and language above 
   import: lang
   
-{- This is the file name token-policy.hs, one of the executable files -}
+-- This is the file name token-policy.hs, one of the executable files 
   main-is: token-policy.hs
   
-{- This is the local directory location of token-policy.hs -} 
+-- This is the local directory location of token-policy.hs 
   hs-source-dirs:      app
 
-{- Always include this -} 
+-- Always include this 
   ghc-options:         -threaded
    
-{- My executable files have no imports, therefore I only need to include base >= 4.9 && < 5, and the project name  -}  
+-- My executable files have no imports, therefore I only need to include base >= 4.9 && < 5, and the project name  
   build-depends:       base >= 4.9 && < 5
                      , NFT-Maker
 
 
-{- This is the second executable file that will get called from the cabal exec command, and will be the main :: IO () files for our project -} 
+-- This is the second executable file that will get called from the cabal exec command, and will be the main :: IO () files for our project 
 executable token-name
 
-{- Include this to import the ghc-options and language above -}
+-- Include this to import the ghc-options and language above 
   import: lang
 
-{- This is the file name token-name.hs, a second executable file -}
+-- This is the file name token-name.hs, a second executable file 
   main-is: token-name.hs
   
-{- This is the local directory location of token-name.hs -}   
+-- This is the local directory location of token-name.hs 
   hs-source-dirs:      app
   
-{- Always include this -} 
+-- Always include this 
   ghc-options:         -threaded
   
-{- My executable files have no imports, therefore I only need to include base >= 4.9 && < 5, and the project name  -} 
+-- My executable files have no imports, therefore I only need to include base >= 4.9 && < 5, and the project name  
   build-depends:       base >= 4.9 && < 5
                     , NFT-Maker
 ```

@@ -20,21 +20,27 @@ nav:
       - 'VS Code': 'Environment/Editors/vscode.md'
       - 'Sublime Text': 'Environment/Editors/sublime_text.md'
       - 'intelliJ IDEA Windows': 'Environment/Editors/intelliJ-Windows.md'
-    - Deprecated:
-      - 'Docker': 'Outdated_Material/DockerCompose(needs_update).md'
-      - 'Ubuntu (using Vagrant)': 'Outdated_Material/Vagrant-Ubuntu(needs_update).md'
-      - 'Windows/WSL2 (1st alternative)': 'Outdated_Material/WindowsCohort2(needs_update).md'
+    - Outdated:
+      - 'Docker': 'Outdated/DockerCompose.md'
+      - 'Ubuntu (using Vagrant)': 'Outdated/Vagrant-Ubuntu.md'
+      - 'Windows/WSL2 (1st alternative)': 'Outdated/WindowsCohort2.md'
   - Lectures:
-    - Cohort 01:
-      - 'Lectures': 'Lectures/Cohort_01/1st_Cohort.md'
-      - '1. EUTxO and English Auction': 'Lectures/Cohort_01/Lecture_01.md'
-      - '2. Validation Scripts': 'Lectures/Cohort_01/Lecture_02.md'
-      - '3. Vesting': 'Lectures/Cohort_01/Lecture_03.md'
-      - '4. Emulator Trace and Contract Monads': 'Lectures/Cohort_01/Lecture_04.md'
-      - '5. Minting Policy': 'Lectures/Cohort_01/Lecture_05.md'
-      - '6. Oracles': 'Lectures/Cohort_01/Lecture_06.md'
-    - Cohort 02:
-      - 'Lectures': 'Lectures/Cohort_02/2nd_Cohort.md'
+    - Cohort 03 (March 2022):
+      - '1. EUTxO and English Auction': 'Lectures/Cohort_03/Lecture_01.md'
+      - '2. Validation Scripts': 'Lectures/Cohort_03/Lecture_02.md'
+      - '3. Vesting and Cardano Testnet': 'Lectures/Cohort_03/Lecture_03.md'
+      - '4. Emulator Trace and Contract Monads': 'Lectures/Cohort_03/Lecture_04.md'
+      - '5. Minting Policy': 'Lectures/Cohort_03/Lecture_05.md'
+      - '6. Minting with CLI and PAB': 'Lectures/Cohort_03/Lecture_06.md'
+      - '7. State Machines': 'Lectures/Cohort_03/Lecture_07.md'
+      - '8. Property Based Testing': 'Lectures/Cohort_03/Lecture_08.md'
+      - '9. Marlowe': 'Lectures/Cohort_03/Lecture_09.md'
+      - Translations:
+        - FR:
+          - 'Lecture 02': 'Lectures/Translations/FR/Lectures/Cohort_03/Lecture_02.md'
+          - 'Lecture 03': 'Lectures/Translations/FR/Lectures/Cohort_03/Lecture_03.md'
+          - 'Lecture 04': 'Lectures/Translations/FR/Lectures/Cohort_03/Lecture_04.md'
+    - Cohort 02 (July 2021):
       - '1. EUTxO and English Auction': 'Lectures/Cohort_02/Lecture_01.md'
       - '2. Validation Scripts': 'Lectures/Cohort_02/Lecture_02.md'
       - '3. Vesting': 'Lectures/Cohort_02/Lecture_03.md'
@@ -45,29 +51,30 @@ nav:
       - '8. Property Based Testing': 'Lectures/Cohort_02/Lecture_08.md'
       - '9. Marlowe': 'Lectures/Cohort_02/Lecture_09.md'
       - '10. Uniswap': 'Lectures/Cohort_02/Lecture_10.md'
-    - Cohort 03:
-      - 'Lectures': 'Lectures/Cohort_03/3rd_Cohort.md'
-      - '1. EUTxO and English Auction': 'Lectures/Cohort_03/Lecture_01.md'
-      - '2. Validation Scripts': 'Lectures/Cohort_03/Lecture_02.md'
-      - '3. Vesting and Cardano Testnet': 'Lectures/Cohort_03/Lecture_03.md'
-      - '4. Emulator Trace and Contract Monads': 'Lectures/Cohort_03/Lecture_04.md'
-      - '5. Minting Policy': 'Lectures/Cohort_03/Lecture_05.md'
-      - '6. Minting with CLI and PAB': 'Lectures/Cohort_03/Lecture_06.md'
-      - '7. State Machines': 'Lectures/Cohort_03/Lecture_07.md'
-      - '8. Property Based Testing': 'Lectures/Cohort_03/Lecture_08.md'
-      - '9. Marlowe': 'Lectures/Cohort_03/Lecture_09.md'
-    - Translations:
-      - 'French Cohort 3': 'Lectures/Translations/FR/Lectures/Cohort_03/FR_3rd_Cohort.md'  
+    - Cohort 01 (April 2021):
+      - '1. EUTxO and English Auction': 'Lectures/Cohort_01/Lecture_01.md'
+      - '2. Validation Scripts': 'Lectures/Cohort_01/Lecture_02.md'
+      - '3. Vesting': 'Lectures/Cohort_01/Lecture_03.md'
+      - '4. Emulator Trace and Contract Monads': 'Lectures/Cohort_01/Lecture_04.md'
+      - '5. Minting Policy': 'Lectures/Cohort_01/Lecture_05.md'
+      - '6. Oracles': 'Lectures/Cohort_01/Lecture_06.md'
   - Guides:
-    - 'Using Plutus API Documentation': 'Environment/Guides/APIbuildDocumentation.md'
-    - 'Using Plutus Playground for Plutus Pioneer Program': 'Environment/Guides/plutusplayground.md'
-    - 'Using nix-shell for Plutus Pioneer Program': 'Environment/Guides/BuildCabalBuild.md'
-    - 'Using PAB for Plutus Pioneer Program': 'Environment/Guides/PAB.md'
-    - 'Using Plutus-Starter to build your own project': 'Environment/Guides/plutus-starter.md'
-    - 'Syncing cardano-node for Plutus Pioneer Program': 'Environment/Guides/cnodesync.md'
+    - 'Using Plutus API Documentation': 'Guides/APIbuildDocumentation.md'
+    - 'Using Plutus Playground for Plutus Pioneer Program': 'Guides/plutusplayground.md'
+    - 'Using nix-shell for Plutus Pioneer Program': 'Guides/BuildCabalBuild.md'
+    - 'Using PAB for Plutus Pioneer Program': 'Guides/PAB.md'
+    - 'Using Plutus-Starter to build your own project': 'Guides/plutus-starter.md'
+    - 'Syncing cardano-node for Plutus Pioneer Program': 'Guides/cnodesync.md'
   - Related Projects:
-    - 'DEX': 'Related_Projects/DEX/Minswap.md'
-    - 'NFTs': 'Related_Projects/NFTS/index_nfts.md'
-    - 'Utility': 'Related_Projects/Utility/index_utility.md'
-    - 'Wallets': 'Related_Projects/Wallets/Nami_Wallet.md'
+    - DEX: 
+      - 'Minswap': 'Related/DEX/Minswap.md'
+    - NFTs: 
+      - 'Cardano NFT Maker using Javscript without Smart Contracts': 'Related/NFTS/Cardano_NFT_JS.md'
+      - 'Cardano NFT Maker using Plutus Smart Contracts': 'Related/NFTS/Cardano_Plutus_NFT_Creator.md'
+    - Utility: 
+      - 'Cardano Wallet DAPP Connector': 'Related/Utility/Dapp_Connector.md'
+      - 'Cardano Javascript-CLI Wrapper': 'Related/Utility/JS_CLI_Wrapper.md'
+      - 'Tokenomia Wallet/Minting Utility Functions': 'Related/Utility/Tokenomia.md'
+    - Wallets: 
+      - 'Nami':'Related/Wallets/Nami_Wallet.md'
   - 'About': 'README.md'

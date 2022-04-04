@@ -62,11 +62,11 @@ https://www.vagrantup.com/docs/installation
 8. To update Plutus to other versions required by weekly exercises, two options are provided along with doing it manually:
     - By using the week's appropriate wrapper script, i.e:
         ```
-        /home/vagrant/NixOS-Plutus-Scripts/plutus-cohort02-week01.bash
+        /home/vagrant/NixOS-Plutus-Scripts/plutus-cohort03-week09.bash
         ```
     - Or by using the generic script passing a commit ID. Please note that the install command tries to install from scratch (deleting first), whereas the update command tries to update the installation in the existing directory.
         ```
-        /home/vagrant/NixOS-Plutus-Scripts/plutus.bash install ea0ca4e9f9821a9dbfc5255fa0f42b6f2b3887c4
+        /home/vagrant/NixOS-Plutus-Scripts/plutus.bash install 400318e0976b82e0ba7692edf26d93293589c671
         ```
 9. Find the exercises for every week under /opt/plutus-pioneer-program/, i.e. to compile week01 code:
     ```

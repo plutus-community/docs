@@ -76,5 +76,5 @@ nav:
       - 'Cardano Javascript-CLI Wrapper': 'Related/Utility/JS_CLI_Wrapper.md'
       - 'Tokenomia Wallet/Minting Utility Functions': 'Related/Utility/Tokenomia.md'
     - Wallets: 
-      - 'Nami':'Related/Wallets/Nami_Wallet.md'
+      - 'Nami': 'Related/Wallets/Nami_Wallet.md'
   - 'About': 'README.md'

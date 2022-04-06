@@ -35,6 +35,7 @@ nav:
       - '7. State Machines': 'Lectures/Cohort_03/Lecture_07.md'
       - '8. Property Based Testing': 'Lectures/Cohort_03/Lecture_08.md'
       - '9. Marlowe': 'Lectures/Cohort_03/Lecture_09.md'
+      - '10. Staking and Private Testnet': 'Lectures/Cohort_03/Lecture_10.md'
       - Translations:
         - FR:
           - 'Lecture 02': 'Lectures/Translations/FR/Lectures/Cohort_03/Lecture_02.md'

@@ -932,7 +932,7 @@ cardano-cli stake-address delegation-certificate \
 cardano-cli query protocol-parameters \
     --testnet-magic 42 \
     --out-file $pp
- ```
+```
 
 Now we can generate the certificates, so there is Cardano-CLI stake address registration certificate.
 

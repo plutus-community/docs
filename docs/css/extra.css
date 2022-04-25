@@ -1,0 +1,67 @@
+@media screen and (min-width: 800px) { .one-half { width: calc(50% - (30px / 2)); } }
+
+label[for="comment-form-message"], label[for="comment-form-name"], label[for="comment-form-email"] { width: 100%; }
+
+.comment-textfield { max-width: 100%; padding: 0.5rem 0; }
+
+.comment-narrowfield { width: 420px; }
+
+.hp { display: none; }
+
+.comment-textfield__input { border: 1px solid rgba(0, 0, 0, 0.12); padding: 4px 5px; width: 100%; }
+
+.checkbox-email-notification { font-size: 0.9rem; margin-top: -0.5em; margin-bottom: 0.5em; }
+
+.notify-me, .g-recaptcha { padding: 0.5rem 0; }
+
+.comment-button { background-color: #1756a9; border: 1px solid #1756a9; color: #ffffff; fill: #ffffff; border-radius: 3px; padding: 4px 10px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; font-weight: 600; height: 34px; letter-spacing: 0.5px; cursor: pointer; }
+
+.comment-button:hover { background-color: #ffffff; color: #1756a9; }
+
+.comment_container {margin-bottom: 1.5em;}
+
+.comment__avatar-wrapper { float: left; width: 60px; min-height: 100px; }
+
+.comment__avatar { width: 50px; height: 50px; margin: 0 2em 0 0 !important; }
+
+.comment__content-wrapper { margin-bottom: 1rem; }
+
+.comment__new { padding: 0px 0px 14px 0px; }
+
+.comment__author h3 { font-size: 1.2em; font-weight: 500; }
+
+.comment__date { font-size: small; font-weight: normal; }
+
+.comment__meta { text-align: left; margin-top: 1em; font-size: small; }
+
+.comments__existing { padding: 8px 0px 0px 0px; }
+
+.comment { margin-bottom: 1em; }
+
+.comment.child { margin-left: 3em; }
+
+.comment__reply-link { cursor: pointer; }
+
+.comment__body p { white-space: pre-line; }
+
+.comment-form-message-footnote { font-size: small; }
+
+.comment-form-footnote { margin-top: .5em; font-size: small; }
+
+.show-modal { overflow: hidden; position: relative; }
+
+.show-modal:before { position: absolute; content: ''; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; background-color: rgba(255, 255, 255, 0.85); }
+
+.show-modal .modal { display: block; }
+
+.mdl-card { min-height: 200px; overflow: hidden; z-index: 1; position: relative; background: #fff; box-sizing: border-box; }
+
+.modal { display: none; position: relative; width: 330px; top: 50%; left: 50%; margin-left: -150px; margin-top: -400px; min-height: 0; z-index: 9999; box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.14); padding: 16px; border-radius: 2px; background: white; }
+
+.mdl-shadow--16dp { box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+
+.mdl-card__supporting-text { overflow: hidden; padding: 16px; width: 90%; }
+
+.modal-title { margin-bottom: 0px; }
+
+.disabled input, .disabled button, .disabled textarea, .disabled label { pointer-events: none; cursor: not-allowed; filter: alpha(opacity=65); box-shadow: none; opacity: 0.65; }

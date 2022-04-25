@@ -109,3 +109,7 @@ https://www.vagrantup.com/docs/installation
     ```
     vagrant up
     ```
+    {# macros_info() #}
+    {# comments #}
+    {# set key = "customdirkey" #}
+    {%- include 'comments.html' -%}

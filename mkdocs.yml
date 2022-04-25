@@ -1,7 +1,10 @@
 site_name: Plutus Community Docs
+site_url: https://plutus-community.readthedocs.io/en/latest/
 repo_url: https://github.com/plutus-community/docs/
-theme: 
-  name: windmill # cleaner for nested content and supporting more than 2 levels of depth
+theme:
+  # theme name, windmill
+  # cleaner for nested content and supporting more than 2 levels of depth
+  name: windmill
   #name: rtd-dropdown
   #name: readthedocs
   collapse_navigation: true
@@ -18,7 +21,29 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - attr_list # For using e.g. [](){:target="_blank"}:
-
 # Navigation is defined in external yml file, which is placed
 # in docs/ directory for triggering reload when changed:
 INHERIT: docs/mkdocs.navigation.yml
+# Plugins to load,
+# search:
+# if no plugin is defined, search is automatically loaded,
+# when any plugin is defined, search needs to be manually defined.
+# macros: https://mkdocs-macros-plugin.readthedocs.io
+# needed to use jinja2 functionality in mkdocs,
+# it is required by the comments system.
+plugins:
+  - search
+  - macros:
+      include_dir: docs/includes
+# Extra CSS code for the comments system and/or any other future use.
+# Be aware that it may overwrite the theme definitions.
+extra_css:
+  - css/extra.css
+# Extra JS code to include
+# Staticman: https://staticman.net/
+# it is required by the comments system.
+# Recaptcha:
+# it is required by the comments system form.
+extra_javascript:
+  - js/staticman.js
+  - https://www.google.com/recaptcha/api.js

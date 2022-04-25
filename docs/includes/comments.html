@@ -1,0 +1,22 @@
+{%- from 'comment.html' import commentRender with context -%}
+{%- from 'comment_form.html' import commentFormRender with context -%}
+{%- if key is undefined -%}
+{%-   set key = page.file.url | trim("/") | replace("/", "_") -%}
+{%- endif -%}
+<section class="comments" id="comment-section">
+  <!-- Existing comments -->
+  <div class="comments__existing">
+    <h2>Comments</h2>
+    <hr style="border-top: 1px solid #ccc; background: transparent; margin-bottom: 10px;">
+{%- for comment in comments -%}
+{%-   if comment.replying_to_uid == "0" and comment.key == key -%}
+{{-     commentRender(comment) -}}
+    <hr style="border-top: 1px solid #ccc; background: transparent; margin-bottom: 10px;">
+{%-   endif -%}
+{%- endfor -%}
+    <!-- New comment form -->
+    <div id="respond" class="comment__new">
+{{- commentFormRender(key, "0") -}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+{%- macro commentRender(myComment) -%}
+
+<article class="comment_container" id="{{- myComment._id -}}" class="" uid="">
+
+  <div class="comment__avatar-wrapper">
+    <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{- myComment.email -}}?s=60&d=identicon&r=g" alt="{{- myComment.name | escape -}}">
+  </div>
+
+  <div class="comment__content-wrapper">
+    <div class="comment__author">
+      <h3>{{- myComment.name | escape -}}</h3>
+    </div>
+
+    <div class="comment__date">
+      {%- if myComment.date is defined -%}
+      <a href="#{{ myComment._id}}" title="Permalink to this comment">
+        {{- myComment.date | escape -}}
+      </a>
+      {%- endif -%}
+      </div>
+  </div>
+
+  <div class="comment__body">
+    {{- myComment.message | escape -}}
+  </div>
+
+  <div class="comment__meta">
+    <a rel="nofollow" class="comment__reply-link" onclick="return addComment.moveForm('{{ myComment._id }}', 'respond', '{{ myComment.key }}', '{{ myComment._id }}')">↪&#xFE0E; Reply to {{ myComment.name | escape -}}</a>
+  </div>
+
+</article>
+
+{%- if myComment.replies is defined -%}
+{%-   for reply in myComment.replies -%}
+<div class="comment-reply" style="margin-left:30px;">
+{{-     commentRender(reply) -}}
+</div>
+{%-   endfor -%}
+{%- endif -%}
+{%- endmacro -%}
